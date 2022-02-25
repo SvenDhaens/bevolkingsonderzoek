@@ -1,9 +1,9 @@
 [
   {
-    "id": "my-ig",
+    "id": "fed.be.core.bevolkingsonderzoek-ig",
     "type": "ImplementationGuide",
     "url": "http://example.com/fhir/example",
-    "version": "1.0.0",
-    "name": "ExampleIG"
+    "version": "1.2.0-draft",
+    "name": "TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG"
   }
 ]

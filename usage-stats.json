@@ -1,8 +1,8 @@
 {
-  "package": "my-ig",
-  "version": "1.0.0",
+  "package": "fed.be.core.bevolkingsonderzoek-ig",
+  "version": "1.2.0-draft",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "001",
+  "jurisdiction": "056",
   "extensions": [],
   "profiles": {},
   "usage": {

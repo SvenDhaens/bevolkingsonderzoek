@@ -1,46 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="my-ig"/>
+  <id value="fed.be.core.bevolkingsonderzoek-ig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>Bevolkingsonderzoek IG exercises many of the fields in a SUSHI configuration.</p>
 </div></div>
   </text>
   <url value="http://example.com/fhir/example"/>
-  <version value="1.0.0"/>
-  <name value="ExampleIG"/>
-  <title value="HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"/>
+  <version value="1.2.0-draft"/>
+  <name value="TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG"/>
+  <title value="HL7 FHIR Implementation Guide: Bevolkingsonderzoek IG Release 1 - BE Realm | STU1"/>
   <status value="active"/>
   <date value="2020-02-26"/>
-  <publisher value="My Organization"/>
+  <publisher value="eHealth Platform"/>
   <contact>
-    <name value="My Organization"/>
+    <name value="eHealth Platform"/>
     <telecom>
       <system value="url"/>
       <value value="http://example.com/committees"/>
     </telecom>
     <telecom>
       <system value="email"/>
-      <value value="my-group@example.com"/>
+      <value value="message-structure@ehealth.fgov.be"/>
     </telecom>
   </contact>
   <contact>
-    <name value="Bob Smith"/>
+    <name value="Sven Dhaens"/>
     <telecom>
       <system value="email"/>
-      <value value="bobsmith@example.com"/>
+      <value value="sven.dhaens@axians.com"/>
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Example IG exercises many of the fields in a SUSHI configuration."/>
+  <contact>
+    <name value="Kurt Dhaene"/>
+    <telecom>
+      <system value="email"/>
+      <value value="kurt.dhaene@axians.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Bevolkingsonderzoek IG exercises many of the fields in a SUSHI configuration."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-      <display value="World"/>
+      <code value="056"/>
+      <display value="Belgium"/>
     </coding>
   </jurisdiction>
-  <packageId value="my-ig"/>
+  <packageId value="fed.be.core.bevolkingsonderzoek-ig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <definition>

@@ -5,23 +5,23 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.com/fhir/example/ImplementationGuide/my-ig> a fhir:ImplementationGuide;
+<http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "my-ig"];
+  fhir:Resource.id [ fhir:value "fed.be.core.bevolkingsonderzoek-ig"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>Bevolkingsonderzoek IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://example.com/fhir/example"];
-  fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
-  fhir:ImplementationGuide.name [ fhir:value "ExampleIG"];
-  fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"];
+  fhir:ImplementationGuide.version [ fhir:value "1.2.0-draft"];
+  fhir:ImplementationGuide.name [ fhir:value "TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG"];
+  fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Implementation Guide: Bevolkingsonderzoek IG Release 1 - BE Realm | STU1"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
   fhir:ImplementationGuide.date [ fhir:value "2020-02-26"^^xsd:date];
-  fhir:ImplementationGuide.publisher [ fhir:value "My Organization"];
+  fhir:ImplementationGuide.publisher [ fhir:value "eHealth Platform"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "My Organization" ];
+     fhir:ContactDetail.name [ fhir:value "eHealth Platform" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
@@ -29,29 +29,38 @@
      ], [
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "my-group@example.com" ]
+       fhir:ContactPoint.value [ fhir:value "message-structure@ehealth.fgov.be" ]
      ]
   ], [
      fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Bob Smith" ];
+     fhir:ContactDetail.name [ fhir:value "Sven Dhaens" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "bobsmith@example.com" ];
+       fhir:ContactPoint.value [ fhir:value "sven.dhaens@axians.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ContactDetail.name [ fhir:value "Kurt Dhaene" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kurt.dhaene@axians.com" ];
        fhir:ContactPoint.use [ fhir:value "work" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "Example IG exercises many of the fields in a SUSHI configuration."];
+  fhir:ImplementationGuide.description [ fhir:value "Bevolkingsonderzoek IG exercises many of the fields in a SUSHI configuration."];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ];
-       fhir:Coding.display [ fhir:value "World" ]
+       fhir:Coding.code [ fhir:value "056" ];
+       fhir:Coding.display [ fhir:value "Belgium" ]
      ]
   ];
-  fhir:ImplementationGuide.packageId [ fhir:value "my-ig"];
+  fhir:ImplementationGuide.packageId [ fhir:value "fed.be.core.bevolkingsonderzoek-ig"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
@@ -419,7 +428,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.com/fhir/example/ImplementationGuide/my-ig.ttl> a owl:Ontology;
+<http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

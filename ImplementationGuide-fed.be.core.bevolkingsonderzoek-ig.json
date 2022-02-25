@@ -1,20 +1,20 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "my-ig",
+  "id": "fed.be.core.bevolkingsonderzoek-ig",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>Bevolkingsonderzoek IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
   },
   "url": "http://example.com/fhir/example",
-  "version": "1.0.0",
-  "name": "ExampleIG",
-  "title": "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1",
+  "version": "1.2.0-draft",
+  "name": "TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG",
+  "title": "HL7 FHIR Implementation Guide: Bevolkingsonderzoek IG Release 1 - BE Realm | STU1",
   "status": "active",
   "date": "2020-02-26",
-  "publisher": "My Organization",
+  "publisher": "eHealth Platform",
   "contact": [
     {
-      "name": "My Organization",
+      "name": "eHealth Platform",
       "telecom": [
         {
           "system": "url",
@@ -22,34 +22,44 @@
         },
         {
           "system": "email",
-          "value": "my-group@example.com"
+          "value": "message-structure@ehealth.fgov.be"
         }
       ]
     },
     {
-      "name": "Bob Smith",
+      "name": "Sven Dhaens",
       "telecom": [
         {
           "system": "email",
-          "value": "bobsmith@example.com",
+          "value": "sven.dhaens@axians.com",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Kurt Dhaene",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kurt.dhaene@axians.com",
           "use": "work"
         }
       ]
     }
   ],
-  "description": "Example IG exercises many of the fields in a SUSHI configuration.",
+  "description": "Bevolkingsonderzoek IG exercises many of the fields in a SUSHI configuration.",
   "jurisdiction": [
     {
       "coding": [
         {
           "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001",
-          "display": "World"
+          "code": "056",
+          "display": "Belgium"
         }
       ]
     }
   ],
-  "packageId": "my-ig",
+  "packageId": "fed.be.core.bevolkingsonderzoek-ig",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
