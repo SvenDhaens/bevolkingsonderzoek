@@ -96,19 +96,6 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "autoload-resources"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "path-liquid"
           },
           {
@@ -351,6 +338,64 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Be-Bvo-EpisodeOfCare"
+        },
+        "name": "belgian-bevolkingsonderzoek-episode-of-care",
+        "description": "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/veterinarian"
+        },
+        "name": "Veterinarian",
+        "description": "A profile on the Practitioner resource for veterinarians. In the US, vets do not have National Provider Numbers.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BvoConditionCode"
+        },
+        "name": "BvoConditionCode",
+        "description": "The certainty of diagnosis",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BvoConditionCodeVS"
+        },
+        "name": "BvoConditionCodeVS",
+        "description": "Values of possible Conditions ofr wich to perform diagnostics",
+        "exampleBoolean": false
       }
     ],
     "page": {

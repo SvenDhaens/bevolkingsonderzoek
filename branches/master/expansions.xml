@@ -1,9 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5b580f58-a8d4-4427-93aa-4ba001616e14"/>
+  <id value="d2f61fbb-4a90-4a2c-82ab-4089cd5c7002"/>
   <meta>
-    <lastUpdated value="2022-02-25T11:19:40.301+00:00"/>
+    <lastUpdated value="2022-02-25T16:17:08.092+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="BvoConditionCodeVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-4473006"> </a>
+                  <a href="http://snomed.info/id/4473006">4473006</a>
+                </td>
+                <td>Migraine with aura</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS"/>
+        <version value="1.2.0-draft"/>
+        <name value="BvoConditionCodeVS"/>
+        <status value="active"/>
+        <date value="2022-02-25T16:17:08+00:00"/>
+        <publisher value="eHealth Platform"/>
+        <contact>
+          <name value="eHealth Platform"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="message-structure@ehealth.fgov.be"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Sven Dhaens"/>
+          <telecom>
+            <system value="email"/>
+            <value value="sven.dhaens@axians.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Kurt Dhaene"/>
+          <telecom>
+            <system value="email"/>
+            <value value="kurt.dhaene@axians.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Values of possible Conditions ofr wich to perform diagnostics"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:120d8d2e-4cd5-4be0-bf4e-00f9d782437d"/>
+          <timestamp value="2022-02-25T16:17:19+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="4473006"/>
+            <display value="Migraine with aura"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>
