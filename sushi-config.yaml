@@ -7,16 +7,18 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
+# id: fed.be.core
+id: fed.be.core.bevolkingsonderzoek-ig
+canonical: https://www.ehealth.fgov.be/standards/fhir
 url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
+#name: TheCoreBelgianFederalFHIRProfiles
+name: TheCoreBelgianFederalFHIRProfiles - BevolkingsonderzoekIG
+title: "HL7 FHIR Implementation Guide: Bevolkingsonderzoek IG Release 1 - BE Realm | STU1"
+description: Bevolkingsonderzoek IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
 date: 2020-02-26
-version: 1.0.0
+version: 1.2.0-draft
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -37,23 +39,28 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
+  name: eHealth Platform
   url: http://example.com/committees
-  email: my-group@example.com
+  email: message-structure@ehealth.fgov.be
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Sven Dhaens
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: sven.dhaens@axians.com
         use: work
+  - name: Kurt Dhaene
+      telecom:
+          - system: email
+            value: kurt.dhaene@axians.com
+            use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#056 "Belgium"
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
