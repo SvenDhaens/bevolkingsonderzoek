@@ -1,0 +1,13 @@
+{
+  "package": "fed.be.core.bevolkingsonderzoek-ig",
+  "version": "1.2.0-draft",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "056",
+  "extensions": [],
+  "profiles": {},
+  "usage": {
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ]
+  }
+}
