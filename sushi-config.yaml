@@ -51,10 +51,10 @@ contact:
         value: sven.dhaens@axians.com
         use: work
   - name: Kurt Dhaene
-      telecom:
-          - system: email
-            value: kurt.dhaene@axians.com
-            use: work
+    telecom:
+      - system: email
+        value: kurt.dhaene@axians.com
+        use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
