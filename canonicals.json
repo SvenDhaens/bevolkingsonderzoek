@@ -5,5 +5,33 @@
     "url": "http://example.com/fhir/example",
     "version": "1.2.0-draft",
     "name": "TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG"
+  },
+  {
+    "id": "Be-Bvo-EpisodeOfCare",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare",
+    "version": "1.2.0-draft",
+    "name": "BeBvoEpisodeOfCare"
+  },
+  {
+    "id": "BvoConditionCode",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoConditionCode",
+    "version": "1.2.0-draft",
+    "name": "BvoConditionCode"
+  },
+  {
+    "id": "veterinarian",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/veterinarian",
+    "version": "1.2.0-draft",
+    "name": "Veterinarian"
+  },
+  {
+    "id": "BvoConditionCodeVS",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS",
+    "version": "1.2.0-draft",
+    "name": "BvoConditionCodeVS"
   }
 ]

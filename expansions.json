@@ -1,8 +1,82 @@
 {
   "resourceType" : "Bundle",
-  "id" : "857098fd-4cd8-4d5a-b349-9f2f76c91e26",
+  "id" : "d2f61fbb-4a90-4a2c-82ab-4089cd5c7002",
   "meta" : {
-    "lastUpdated" : "2022-02-25T11:26:39.566+00:00"
+    "lastUpdated" : "2022-02-25T16:17:08.092+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BvoConditionCodeVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-4473006\"> </a><a href=\"http://snomed.info/id/4473006\">4473006</a></td><td>Migraine with aura</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS",
+      "version" : "1.2.0-draft",
+      "name" : "BvoConditionCodeVS",
+      "status" : "active",
+      "date" : "2022-02-25T16:17:08+00:00",
+      "publisher" : "eHealth Platform",
+      "contact" : [{
+        "name" : "eHealth Platform",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "message-structure@ehealth.fgov.be"
+        }]
+      },
+      {
+        "name" : "Sven Dhaens",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "sven.dhaens@axians.com",
+          "use" : "work"
+        }]
+      },
+      {
+        "name" : "Kurt Dhaene",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "kurt.dhaene@axians.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Values of possible Conditions ofr wich to perform diagnostics",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:120d8d2e-4cd5-4be0-bf4e-00f9d782437d",
+        "timestamp" : "2022-02-25T16:17:19+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "4473006",
+          "display" : "Migraine with aura"
+        }]
+      }
+    }
+  }]
 }
