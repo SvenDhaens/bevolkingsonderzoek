@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "JaneDoe",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jane Doe </b> (no stated gender) DoB Unknown</p></div>"
+  },
+  "name": [
+    {
+      "family": "Doe",
+      "given": [
+        "Jane"
+      ]
+    }
+  ]
+}

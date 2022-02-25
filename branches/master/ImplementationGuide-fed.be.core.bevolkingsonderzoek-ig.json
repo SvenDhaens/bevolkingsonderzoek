@@ -349,6 +349,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/be-bevolkingsonderzoek-follow-up"
+        },
+        "name": "Be Bevolkingsonderzoek Follow Up",
+        "description": "Follow up data",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/Be-Bvo-EpisodeOfCare"
         },
         "name": "belgian-bevolkingsonderzoek-episode-of-care",
@@ -377,10 +391,38 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring"
+        },
+        "name": "Be Bevolkingsonderzoek follow Up Goedkeuring",
+        "description": "Goedkeuring voor verwerking gegevens follow up onderzoek",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/BvoConditionCode"
         },
         "name": "BvoConditionCode",
         "description": "The certainty of diagnosis",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BeBevolkingsonderzoekFollowUpOnderzoek"
+        },
+        "name": "BeBevolkingsonderzoekFollowUpOnderzoek",
+        "description": "Mogelijk aangeraden vervolgonderzoek",
         "exampleBoolean": false
       },
       {
@@ -396,6 +438,33 @@
         "name": "BvoConditionCodeVS",
         "description": "Values of possible Conditions ofr wich to perform diagnostics",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/ColorectalCancerScreeningFollowUp"
+        },
+        "name": "Colorectal Cancer Screening Follow Up",
+        "description": "Follow up after positive colorectal cancer screening",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/JaneDoe"
+        },
+        "name": "JaneDoe",
+        "exampleBoolean": true
       }
     ],
     "page": {

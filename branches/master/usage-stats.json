@@ -10,6 +10,13 @@
       "types": [
         "CodeableConcept"
       ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring",
+      "title": "Be Bevolkingsonderzoek follow Up Goedkeuring",
+      "types": [
+        "boolean"
+      ]
     }
   ],
   "profiles": {
@@ -17,6 +24,12 @@
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare",
         "title": "belgian-bevolkingsonderzoek-episode-of-care"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up",
+        "title": "Be Bevolkingsonderzoek Follow Up"
       }
     ],
     "Practitioner": [
@@ -62,6 +75,9 @@
     ],
     "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoConditionCode": [
       "EpisodeOfCare"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring": [
+      "ServiceRequest"
     ]
   }
 }

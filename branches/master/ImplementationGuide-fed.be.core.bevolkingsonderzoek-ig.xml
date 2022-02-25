@@ -225,6 +225,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/be-bevolkingsonderzoek-follow-up"/>
+      </reference>
+      <name value="Be Bevolkingsonderzoek Follow Up"/>
+      <description value="Follow up data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/Be-Bvo-EpisodeOfCare"/>
       </reference>
       <name value="belgian-bevolkingsonderzoek-episode-of-care"/>
@@ -247,10 +258,32 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring"/>
+      </reference>
+      <name value="Be Bevolkingsonderzoek follow Up Goedkeuring"/>
+      <description value="Goedkeuring voor verwerking gegevens follow up onderzoek"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/BvoConditionCode"/>
       </reference>
       <name value="BvoConditionCode"/>
       <description value="The certainty of diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BeBevolkingsonderzoekFollowUpOnderzoek"/>
+      </reference>
+      <name value="BeBevolkingsonderzoekFollowUpOnderzoek"/>
+      <description value="Mogelijk aangeraden vervolgonderzoek"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -263,6 +296,27 @@
       <name value="BvoConditionCodeVS"/>
       <description value="Values of possible Conditions ofr wich to perform diagnostics"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/ColorectalCancerScreeningFollowUp"/>
+      </reference>
+      <name value="Colorectal Cancer Screening Follow Up"/>
+      <description value="Follow up after positive colorectal cancer screening"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/JaneDoe"/>
+      </reference>
+      <name value="JaneDoe"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

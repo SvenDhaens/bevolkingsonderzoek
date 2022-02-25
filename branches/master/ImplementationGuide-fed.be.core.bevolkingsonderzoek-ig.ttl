@@ -328,6 +328,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/be-bevolkingsonderzoek-follow-up>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-bevolkingsonderzoek-follow-up" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Be Bevolkingsonderzoek Follow Up" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Follow up data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://example.com/fhir/example/StructureDefinition/Be-Bvo-EpisodeOfCare>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Be-Bvo-EpisodeOfCare" ]
        ];
@@ -335,7 +349,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -349,7 +363,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Practitioner resource for veterinarians. In the US, vets do not have National Provider Numbers." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Be Bevolkingsonderzoek follow Up Goedkeuring" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Goedkeuring voor verwerking gegevens follow up onderzoek" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -363,7 +391,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The certainty of diagnosis" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ValueSet/BeBevolkingsonderzoekFollowUpOnderzoek>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BeBevolkingsonderzoekFollowUpOnderzoek" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BeBevolkingsonderzoekFollowUpOnderzoek" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mogelijk aangeraden vervolgonderzoek" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -376,6 +418,36 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BvoConditionCodeVS" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values of possible Conditions ofr wich to perform diagnostics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ServiceRequest/ColorectalCancerScreeningFollowUp>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/ColorectalCancerScreeningFollowUp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Colorectal Cancer Screening Follow Up" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Follow up after positive colorectal cancer screening" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Patient/JaneDoe>;
+         fhir:Reference.reference [ fhir:value "Patient/JaneDoe" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JaneDoe" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
