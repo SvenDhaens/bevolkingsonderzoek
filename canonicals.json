@@ -21,11 +21,32 @@
     "name": "BvoConditionCode"
   },
   {
+    "id": "be-bevolkingsonderzoek-follow-up",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up",
+    "version": "1.2.0-draft",
+    "name": "BeBevolkingsonderzoekFollowUp"
+  },
+  {
+    "id": "be-bevolkingsonderzoek-follow-up-goedkeuring",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring",
+    "version": "1.2.0-draft",
+    "name": "BeBevolkingsonderzoekFollowUpGoedkeuring"
+  },
+  {
     "id": "veterinarian",
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/veterinarian",
     "version": "1.2.0-draft",
     "name": "Veterinarian"
+  },
+  {
+    "id": "BeBevolkingsonderzoekFollowUpOnderzoek",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeBevolkingsonderzoekFollowUpOnderzoek",
+    "version": "1.2.0-draft",
+    "name": "BeBevolkingsonderzoekFollowUpOnderzoek"
   },
   {
     "id": "BvoConditionCodeVS",
