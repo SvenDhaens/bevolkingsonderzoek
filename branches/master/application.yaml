@@ -24,9 +24,9 @@ hapi:
 
     install_transitive_ig_dependencies: true
     implementationguides:
-      my-ig:
-        name: my-ig
-        version: 1.0.0 
+      fed.be.core.bevolkingsonderzoek-ig:
+        name: fed.be.core.bevolkingsonderzoek-ig
+        version: 1.2.0-draft 
     cors:
       allow_Credentials: true
       # These are allowed_origin patterns, see: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html#setAllowedOriginPatterns-java.util.List-
