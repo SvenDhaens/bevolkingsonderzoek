@@ -5,7 +5,7 @@ Title:          "belgian-bevolkingsonderzoek-episode-of-care"
 Description:    "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition."
 * identifier 0..*
 * status = #active (exactly)
-* patient only Reference(be-patient)
+* patient only Reference(BePatient)
 * patient 1..1
 * extension contains BvoConditionCode named Condition 0..1 MS
 
@@ -43,9 +43,12 @@ Usage: #example
 * account = Reference(Account/example) "example account"
 
 Instance: examplePatient
-InstanceOf: be-patient
+InstanceOf: Patient
 Usage: #example
-* identifier.type = https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin
+* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+* identifier.use = #official
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SB "Social Beneficiary Identifier"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * identifier.value = "12345"
 * name[0].use = #official
 * name[=].family = "Chalmers"
