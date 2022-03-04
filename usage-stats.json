@@ -12,6 +12,13 @@
       ]
     },
     {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication",
+      "title": "BvoNextInvitationIndication",
+      "types": [
+        "date"
+      ]
+    },
+    {
       "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring",
       "title": "Be Bevolkingsonderzoek follow Up Goedkeuring",
       "types": [
@@ -74,6 +81,9 @@
       "ImplementationGuide.definition.resource"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoConditionCode": [
+      "EpisodeOfCare"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication": [
       "EpisodeOfCare"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring": [

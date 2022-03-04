@@ -391,6 +391,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/BvoNextInvitationIndication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BvoNextInvitationIndication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BvoNextInvitationIndication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The estimated date on which to expect the next invitation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -401,7 +415,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible follow up actions" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -415,7 +429,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values of possible Conditions ofr wich to perform diagnostics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -429,7 +443,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code system for follow up advice for Bevolkingsonderzoek screenings" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -446,7 +460,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
        ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -463,7 +477,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
        ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -480,7 +494,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
        ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -493,7 +507,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JaneDoe" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -509,7 +523,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

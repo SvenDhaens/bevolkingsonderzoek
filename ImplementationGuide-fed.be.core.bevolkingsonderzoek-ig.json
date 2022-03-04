@@ -409,6 +409,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BvoNextInvitationIndication"
+        },
+        "name": "BvoNextInvitationIndication",
+        "description": "The estimated date on which to expect the next invitation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
