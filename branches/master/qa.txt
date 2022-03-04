@@ -1,9 +1,9 @@
 ﻿TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG : Validation Results
 =========================================
 
-err = 8, warn = 19, info = 2
+err = 8, warn = 21, info = 2
 IG Publisher Version: 1.1.111
-Generated Fri Mar 04 08:50:45 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+Generated Fri Mar 04 09:19:41 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/EpisodeOfCare-example : 5 / 0 / 1
@@ -15,6 +15,7 @@ Generated Fri Mar 04 08:50:45 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevol
  /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample2 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BvoConditionCode : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up-goedkeuring : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-BeVSBevolkingsonderzoekFollowUpAdvice : 0 / 3 / 1
@@ -54,6 +55,9 @@ WARNING: StructureDefinition/Be-Bvo-EpisodeOfCare: StructureDefinition.jurisdict
 == fsh-generated/resources/StructureDefinition-BvoConditionCode.json ==
 WARNING: StructureDefinition/BvoConditionCode: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoConditionCode'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication.json ==
+WARNING: StructureDefinition/BvoNextInvitationIndication: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up.json ==
 WARNING: StructureDefinition/be-bevolkingsonderzoek-follow-up: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 == fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up-goedkeuring.json ==

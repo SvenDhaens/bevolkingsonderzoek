@@ -28,6 +28,13 @@
     "name": "BvoConditionCode"
   },
   {
+    "id": "BvoNextInvitationIndication",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication",
+    "version": "1.2.0-draft",
+    "name": "BvoNextInvitationIndication"
+  },
+  {
     "id": "be-bevolkingsonderzoek-follow-up",
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up",
