@@ -7,11 +7,18 @@
     "name": "TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG"
   },
   {
+    "id": "BeCSBevolkingsonderzoekFollowUpAdvice",
+    "type": "CodeSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice",
+    "version": "1.2.0-draft",
+    "name": "BeCSBevolkingsonderzoekFollowUpAdvice"
+  },
+  {
     "id": "Be-Bvo-EpisodeOfCare",
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare",
     "version": "1.2.0-draft",
-    "name": "BeBvoEpisodeOfCare"
+    "name": "BePopulationBasedScreeningEpisodeOfCare"
   },
   {
     "id": "BvoConditionCode",
@@ -32,21 +39,14 @@
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring",
     "version": "1.2.0-draft",
-    "name": "BeBevolkingsonderzoekFollowUpGoedkeuring"
+    "name": "BeExtBevolkingsonderzoekFollowUpGoedkeuring"
   },
   {
-    "id": "veterinarian",
-    "type": "StructureDefinition",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/veterinarian",
-    "version": "1.2.0-draft",
-    "name": "Veterinarian"
-  },
-  {
-    "id": "BeBevolkingsonderzoekFollowUpOnderzoek",
+    "id": "BeVSBevolkingsonderzoekFollowUpAdvice",
     "type": "ValueSet",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeBevolkingsonderzoekFollowUpOnderzoek",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice",
     "version": "1.2.0-draft",
-    "name": "BeBevolkingsonderzoekFollowUpOnderzoek"
+    "name": "BeVSBevolkingsonderzoekFollowUpAdvice"
   },
   {
     "id": "BvoConditionCodeVS",

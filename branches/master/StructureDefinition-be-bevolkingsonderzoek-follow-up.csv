@@ -24,8 +24,9 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ServiceRequest.extension","followup_goedkeuring","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring]]} {[]}
-","Be Bevolkingsonderzoek follow Up Goedkeuring","Goedkeuring voor verwerking gegevens follow up onderzoek","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"ServiceRequest.extension","FollowupGoedkeuring","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring]]} {[]}
+","Be Bevolkingsonderzoek follow Up Goedkeuring","Patiënt approval for collection of follow up data by the bevolkingsonderzoek responsible authority. Indication if the patiënt accepted that the bevolkingsonderzoek responsible authority can ask the healthcare providers of the patiënt for information on examinations performed after the patiënt had a positive result.
+Can probably be removed or replaced by note.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequest.modifierExtension","","extensions
@@ -72,7 +73,7 @@ groupIdentifier","",0,1,"","","Y","Identifier {[]} {[]}
 ","Request.doNotPerform",".actionNegationInd"
 "ServiceRequest.code","","service requested
 ","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","What is being requested/ordered","A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.","Many laboratory and radiology procedure codes embed the specimen/organ system in the test order name, for example,  serum or serum/plasma glucose, or a chest x-ray. The specimen might not be recorded separately from the test code.","","","","","","","","",,"required","","https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeBevolkingsonderzoekFollowUpOnderzoek","",,,,"ServiceRequest.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","What is being requested/ordered","A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.","Many laboratory and radiology procedure codes embed the specimen/organ system in the test order name, for example,  serum or serum/plasma glucose, or a chest x-ray. The specimen might not be recorded separately from the test code.","","","","","","","","",,"extensible","","https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice","",,,,"ServiceRequest.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.code","PR1-3 / OBR-4  (varies by domain)",".code","FiveWs.what[x]","Procedure.procedureCode"
 "ServiceRequest.orderDetail","","detailed instructions
 ","",0,*,"","","Y","CodeableConcept {[]} {[]}

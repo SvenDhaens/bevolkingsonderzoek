@@ -1,0 +1,101 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BeCSBevolkingsonderzoekFollowUpAdvice",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">colonoscopy<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-colonoscopy\"> </a></td><td>Colonoscopie</td></tr><tr><td style=\"white-space:nowrap\">additional_mammography_or_and_echography_left<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-additional_mammography_or_and_echography_left\"> </a></td><td>Links: bijkomende mammografie en/of echografie</td></tr><tr><td style=\"white-space:nowrap\">additional_mammography_or_and_echography_right<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-additional_mammography_or_and_echography_right\"> </a></td><td>Rechts: bijkomende mammografie en/of echografie</td></tr><tr><td style=\"white-space:nowrap\">pathological_examination_left<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-pathological_examination_left\"> </a></td><td>Links: pathologisch onderzoek</td></tr><tr><td style=\"white-space:nowrap\">pathological_examination_right<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-pathological_examination_right\"> </a></td><td>Rechts: pathologisch onderzoek</td></tr><tr><td style=\"white-space:nowrap\">mammographic_check_after_6_months_left<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-mammographic_check_after_6_months_left\"> </a></td><td>Links: mammografische controle(s) na 6 maanden</td></tr><tr><td style=\"white-space:nowrap\">mammographic_check_after_6_months_richt<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-mammographic_check_after_6_months_richt\"> </a></td><td>Rechts: mammografische controle(s) na 6 maanden</td></tr><tr><td style=\"white-space:nowrap\">compare_with_previous_mammography_left<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography_left\"> </a></td><td>Links: te vergelijken met vorige mammografie</td></tr><tr><td style=\"white-space:nowrap\">compare_with_previous_mammography_right<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography_right\"> </a></td><td>Rechts: te vergelijken met vorige mammografie</td></tr></table></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice",
+  "version": "1.2.0-draft",
+  "name": "BeCSBevolkingsonderzoekFollowUpAdvice",
+  "status": "draft",
+  "date": "2022-03-04T07:40:22+00:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "eHealth Platform",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "message-structure@ehealth.fgov.be"
+        }
+      ]
+    },
+    {
+      "name": "Sven Dhaens",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "sven.dhaens@axians.com",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Kurt Dhaene",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kurt.dhaene@axians.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Code system for follow up advice for Bevolkingsonderzoek screenings",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056",
+          "display": "Belgium"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 9,
+  "concept": [
+    {
+      "code": "colonoscopy",
+      "display": "Colonoscopie"
+    },
+    {
+      "code": "additional_mammography_or_and_echography_left",
+      "display": "Links: bijkomende mammografie en/of echografie"
+    },
+    {
+      "code": "additional_mammography_or_and_echography_right",
+      "display": "Rechts: bijkomende mammografie en/of echografie"
+    },
+    {
+      "code": "pathological_examination_left",
+      "display": "Links: pathologisch onderzoek"
+    },
+    {
+      "code": "pathological_examination_right",
+      "display": "Rechts: pathologisch onderzoek"
+    },
+    {
+      "code": "mammographic_check_after_6_months_left",
+      "display": "Links: mammografische controle(s) na 6 maanden"
+    },
+    {
+      "code": "mammographic_check_after_6_months_richt",
+      "display": "Rechts: mammografische controle(s) na 6 maanden"
+    },
+    {
+      "code": "compare_with_previous_mammography_left",
+      "display": "Links: te vergelijken met vorige mammografie"
+    },
+    {
+      "code": "compare_with_previous_mammography_right",
+      "display": "Rechts: te vergelijken met vorige mammografie"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ColorectalCancerScreeningFollowUpExample",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ColorectalCancerScreeningFollowUpExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bevolkingsonderzoek-follow-up.html\">Be Bevolkingsonderzoek Follow Up</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: colonoscopy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#colonoscopy)</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p></div>"
+  },
+  "status": "active",
+  "intent": "proposal",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/",
+        "code": "colonoscopy"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/JaneDoe"
+  }
+}

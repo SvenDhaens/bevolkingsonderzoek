@@ -1,0 +1,106 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BeVSBevolkingsonderzoekFollowUpAdvice",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>colonoscopy</td><td>Colonoscopy</td></tr><tr><td>additional_mammography_or_and_echography_left</td><td>Links: bijkomende mammografie en/of echografie</td></tr><tr><td>additional_mammography_or_and_echography_right</td><td>Rechts: bijkomende mammografie en/of echografie</td></tr><tr><td>pathological_examination_left</td><td>Links: pathologisch onderzoek</td></tr><tr><td>pathological_examination_right</td><td>Rechts: pathologisch onderzoek</td></tr><tr><td>mammographic_check_after_6_months_left</td><td>Links: mammografische controle(s) na 6 maanden</td></tr><tr><td>mammographic_check_after_6_months_richt</td><td>Rechts: mammografische controle(s) na 6 maanden</td></tr><tr><td>compare_with_previous_mammography_left</td><td>Links: te vergelijken met vorige mammografie</td></tr><tr><td>compare_with_previous_mammography_right</td><td>Rechts: te vergelijken met vorige mammografie</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice",
+  "version": "1.2.0-draft",
+  "name": "BeVSBevolkingsonderzoekFollowUpAdvice",
+  "status": "draft",
+  "date": "2022-03-04T07:40:22+00:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "eHealth Platform",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "message-structure@ehealth.fgov.be"
+        }
+      ]
+    },
+    {
+      "name": "Sven Dhaens",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "sven.dhaens@axians.com",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Kurt Dhaene",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kurt.dhaene@axians.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Possible follow up actions",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056",
+          "display": "Belgium"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/",
+        "concept": [
+          {
+            "code": "colonoscopy",
+            "display": "Colonoscopy"
+          },
+          {
+            "code": "additional_mammography_or_and_echography_left",
+            "display": "Links: bijkomende mammografie en/of echografie"
+          },
+          {
+            "code": "additional_mammography_or_and_echography_right",
+            "display": "Rechts: bijkomende mammografie en/of echografie"
+          },
+          {
+            "code": "pathological_examination_left",
+            "display": "Links: pathologisch onderzoek"
+          },
+          {
+            "code": "pathological_examination_right",
+            "display": "Rechts: pathologisch onderzoek"
+          },
+          {
+            "code": "mammographic_check_after_6_months_left",
+            "display": "Links: mammografische controle(s) na 6 maanden"
+          },
+          {
+            "code": "mammographic_check_after_6_months_richt",
+            "display": "Rechts: mammografische controle(s) na 6 maanden"
+          },
+          {
+            "code": "compare_with_previous_mammography_left",
+            "display": "Links: te vergelijken met vorige mammografie"
+          },
+          {
+            "code": "compare_with_previous_mammography_right",
+            "display": "Rechts: te vergelijken met vorige mammografie"
+          }
+        ]
+      }
+    ]
+  }
+}
