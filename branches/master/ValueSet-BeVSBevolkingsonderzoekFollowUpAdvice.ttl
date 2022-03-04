@@ -16,7 +16,7 @@
   fhir:ValueSet.version [ fhir:value "1.2.0-draft"];
   fhir:ValueSet.name [ fhir:value "BeVSBevolkingsonderzoekFollowUpAdvice"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-03-04T07:40:22+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-03-04T08:50:25+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;

@@ -3,7 +3,7 @@
 
 err = 8, warn = 19, info = 2
 IG Publisher Version: 1.1.111
-Generated Fri Mar 04 07:40:40 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+Generated Fri Mar 04 08:50:45 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/EpisodeOfCare-example : 5 / 0 / 1
