@@ -8,6 +8,11 @@ Description:    "Manages a recurring periodical workflow for diagnostics in rega
 * patient only Reference(BePatient)
 * patient 1..1
 * extension contains BvoConditionCode named Condition 0..1 MS
+* extension contains BvoNextInvitationIndication named nextInvitationDate 0..1
+
+Extension: BvoNextInvitationIndication
+Description: "The estimated date on which to expect the next invitation"
+* value[x] only date
 
 Extension: BvoConditionCode
 Description: "The certainty of diagnosis"
