@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BeVSBevolkingsonderzoekFollowUpAdvice"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>colonoscopy</td><td>Colonoscopy</td></tr><tr><td>additional_mammography_or_and_echography_left</td><td>Links: bijkomende mammografie en/of echografie</td></tr><tr><td>additional_mammography_or_and_echography_right</td><td>Rechts: bijkomende mammografie en/of echografie</td></tr><tr><td>pathological_examination_left</td><td>Links: pathologisch onderzoek</td></tr><tr><td>pathological_examination_right</td><td>Rechts: pathologisch onderzoek</td></tr><tr><td>mammographic_check_after_6_months_left</td><td>Links: mammografische controle(s) na 6 maanden</td></tr><tr><td>mammographic_check_after_6_months_richt</td><td>Rechts: mammografische controle(s) na 6 maanden</td></tr><tr><td>compare_with_previous_mammography_left</td><td>Links: te vergelijken met vorige mammografie</td></tr><tr><td>compare_with_previous_mammography_right</td><td>Rechts: te vergelijken met vorige mammografie</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice"/>
+  <version value="1.2.0-draft"/>
+  <name value="BeVSBevolkingsonderzoekFollowUpAdvice"/>
+  <status value="draft"/>
+  <date value="2022-03-04T07:40:22+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Sven Dhaens"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sven.dhaens@axians.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kurt Dhaene"/>
+    <telecom>
+      <system value="email"/>
+      <value value="kurt.dhaene@axians.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Possible follow up actions"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/"/>
+      <concept>
+        <code value="colonoscopy"/>
+        <display value="Colonoscopy"/>
+      </concept>
+      <concept>
+        <code value="additional_mammography_or_and_echography_left"/>
+        <display value="Links: bijkomende mammografie en/of echografie"/>
+      </concept>
+      <concept>
+        <code value="additional_mammography_or_and_echography_right"/>
+        <display value="Rechts: bijkomende mammografie en/of echografie"/>
+      </concept>
+      <concept>
+        <code value="pathological_examination_left"/>
+        <display value="Links: pathologisch onderzoek"/>
+      </concept>
+      <concept>
+        <code value="pathological_examination_right"/>
+        <display value="Rechts: pathologisch onderzoek"/>
+      </concept>
+      <concept>
+        <code value="mammographic_check_after_6_months_left"/>
+        <display value="Links: mammografische controle(s) na 6 maanden"/>
+      </concept>
+      <concept>
+        <code value="mammographic_check_after_6_months_richt"/>
+        <display value="Rechts: mammografische controle(s) na 6 maanden"/>
+      </concept>
+      <concept>
+        <code value="compare_with_previous_mammography_left"/>
+        <display value="Links: te vergelijken met vorige mammografie"/>
+      </concept>
+      <concept>
+        <code value="compare_with_previous_mammography_right"/>
+        <display value="Rechts: te vergelijken met vorige mammografie"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

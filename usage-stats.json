@@ -31,12 +31,6 @@
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up",
         "title": "Be Bevolkingsonderzoek Follow Up"
       }
-    ],
-    "Practitioner": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/veterinarian",
-        "title": "Veterinarian"
-      }
     ]
   },
   "usage": {
@@ -54,6 +48,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Patient.contact.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
+      "Patient.birthDate"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"

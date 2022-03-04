@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "f775d90f-e8a9-46d9-982b-368fbf06a566",
+  "id" : "3cd56055-925d-4713-962e-9723bdeeb889",
   "meta" : {
-    "lastUpdated" : "2022-02-25T16:33:50.538+00:00"
+    "lastUpdated" : "2022-03-04T07:40:22.796+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "version" : "1.2.0-draft",
       "name" : "BvoConditionCodeVS",
       "status" : "active",
-      "date" : "2022-02-25T16:33:50+00:00",
+      "date" : "2022-03-04T07:40:22+00:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -56,8 +56,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6bc911c4-79ba-4caf-8f4f-488291deaf09",
-        "timestamp" : "2022-02-25T16:34:05+00:00",
+        "identifier" : "urn:uuid:36a7d91b-21c4-4ece-9a27-373f49a1aa83",
+        "timestamp" : "2022-03-04T07:40:35+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",

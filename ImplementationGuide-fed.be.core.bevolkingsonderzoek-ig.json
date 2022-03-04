@@ -64,6 +64,14 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "id": "beFederalprofiles",
+      "uri": "http://https://simplifier.net/ehealthplatformfederalprofiles",
+      "packageId": "ehealthplatform.be.r4.federalprofiles",
+      "version": "1.2.2"
+    }
+  ],
   "definition": {
     "extension": [
       {
@@ -352,7 +360,7 @@
           "reference": "StructureDefinition/be-bevolkingsonderzoek-follow-up"
         },
         "name": "Be Bevolkingsonderzoek Follow Up",
-        "description": "Follow up data",
+        "description": "These are an indication which actions a patiënt can take next or which follow up examinations are proposed. This is a proposal. \nThis resource exists to notify the patiënt that the patiënt should request additional examinations if the result was positive. \nIf the screening was negative, the follow up examination should not be performed. In case of a negative result, the resource should not exist.",
         "exampleBoolean": false
       },
       {
@@ -373,20 +381,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/veterinarian"
-        },
-        "name": "Veterinarian",
-        "description": "A profile on the Practitioner resource for veterinarians. In the US, vets do not have National Provider Numbers.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -394,7 +388,7 @@
           "reference": "StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring"
         },
         "name": "Be Bevolkingsonderzoek follow Up Goedkeuring",
-        "description": "Goedkeuring voor verwerking gegevens follow up onderzoek",
+        "description": "Patiënt approval for collection of follow up data by the bevolkingsonderzoek responsible authority. Indication if the patiënt accepted that the bevolkingsonderzoek responsible authority can ask the healthcare providers of the patiënt for information on examinations performed after the patiënt had a positive result.\nCan probably be removed or replaced by note.",
         "exampleBoolean": false
       },
       {
@@ -419,10 +413,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/BeBevolkingsonderzoekFollowUpOnderzoek"
+          "reference": "ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice"
         },
-        "name": "BeBevolkingsonderzoekFollowUpOnderzoek",
-        "description": "Mogelijk aangeraden vervolgonderzoek",
+        "name": "BeVSBevolkingsonderzoekFollowUpAdvice",
+        "description": "Possible follow up actions",
         "exampleBoolean": false
       },
       {
@@ -443,14 +437,56 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice"
+        },
+        "name": "BeCSBevolkingsonderzoekFollowUpAdvice",
+        "description": "Code system for follow up advice for Bevolkingsonderzoek screenings",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ServiceRequest"
           }
         ],
         "reference": {
-          "reference": "ServiceRequest/ColorectalCancerScreeningFollowUp"
+          "reference": "ServiceRequest/BreastCancerScreeningFollowUp"
         },
-        "name": "Colorectal Cancer Screening Follow Up",
+        "name": "Breast Cancer Screening Follow Up",
+        "description": "Follow up after positive breast cancer screening. This is a proposal. This resource exists to notify the patiënt that the patiënt should request additional examinations.",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/ColorectalCancerScreeningFollowUpExample"
+        },
+        "name": "Colorectal Cancer Screening Follow Up Example Positive",
         "description": "Follow up after positive colorectal cancer screening",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/ColorectalCancerScreeningFollowUpExample2"
+        },
+        "name": "Colorectal Cancer Screening Follow Up Example Negative",
+        "description": "Follow up after negative colorectal cancer screening. This resource exists to notify the patiënt that the patiënt that possible follow up examination exists, but because the result of the Bevolkinsonderzoek screening was negative, the follow up examination should not be performed.",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
       },
       {
@@ -464,6 +500,32 @@
           "reference": "Patient/JaneDoe"
         },
         "name": "JaneDoe",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "EpisodeOfCare"
+          }
+        ],
+        "reference": {
+          "reference": "EpisodeOfCare/example"
+        },
+        "name": "example",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/examplePatient"
+        },
+        "name": "examplePatient",
         "exampleBoolean": true
       }
     ],
