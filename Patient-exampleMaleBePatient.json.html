@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FED.BE.CORE.BEVOLKINGSONDERZOEK-IG\examplePatient - JSON Representation - FHIR v4.0.1</title>
+    <title>FED.BE.CORE.BEVOLKINGSONDERZOEK-IG\exampleMaleBePatient - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.14"}
-    h3,h4,h5,h6{--heading-prefix:"6.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.15"}
+    h3,h4,h5,h6{--heading-prefix:"6.15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -137,7 +137,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>examplePatient</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>exampleMaleBePatient</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -161,13 +161,13 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="Patient-examplePatient.html">Narrative Content</a>
+    <a href="Patient-exampleMaleBePatient.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="Patient-examplePatient.xml.html">XML</a>
+      <a href="Patient-exampleMaleBePatient.xml.html">XML</a>
     </li>
   
 
@@ -181,7 +181,7 @@
 
   
     <li>
-      <a href="Patient-examplePatient.ttl.html">TTL</a>
+      <a href="Patient-exampleMaleBePatient.ttl.html">TTL</a>
     </li>
   
 
@@ -193,7 +193,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: examplePatient - JSON Representation</h2>
+<h2 id="root">: exampleMaleBePatient - JSON Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -208,7 +208,7 @@
   </table>
 
 
-<p><a href="Patient-examplePatient.json" no-download="true">Raw json</a> | <a href="Patient-examplePatient.json" download>Download</a></p>
+<p><a href="Patient-exampleMaleBePatient.json" no-download="true">Raw json</a> | <a href="Patient-exampleMaleBePatient.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -218,7 +218,7 @@
   <pre class="json"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resourceType</a>" : "Patient",
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "examplePatient",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "exampleMaleBePatient",
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
@@ -226,7 +226,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Jim &lt;/b&gt; (no stated gender) 1974-12-25 ( Social Beneficiary Identifier: 12345 (OFFICIAL))&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Bauer Jack &lt;/b&gt; (no stated gender) DoB Unknown ( Social Beneficiary Identifier: 12345 (OFFICIAL))&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
     {
@@ -246,133 +246,13 @@
   ],
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "official",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Chalmers",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Jack",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-        "Peter",
-        "James"
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "usual",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-        "Jim"
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "maiden",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Windsor",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-        "Peter",
-        "James"
+        "Bauer"
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "home"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "(03) 5555 6473",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.rank">rank</a>" : 1
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "(03) 3410 5613",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "mobile",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.rank">rank</a>" : 2
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "(03) 5555 8834",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "old",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.period">period</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2014"
-      }
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "male",
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1974-12-25",
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">_birthDate</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#date#date.extension">extension</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "1974-12-25T14:35:45-05:00"
-      }
-    ]
-  },
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">deceasedBoolean</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a>" : "home",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a>" : "both",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a>" : "534 Erewhon St PeasantVille, Rainbow, Vic  3999",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
-        "534 Erewhon St"
-      ],
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "PleasantVille",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "Rainbow",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "Vic",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "9000",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.period">period</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "1974-12-25"
-      }
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.relationship">relationship</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "N"
-            }
-          ]
-        }
-      ],
-      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.name">name</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "du Marché",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">_family</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "VV"
-            }
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-          "Bénédicte"
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "+32 (050) 998327"
-        }
-      ],
-      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.address">address</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a>" : "home",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a>" : "both",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
-          "534 Erewhon St"
-        ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "PleasantVille",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "Rainbow",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "Vic",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "3999",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.period">period</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "1974-12-25"
-        }
-      },
-      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.gender">gender</a>" : "male",
-      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.period">period</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2012"
-      }
-    }
-  ]
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "male"
 }</code></pre>
 
 
@@ -403,7 +283,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">eHealth Platform</a>.  Package fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 4, 2022 09:19+0000">2022-03-04</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">eHealth Platform</a>.  Package fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 11, 2022 15:39+0000">2022-03-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

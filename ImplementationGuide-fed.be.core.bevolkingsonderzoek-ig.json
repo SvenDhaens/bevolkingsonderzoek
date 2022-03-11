@@ -373,7 +373,7 @@
         "reference": {
           "reference": "StructureDefinition/Be-Bvo-EpisodeOfCare"
         },
-        "name": "belgian-bevolkingsonderzoek-episode-of-care",
+        "name": "BE Episode Bevolkingsonderzoek",
         "description": "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition.",
         "exampleBoolean": false
       },
@@ -507,6 +507,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/CvKO"
+        },
+        "name": "CvKO",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -524,9 +537,9 @@
           }
         ],
         "reference": {
-          "reference": "EpisodeOfCare/example"
+          "reference": "EpisodeOfCare/exampleEpisodeBevolkingsonderzoek"
         },
-        "name": "example",
+        "name": "exampleEpisodeBevolkingsonderzoek",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"
       },
       {
@@ -537,9 +550,9 @@
           }
         ],
         "reference": {
-          "reference": "Patient/examplePatient"
+          "reference": "Patient/exampleMaleBePatient"
         },
-        "name": "examplePatient",
+        "name": "exampleMaleBePatient",
         "exampleBoolean": true
       }
     ],

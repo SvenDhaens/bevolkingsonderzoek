@@ -1,19 +1,20 @@
 ﻿TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG : Validation Results
 =========================================
 
-err = 8, warn = 21, info = 2
-IG Publisher Version: 1.1.111
-Generated Fri Mar 04 09:19:41 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
- Build Errors : 0 / 5 / 0
+err = 3, warn = 24, info = 2
+IG Publisher Version: 1.1.112
+Generated Fri Mar 11 15:39:41 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+ Build Errors : 0 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/EpisodeOfCare-example : 5 / 0 / 1
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/Organization-CvKO : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-JaneDoe : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-examplePatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-exampleMaleBePatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUp : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample2 : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BvoConditionCode : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up : 0 / 1 / 1
@@ -24,25 +25,22 @@ Generated Fri Mar 04 09:19:41 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevol
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/CvKO.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/JaneDoe.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/examplePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/exampleEpisodeBevolkingsonderzoek.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/exampleMaleBePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.json ==
 WARNING: CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice: CodeSystem.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 INFORMATION: CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-== fsh-generated/resources/EpisodeOfCare-example.json ==
-ERROR: EpisodeOfCare/example: EpisodeOfCare.diagnosis[0].condition: Unable to resolve resource 'Condition/stroke'
-ERROR: EpisodeOfCare/example: EpisodeOfCare.managingOrganization: Unable to resolve resource 'Organization/cvko'
-ERROR: EpisodeOfCare/example: EpisodeOfCare.careManager: Unable to resolve resource 'Practitioner/14'
-ERROR: EpisodeOfCare/example: EpisodeOfCare.team[0]: Unable to resolve resource 'CareTeam/example'
-ERROR: EpisodeOfCare/example: EpisodeOfCare.account[0]: Unable to resolve resource 'Account/example'
+== fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.json ==
 == fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: fed.be.core.bevolkingsonderzoek-ig/http://example.com/fhir/example
 WARNING: ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig: ImplementationGuide.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig vs http://example.com/fhir/example
+== fsh-generated/resources/Organization-CvKO.json ==
 == fsh-generated/resources/Patient-JaneDoe.json ==
-== fsh-generated/resources/Patient-examplePatient.json ==
+== fsh-generated/resources/Patient-exampleMaleBePatient.json ==
 == fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUp.json ==
 WARNING: ServiceRequest/BreastCancerScreeningFollowUp: ServiceRequest.code: No code provided, and a code should be provided from the value set 'BeVSBevolkingsonderzoekFollowUpAdvice' (https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice)
 == fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample.json ==
@@ -52,6 +50,8 @@ INFORMATION: ServiceRequest/ColorectalCancerScreeningFollowUpExample: ServiceReq
 WARNING: ServiceRequest/ColorectalCancerScreeningFollowUpExample2: ServiceRequest.code: No code provided, and a code should be provided from the value set 'BeVSBevolkingsonderzoekFollowUpAdvice' (https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice)
 == fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare.json ==
 WARNING: StructureDefinition/Be-Bvo-EpisodeOfCare: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+WARNING: StructureDefinition/Be-Bvo-EpisodeOfCare: StructureDefinition.snapshot.element[19].fixed.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/Be-Bvo-EpisodeOfCare: StructureDefinition.differential.element[5].fixed.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/StructureDefinition-BvoConditionCode.json ==
 WARNING: StructureDefinition/BvoConditionCode: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoConditionCode'): The Implementation Guide contains no examples for this extension

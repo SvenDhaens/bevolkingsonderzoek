@@ -30,7 +30,7 @@
     "EpisodeOfCare": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare",
-        "title": "belgian-bevolkingsonderzoek-episode-of-care"
+        "title": "BE Episode Bevolkingsonderzoek"
       }
     ],
     "ServiceRequest": [
@@ -55,12 +55,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
-      "Patient.contact.name.family"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
-      "Patient.birthDate"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
