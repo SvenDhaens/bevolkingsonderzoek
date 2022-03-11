@@ -371,6 +371,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/be-bvo-appointment"
+        },
+        "name": "Be Bvo Appointment",
+        "description": "Appointment for bevolkingsonderzoek",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/Be-Bvo-EpisodeOfCare"
         },
         "name": "BE Episode Bevolkingsonderzoek",
@@ -465,6 +479,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/BreastCancerScreeningAppointment"
+        },
+        "name": "Appointment Breast Cancer Screening",
+        "description": "Appointment for mammography in a mammographic unit in context of breast cancer screening",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ServiceRequest"
           }
         ],
@@ -474,6 +502,34 @@
         "name": "Breast Cancer Screening Follow Up",
         "description": "Follow up after positive breast cancer screening. This is a proposal. This resource exists to notify the patiënt that the patiënt should request additional examinations.",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/CervicalCancerScreeningAppointment"
+        },
+        "name": "Appointment Cervical Cancer Screening",
+        "description": "Proposed appointment in context of cervical cancer screening",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/ColonCancerScreeningAppointment"
+        },
+        "name": "Appointment Colon Cancer Screening",
+        "description": "Appointment for stool sample in context of colon cancer screening",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"
       },
       {
         "extension": [

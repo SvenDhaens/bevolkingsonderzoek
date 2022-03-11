@@ -241,6 +241,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/be-bvo-appointment"/>
+      </reference>
+      <name value="Be Bvo Appointment"/>
+      <description value="Appointment for bevolkingsonderzoek"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/Be-Bvo-EpisodeOfCare"/>
       </reference>
       <name value="BE Episode Bevolkingsonderzoek"/>
@@ -315,6 +326,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/BreastCancerScreeningAppointment"/>
+      </reference>
+      <name value="Appointment Breast Cancer Screening"/>
+      <description value="Appointment for mammography in a mammographic unit in context of breast cancer screening"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
@@ -323,6 +345,28 @@
       <name value="Breast Cancer Screening Follow Up"/>
       <description value="Follow up after positive breast cancer screening. This is a proposal. This resource exists to notify the patiënt that the patiënt should request additional examinations."/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/CervicalCancerScreeningAppointment"/>
+      </reference>
+      <name value="Appointment Cervical Cancer Screening"/>
+      <description value="Proposed appointment in context of cervical cancer screening"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/ColonCancerScreeningAppointment"/>
+      </reference>
+      <name value="Appointment Colon Cancer Screening"/>
+      <description value="Appointment for stool sample in context of colon cancer screening"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

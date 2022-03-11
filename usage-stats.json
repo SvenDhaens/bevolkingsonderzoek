@@ -38,6 +38,12 @@
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up",
         "title": "Be Bevolkingsonderzoek Follow Up"
       }
+    ],
+    "Appointment": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment",
+        "title": "Be Bvo Appointment"
+      }
     ]
   },
   "usage": {
@@ -67,6 +73,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare": [
+      "Appointment"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
