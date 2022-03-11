@@ -355,7 +355,7 @@
          fhir:link <http://example.com/fhir/example/StructureDefinition/Be-Bvo-EpisodeOfCare>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Be-Bvo-EpisodeOfCare" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "belgian-bevolkingsonderzoek-episode-of-care" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BE Episode Bevolkingsonderzoek" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -498,6 +498,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Organization/CvKO>;
+         fhir:Reference.reference [ fhir:value "Organization/CvKO" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CvKO" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -507,33 +520,33 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JaneDoe" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "EpisodeOfCare" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/EpisodeOfCare/example>;
-         fhir:Reference.reference [ fhir:value "EpisodeOfCare/example" ]
+         fhir:link <http://example.com/fhir/example/EpisodeOfCare/exampleEpisodeBevolkingsonderzoek>;
+         fhir:Reference.reference [ fhir:value "EpisodeOfCare/exampleEpisodeBevolkingsonderzoek" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "exampleEpisodeBevolkingsonderzoek" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare";
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/Patient/examplePatient>;
-         fhir:Reference.reference [ fhir:value "Patient/examplePatient" ]
+         fhir:link <http://example.com/fhir/example/Patient/exampleMaleBePatient>;
+         fhir:Reference.reference [ fhir:value "Patient/exampleMaleBePatient" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "examplePatient" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "exampleMaleBePatient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

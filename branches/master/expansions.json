@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "52805aff-0920-4895-9801-94063f56e1e7",
+  "id" : "b9ee7fec-9bbd-418d-88c7-f5400b064d86",
   "meta" : {
-    "lastUpdated" : "2022-03-04T09:19:21.974+00:00"
+    "lastUpdated" : "2022-03-11T15:39:18.807+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,13 +12,13 @@
       "id" : "BvoConditionCodeVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-4473006\"> </a><a href=\"http://snomed.info/id/4473006\">4473006</a></td><td>Migraine with aura</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-4473006\"> </a>  <a href=\"http://snomed.info/id/4473006\">4473006</a></td><td>Migraine with aura</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS",
       "version" : "1.2.0-draft",
       "name" : "BvoConditionCodeVS",
       "status" : "active",
-      "date" : "2022-03-04T09:19:21+00:00",
+      "date" : "2022-03-11T15:39:18+00:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -56,8 +56,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d2b06e46-0fb5-463e-ae43-f4b267e2e17a",
-        "timestamp" : "2022-03-04T09:19:35+00:00",
+        "identifier" : "urn:uuid:9b01d6d7-8a0d-4fae-b514-3d6d6d767715",
+        "timestamp" : "2022-03-11T15:39:34+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="52805aff-0920-4895-9801-94063f56e1e7"/>
+  <id value="b9ee7fec-9bbd-418d-88c7-f5400b064d86"/>
   <meta>
-    <lastUpdated value="2022-03-04T09:19:21.974+00:00"/>
+    <lastUpdated value="2022-03-11T15:39:18.807+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -32,7 +32,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-4473006"> </a>
+                  <a name="http---snomed.info-sct-4473006"> </a>  
                   <a href="http://snomed.info/id/4473006">4473006</a>
                 </td>
                 <td>Migraine with aura</td>
@@ -44,7 +44,7 @@
         <version value="1.2.0-draft"/>
         <name value="BvoConditionCodeVS"/>
         <status value="active"/>
-        <date value="2022-03-04T09:19:21+00:00"/>
+        <date value="2022-03-11T15:39:18+00:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -82,8 +82,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d2b06e46-0fb5-463e-ae43-f4b267e2e17a"/>
-          <timestamp value="2022-03-04T09:19:35+00:00"/>
+          <identifier value="urn:uuid:9b01d6d7-8a0d-4fae-b514-3d6d6d767715"/>
+          <timestamp value="2022-03-11T15:39:34+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>

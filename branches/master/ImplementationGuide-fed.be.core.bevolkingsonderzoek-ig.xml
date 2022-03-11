@@ -243,7 +243,7 @@
       <reference>
         <reference value="StructureDefinition/Be-Bvo-EpisodeOfCare"/>
       </reference>
-      <name value="belgian-bevolkingsonderzoek-episode-of-care"/>
+      <name value="BE Episode Bevolkingsonderzoek"/>
       <description value="Manages a recurring periodical workflow for diagnostics in regard to a specific Condition."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -348,6 +348,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/CvKO"/>
+      </reference>
+      <name value="CvKO"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -361,9 +371,9 @@
         <valueString value="EpisodeOfCare"/>
       </extension>
       <reference>
-        <reference value="EpisodeOfCare/example"/>
+        <reference value="EpisodeOfCare/exampleEpisodeBevolkingsonderzoek"/>
       </reference>
-      <name value="example"/>
+      <name value="exampleEpisodeBevolkingsonderzoek"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"/>
     </resource>
     <resource>
@@ -371,9 +381,9 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/examplePatient"/>
+        <reference value="Patient/exampleMaleBePatient"/>
       </reference>
-      <name value="examplePatient"/>
+      <name value="exampleMaleBePatient"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

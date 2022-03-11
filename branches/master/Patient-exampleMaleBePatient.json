@@ -1,0 +1,38 @@
+{
+  "resourceType": "Patient",
+  "id": "exampleMaleBePatient",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Bauer Jack </b> (no stated gender) DoB Unknown ( Social Beneficiary Identifier: 12345 (OFFICIAL))</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SB",
+            "display": "Social Beneficiary Identifier"
+          }
+        ]
+      },
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "12345"
+    }
+  ],
+  "name": [
+    {
+      "family": "Jack",
+      "given": [
+        "Bauer"
+      ]
+    }
+  ],
+  "gender": "male"
+}

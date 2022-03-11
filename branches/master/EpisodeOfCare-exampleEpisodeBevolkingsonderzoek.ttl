@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/EpisodeOfCare/exampleEpisodeBevolkingsonderzoek> a fhir:EpisodeOfCare;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "exampleEpisodeBevolkingsonderzoek"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"exampleEpisodeBevolkingsonderzoek\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Be-Bvo-EpisodeOfCare.html\">BE Episode Bevolkingsonderzoek</a></p></div><p><b>identifier</b>: id: 123</p><p><b>status</b>: active</p><p><b>patient</b>: <a href=\"Patient-exampleMaleBePatient.html\">Patient/exampleMaleBePatient</a> \" JACK\"</p><p><b>managingOrganization</b>: <a href=\"Organization-CvKO.html\">Organization/CvKO</a> \"Centrum voor Kankeropsporing\"</p><p><b>period</b>: 2014-09-01 --&gt; (ongoing)</p></div>"
+  ];
+  fhir:EpisodeOfCare.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://example.org/sampleepisodeofcare-identifier" ];
+     fhir:Identifier.value [ fhir:value "123" ]
+  ];
+  fhir:EpisodeOfCare.status [ fhir:value "active"];
+  fhir:EpisodeOfCare.patient [
+     fhir:link <http://example.com/fhir/example/Patient/exampleMaleBePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/exampleMaleBePatient" ]
+  ];
+  fhir:EpisodeOfCare.managingOrganization [
+     fhir:link <http://example.com/fhir/example/Organization/CvKO>;
+     fhir:Reference.reference [ fhir:value "Organization/CvKO" ]
+  ];
+  fhir:EpisodeOfCare.period [
+     fhir:Period.start [ fhir:value "2014-09-01"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/example/EpisodeOfCare/exampleEpisodeBevolkingsonderzoek.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
