@@ -1,10 +1,13 @@
 ﻿TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG : Validation Results
 =========================================
 
-err = 3, warn = 24, info = 2
+err = 17, warn = 25, info = 2
 IG Publisher Version: 1.1.112
-Generated Fri Mar 11 15:39:41 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
- Build Errors : 0 / 6 / 0
+Generated Fri Mar 11 16:13:10 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+ Build Errors : 3 / 6 / 0
+ /github/workspace/fsh-generated/resources/Appointment-BreastCancerScreeningAppointment : 5 / 0 / 2
+ /github/workspace/fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/Appointment-ColonCancerScreeningAppointment : 5 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig : 3 / 1 / 1
@@ -19,6 +22,7 @@ Generated Fri Mar 11 15:39:41 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevol
  /github/workspace/fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up-goedkeuring : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-appointment : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-BeVSBevolkingsonderzoekFollowUpAdvice : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-BvoConditionCodeVS : 0 / 1 / 1
 </table>
@@ -29,6 +33,26 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/JaneDoe.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/exampleEpisodeBevolkingsonderzoek.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/exampleMaleBePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Appointment-BreastCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/p/a at Line 217, column 473: The link 'example' for "example" cannot be resolved
+ERROR: /github/workspace/output/Appointment-CervicalCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/p/a at Line 217, column 475: The link 'example' for "example" cannot be resolved
+ERROR: /github/workspace/output/Appointment-ColonCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/p/a at Line 217, column 472: The link 'example' for "example" cannot be resolved
+== fsh-generated/resources/Appointment-BreastCancerScreeningAppointment.json ==
+ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: app-2: 'Either start and end are specified, or neither' Rule 'Either start and end are specified, or neither' Failed
+ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Rule 'Only proposed or cancelled appointments can be missing start/end dates' Failed
+ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
+ERROR: Appointment/BreastCancerScreeningAppointment: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'example'
+ERROR: Appointment/BreastCancerScreeningAppointment: Appointment.participant[0].actor: Unable to resolve resource 'examplePatient'
+== fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment.json ==
+ERROR: Appointment/CervicalCancerScreeningAppointment: Appointment: app-2: 'Either start and end are specified, or neither' Rule 'Either start and end are specified, or neither' Failed
+ERROR: Appointment/CervicalCancerScreeningAppointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
+ERROR: Appointment/CervicalCancerScreeningAppointment: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'example'
+ERROR: Appointment/CervicalCancerScreeningAppointment: Appointment.participant[0].actor: Unable to resolve resource 'examplePatient'
+== fsh-generated/resources/Appointment-ColonCancerScreeningAppointment.json ==
+ERROR: Appointment/ColonCancerScreeningAppointment: Appointment: app-2: 'Either start and end are specified, or neither' Rule 'Either start and end are specified, or neither' Failed
+ERROR: Appointment/ColonCancerScreeningAppointment: Appointment: app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Rule 'Only proposed or cancelled appointments can be missing start/end dates' Failed
+ERROR: Appointment/ColonCancerScreeningAppointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
+ERROR: Appointment/ColonCancerScreeningAppointment: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'example'
+ERROR: Appointment/ColonCancerScreeningAppointment: Appointment.participant[0].actor: Unable to resolve resource 'examplePatient'
 == fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.json ==
 WARNING: CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice: CodeSystem.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 INFORMATION: CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -62,6 +86,8 @@ WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/
 WARNING: StructureDefinition/be-bevolkingsonderzoek-follow-up: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 == fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up-goedkeuring.json ==
 WARNING: StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+== fsh-generated/resources/StructureDefinition-be-bvo-appointment.json ==
+WARNING: StructureDefinition/be-bvo-appointment: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 == fsh-generated/resources/ValueSet-BeVSBevolkingsonderzoekFollowUpAdvice.json ==
 WARNING: ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice: ValueSet.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 WARNING: ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
