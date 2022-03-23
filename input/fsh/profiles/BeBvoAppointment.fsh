@@ -21,28 +21,6 @@ Description: "Appointment for mammography in a mammographic unit in context of b
 * extension.valueReference = Reference(example)
 * contained[0] = mammographicUnit
 
-Instance: mammographicUnit
-InstanceOf: Location
-Usage: #inline
-Title: "Mammographic Unit"
-Description: "Location of a mammographic unit"
-* name = "Mammografic unit example name"
-* address.city = "Merelbeke"
-* address.postalCode = "9820"
-* address.country = "BE"
-
-// Instance: mammographicUnitAddress
-// InstanceOf: BeAddress
-// Usage: #example
-// Title: "Mammographic Unit Address"
-// Description: "Address of a mammographic unit"
-// * meta.profile = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address"
-// * line.extension.streetname.valueString = "Verlorenbroodstraat"
-// * line.extension.housenumber.valueString = "122"
-// * city = "Merelbeke"
-// * postalCode = "9820"
-// * country = "BE"
-
 Instance: ColonCancerScreeningAppointment
 InstanceOf: BeBvoAppointment
 Usage: #example

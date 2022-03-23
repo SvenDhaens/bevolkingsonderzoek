@@ -36,13 +36,10 @@ Usage: #example
 
 
 Instance: exampleMaleBePatient
-InstanceOf: Patient
+InstanceOf: BePatient
 Usage: #example
-* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
-* identifier.use = #official
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SB "Social Beneficiary Identifier"
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* identifier.value = "12345"
+* identifier[SSIN].system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* identifier[SSIN].value = "12345"
 * name.family = "Jack"
 * name.given = "Bauer"
 * gender = #male
