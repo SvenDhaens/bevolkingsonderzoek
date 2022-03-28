@@ -4,9 +4,9 @@ Id:             Be-Bvo-EpisodeOfCare
 Title:          "BE Episode Bevolkingsonderzoek"
 Description:    "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition."
 * status = #active (exactly)
-* type = #cacp (exactly)
 * patient only Reference(BePatient)
 * patient 1..1
+* type from BevolkingsonderzoekScreeningVS (extensible) 
 * extension contains BvoConditionCode named Condition 0..1 MS
 * extension contains BvoNextInvitationIndication named nextInvitationDate 0..1
 
@@ -33,6 +33,8 @@ Usage: #example
 * patient = Reference(exampleMaleBePatient)
 * managingOrganization = Reference(CvKO)
 * period.start = "2014-09-01"
+* type = http://snomed.info/sct/#762444001
+* type.text = "Dikkedarmkanker"
 
 
 Instance: exampleMaleBePatient
@@ -49,3 +51,12 @@ InstanceOf: Organization
 Usage: #example
 * name = "Centrum voor Kankeropsporing"
 * alias = "CvKO"
+
+
+ValueSet: BevolkingsonderzoekScreeningVS
+Id: bevolkingsonderzoek-screening-vs
+Title: "Bevolkingsonderzoek Screening VS"
+Description: "Bevolkingsonderzoek screening types"
+* http://snomed.info/sct/#268547008 "Borstkanker"
+* http://snomed.info/sct/#762444001 "Dikkedarmkanker"
+* http://snomed.info/sct/#171149006 "Baarmoederhalskanker"
