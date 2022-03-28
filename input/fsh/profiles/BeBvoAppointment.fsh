@@ -18,7 +18,7 @@ Description: "Appointment for mammography in a mammographic unit in context of b
 * participant[+].actor = Reference(mammographicUnit)
 * participant[=].status = #accepted
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(example)
+* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 * contained[0] = mammographicUnit
 
 Instance: ColonCancerScreeningAppointment
@@ -31,7 +31,7 @@ Description: "Appointment for stool sample in context of colon cancer screening"
 * participant[0].actor = Reference(examplePatient)
 * participant[=].status = #tentative
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(example)
+* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
 
 Instance: CervicalCancerScreeningAppointment
@@ -44,4 +44,4 @@ Description: "Proposed appointment in context of cervical cancer screening"
 * participant[0].actor = Reference(examplePatient)
 * participant[=].status = #tentative
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(example)
+* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)

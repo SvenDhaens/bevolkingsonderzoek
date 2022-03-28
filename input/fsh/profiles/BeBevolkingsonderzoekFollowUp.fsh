@@ -14,6 +14,7 @@ If the screening was negative, the follow up examination should not be performed
 * bodySite from BeVSBevolkingsonderzoekBodySiteLocation (extensible)
 * patientInstruction
 * occurrence[x]
+* extension contains workflow-episodeOfCare named Episode 1..1 MS
 
 // Extension: BeExtBevolkingsonderzoekFollowUpGoedkeuring
 // Id: be-bevolkingsonderzoek-follow-up-goedkeuring
@@ -77,6 +78,8 @@ Description: "Follow up after positive colorectal cancer screening"
 * subject = Reference(JaneDoe)
 * code = http://snomed.info/sct/#73761001
 * patientInstruction = "Colonoscopie"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
 Instance: BreastCancerScreeningFollowUpExample
 InstanceOf: BeBevolkingsonderzoekFollowUp
@@ -91,6 +94,8 @@ Description: "Follow up after positive breast cancer screening. This is a propos
 * patientInstruction = "Rechts: bijkomende mammografie"
 * bodySite = http://snomed.info/sct/#73056007
 * bodySite.text = "Rechterborst"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring"
 // * extension.valueBoolean = false
 
@@ -107,10 +112,13 @@ Description: "Follow up after positive breast cancer screening. This is a propos
 * patientInstruction = "Links: mammografische controle na 6 maanden"
 * bodySite = http://snomed.info/sct/#80248007
 * bodySite.text = "Linkerborst"
-* occurrencePeriod.start = "2022-09-15T00:00:00.000+02:00"
+* occurrencePeriod.start = "2022-09-15"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
 Instance: JaneDoe
 InstanceOf: BePatient
+Description: "female example patient"
 * name.family = "Doe"
 * name.given = "Jane"
 * gender = #female
