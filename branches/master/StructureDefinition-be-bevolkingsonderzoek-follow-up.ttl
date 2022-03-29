@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeBevolkingsonderzoekFollowUp"];
   fhir:StructureDefinition.title [ fhir:value "Be Bevolkingsonderzoek Follow Up"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-29T08:17:10+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-29T08:21:37+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -3,7 +3,7 @@
   "name": "TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG",
   "package-id": "fed.be.core.bevolkingsonderzoek-ig",
   "ig-ver": "1.2.0-draft",
-  "date": "Tue, 29 Mar, 2022 08:17:10 +0000",
+  "date": "Tue, 29 Mar, 2022 08:21:37 +0000",
   "errs": 22,
   "warnings": 29,
   "hints": 1,

@@ -16,8 +16,18 @@
       </meta>
       <name value="Mammografic unit example name"/>
       <address>
+        <extension url="http://hl7.org/fhir/StructureDefinition/language">
+          <valueCode value="nl"/>
+        </extension>
         <text value="Verlorenbroodstraat 122, 9820 Merelbeke"/>
-        <line value="Verlorenbroodstraat 122"/>
+        <line value="Verlorenbroodstraat 122">
+          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+            <valueString value="Verlorenbroodstraat"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+            <valueString value="122"/>
+          </extension>
+        </line>
         <city value="Merelbeke"/>
         <postalCode value="9820"/>
         <country value="BE"/>

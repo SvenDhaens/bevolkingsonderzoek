@@ -66,6 +66,18 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Appointment.contained.address.line",
+      "Encounter.contained.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Appointment.contained.address.line",
+      "Encounter.contained.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/language": [
+      "Appointment.contained.address",
+      "Encounter.contained.address"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
