@@ -33,7 +33,7 @@ Description: "Participation for breastcancer screening"
 
 
 Instance: PositiveBreastCancerResult
-InstanceOf: BeObservation
+InstanceOf: BeBvoObservation
 Usage: #example
 Title: "Positive Breast Cancer Result"
 Description: "Observation with positive/abnormal result"
@@ -42,7 +42,6 @@ Description: "Observation with positive/abnormal result"
 * encounter = Reference(BreastCancerEncounterExample)
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
-* performer = Reference(Organization/CvKO) //Element Observation.performer has minimum cardinality 1 but occurs 0 time(s). ?? not in spec https://www.hl7.org/fhir/observation.html
 
 
 Alias: $sct = http://snomed.info/sct
