@@ -1,0 +1,73 @@
+{
+  "resourceType": "Encounter",
+  "id": "BreastCancerEncounterExample",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BreastCancerEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-encounter.html\">Be Bvo Encounter</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: finished</p><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"examplePatient\">examplePatient</a></td></tr></table><p><b>appointment</b>: <a href=\"Appointment-BreastCancerScreeningAppointment.html\">Appointment/BreastCancerScreeningAppointment</a></p><p><b>period</b>: 2022-03-15 11:30:00+0200 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a name=\"mammographicUnit\"> </a><blockquote><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"mammographicUnit\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-location.html\">Be Bvo Location</a></p></div><p><b>name</b>: Mammografic unit example name</p><p><b>address</b>: Verlorenbroodstraat 122, 9820 Merelbeke</p></blockquote></td></tr></table></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Location",
+      "id": "mammographicUnit",
+      "meta": {
+        "profile": [
+          "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-location"
+        ]
+      },
+      "name": "Mammografic unit example name",
+      "address": {
+        "text": "Verlorenbroodstraat 122, 9820 Merelbeke",
+        "line": [
+          "Verlorenbroodstraat 122"
+        ],
+        "city": "Merelbeke",
+        "postalCode": "9820",
+        "country": "BE"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+      "valueReference": {
+        "reference": "EpisodeOfCare/exampleEpisodeBevolkingsonderzoek"
+      }
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "AMB"
+  },
+  "episodeOfCare": [
+    {
+      "reference": "EpisodeOfCare/exampleEpisodeBevolkingsonderzoek"
+    }
+  ],
+  "participant": [
+    {
+      "individual": {
+        "reference": "examplePatient"
+      }
+    }
+  ],
+  "appointment": [
+    {
+      "reference": "Appointment/BreastCancerScreeningAppointment"
+    }
+  ],
+  "period": {
+    "start": "2022-03-15T11:30:00.000+02:00"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "#mammographicUnit"
+      }
+    }
+  ]
+}

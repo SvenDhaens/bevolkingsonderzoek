@@ -6,17 +6,9 @@
     <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Bauer Jack </b> (no stated gender) DoB Unknown ( Social Beneficiary Identifier: 12345 (OFFICIAL))</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Bauer Jack </b> male, DoB Unknown ( id: 12345)</p></div>
   </text>
   <identifier>
-    <use value="official"/>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="SB"/>
-        <display value="Social Beneficiary Identifier"/>
-      </coding>
-    </type>
     <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
     <value value="12345"/>
   </identifier>

@@ -17,19 +17,10 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Bauer Jack </b> (no stated gender) DoB Unknown ( Social Beneficiary Identifier: 12345 (OFFICIAL))</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Bauer Jack </b> male, DoB Unknown ( id: 12345)</p></div>"
   ];
   fhir:Patient.identifier [
      fhir:index 0;
-     fhir:Identifier.use [ fhir:value "official" ];
-     fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
-         fhir:Coding.code [ fhir:value "SB" ];
-         fhir:Coding.display [ fhir:value "Social Beneficiary Identifier" ]
-       ]
-     ];
      fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
      fhir:Identifier.value [ fhir:value "12345" ]
   ];

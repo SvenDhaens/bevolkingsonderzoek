@@ -1,96 +1,115 @@
 ﻿TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG : Validation Results
 =========================================
 
-err = 17, warn = 25, info = 2
-IG Publisher Version: 1.1.112
-Generated Fri Mar 11 16:13:10 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
- Build Errors : 3 / 6 / 0
- /github/workspace/fsh-generated/resources/Appointment-BreastCancerScreeningAppointment : 5 / 0 / 2
- /github/workspace/fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment : 4 / 0 / 1
- /github/workspace/fsh-generated/resources/Appointment-ColonCancerScreeningAppointment : 5 / 0 / 1
+err = 22, warn = 29, info = 1
+IG Publisher Version: 1.1.113
+Generated Tue Mar 29 08:17:42 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+ Build Errors : 4 / 4 / 0
+ /github/workspace/fsh-generated/resources/Appointment-BreastCancerScreeningAppointment : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Appointment-ColonCancerScreeningAppointment : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-BreastCancerEncounterExample : 2 / 1 / 3
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-PositiveBreastCancerResult : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CvKO : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-JaneDoe : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-exampleMaleBePatient : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUp : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample2 : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BvoConditionCode : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpExample : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpWithExample2 : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up-goedkeuring : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-appointment : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-encounter : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-location : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-observation : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-BeVSBevolkingsonderzoekFollowUpAdvice : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-BvoConditionCodeVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-bvo-result-vs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vsbevolkingsonderzoek-body-site-location : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-bevolkingsonderzoek-screening-vs : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/CvKO.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/JaneDoe.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/exampleEpisodeBevolkingsonderzoek.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/exampleMaleBePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Appointment-BreastCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/p/a at Line 217, column 473: The link 'example' for "example" cannot be resolved
-ERROR: /github/workspace/output/Appointment-CervicalCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/p/a at Line 217, column 475: The link 'example' for "example" cannot be resolved
-ERROR: /github/workspace/output/Appointment-ColonCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/p/a at Line 217, column 472: The link 'example' for "example" cannot be resolved
+ERROR: /github/workspace/output/Appointment-BreastCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 217, column 718: The link 'examplePatient' for "examplePatient" cannot be resolved
+ERROR: /github/workspace/output/Appointment-CervicalCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 217, column 789: The link 'examplePatient' for "examplePatient" cannot be resolved
+ERROR: /github/workspace/output/Appointment-ColonCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 217, column 784: The link 'examplePatient' for "examplePatient" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BreastCancerEncounterExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 217, column 943: The link 'examplePatient' for "examplePatient" cannot be resolved
 == fsh-generated/resources/Appointment-BreastCancerScreeningAppointment.json ==
 ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: app-2: 'Either start and end are specified, or neither' Rule 'Either start and end are specified, or neither' Failed
 ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Rule 'Only proposed or cancelled appointments can be missing start/end dates' Failed
 ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
-ERROR: Appointment/BreastCancerScreeningAppointment: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'example'
 ERROR: Appointment/BreastCancerScreeningAppointment: Appointment.participant[0].actor: Unable to resolve resource 'examplePatient'
 == fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment.json ==
 ERROR: Appointment/CervicalCancerScreeningAppointment: Appointment: app-2: 'Either start and end are specified, or neither' Rule 'Either start and end are specified, or neither' Failed
 ERROR: Appointment/CervicalCancerScreeningAppointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
-ERROR: Appointment/CervicalCancerScreeningAppointment: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'example'
 ERROR: Appointment/CervicalCancerScreeningAppointment: Appointment.participant[0].actor: Unable to resolve resource 'examplePatient'
 == fsh-generated/resources/Appointment-ColonCancerScreeningAppointment.json ==
 ERROR: Appointment/ColonCancerScreeningAppointment: Appointment: app-2: 'Either start and end are specified, or neither' Rule 'Either start and end are specified, or neither' Failed
 ERROR: Appointment/ColonCancerScreeningAppointment: Appointment: app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Rule 'Only proposed or cancelled appointments can be missing start/end dates' Failed
 ERROR: Appointment/ColonCancerScreeningAppointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
-ERROR: Appointment/ColonCancerScreeningAppointment: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'example'
 ERROR: Appointment/ColonCancerScreeningAppointment: Appointment.participant[0].actor: Unable to resolve resource 'examplePatient'
 == fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.json ==
 WARNING: CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice: CodeSystem.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 INFORMATION: CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/Encounter-BreastCancerEncounterExample.json ==
+ERROR: Encounter/BreastCancerEncounterExample: Encounter: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Encounter])
+WARNING: Encounter/BreastCancerEncounterExample: Encounter.class: A code with no system has no defined meaning. A system should be provided
+ERROR: Encounter/BreastCancerEncounterExample: Encounter.participant[0].individual: Unable to resolve resource 'examplePatient'
 == fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.json ==
+ERROR: EpisodeOfCare/exampleEpisodeBevolkingsonderzoek: EpisodeOfCare.type[0].coding[0]: Invalid System URI: http://snomed.info/sct/
 == fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: fed.be.core.bevolkingsonderzoek-ig/http://example.com/fhir/example
 WARNING: ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig: ImplementationGuide.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig vs http://example.com/fhir/example
+== fsh-generated/resources/Observation-PositiveBreastCancerResult.json ==
 == fsh-generated/resources/Organization-CvKO.json ==
 == fsh-generated/resources/Patient-JaneDoe.json ==
 == fsh-generated/resources/Patient-exampleMaleBePatient.json ==
-== fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUp.json ==
-WARNING: ServiceRequest/BreastCancerScreeningFollowUp: ServiceRequest.code: No code provided, and a code should be provided from the value set 'BeVSBevolkingsonderzoekFollowUpAdvice' (https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice)
+== fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpExample.json ==
+WARNING: ServiceRequest/BreastCancerScreeningFollowUpExample: ServiceRequest.code: [Unable to determine whether the provided codes are in the value set https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice because the value set or a code system it depends on is not known to the validator, Code System URI 'http://snomed.info/sct/' is unknown so the code cannot be validated]
+ERROR: ServiceRequest/BreastCancerScreeningFollowUpExample: ServiceRequest.code.coding[0]: Invalid System URI: http://snomed.info/sct/
+WARNING: ServiceRequest/BreastCancerScreeningFollowUpExample: ServiceRequest.bodySite[0]: [Unable to determine whether the provided codes are in the value set https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location because the value set or a code system it depends on is not known to the validator, Code System URI 'http://snomed.info/sct/' is unknown so the code cannot be validated]
+ERROR: ServiceRequest/BreastCancerScreeningFollowUpExample: ServiceRequest.bodySite[0].coding[0]: Invalid System URI: http://snomed.info/sct/
+== fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpWithExample2.json ==
+WARNING: ServiceRequest/BreastCancerScreeningFollowUpWithExample2: ServiceRequest.code: [Unable to determine whether the provided codes are in the value set https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice because the value set or a code system it depends on is not known to the validator, Code System URI 'http://snomed.info/sct/' is unknown so the code cannot be validated]
+ERROR: ServiceRequest/BreastCancerScreeningFollowUpWithExample2: ServiceRequest.code.coding[0]: Invalid System URI: http://snomed.info/sct/
+WARNING: ServiceRequest/BreastCancerScreeningFollowUpWithExample2: ServiceRequest.bodySite[0]: [Unable to determine whether the provided codes are in the value set https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location because the value set or a code system it depends on is not known to the validator, Code System URI 'http://snomed.info/sct/' is unknown so the code cannot be validated]
+ERROR: ServiceRequest/BreastCancerScreeningFollowUpWithExample2: ServiceRequest.bodySite[0].coding[0]: Invalid System URI: http://snomed.info/sct/
 == fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample.json ==
-WARNING: ServiceRequest/ColorectalCancerScreeningFollowUpExample: ServiceRequest.code: [Unable to determine whether the provided codes are in the value set https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice because the value set or a code system it depends on is not known to the validator, Code System URI 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/' is unknown so the code cannot be validated]
-INFORMATION: ServiceRequest/ColorectalCancerScreeningFollowUpExample: ServiceRequest.code.coding[0]: Code System URI 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/' is unknown so the code cannot be validated
-== fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample2.json ==
-WARNING: ServiceRequest/ColorectalCancerScreeningFollowUpExample2: ServiceRequest.code: No code provided, and a code should be provided from the value set 'BeVSBevolkingsonderzoekFollowUpAdvice' (https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice)
+WARNING: ServiceRequest/ColorectalCancerScreeningFollowUpExample: ServiceRequest.code: [Unable to determine whether the provided codes are in the value set https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice because the value set or a code system it depends on is not known to the validator, Code System URI 'http://snomed.info/sct/' is unknown so the code cannot be validated]
+ERROR: ServiceRequest/ColorectalCancerScreeningFollowUpExample: ServiceRequest.code.coding[0]: Invalid System URI: http://snomed.info/sct/
 == fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare.json ==
 WARNING: StructureDefinition/Be-Bvo-EpisodeOfCare: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
-WARNING: StructureDefinition/Be-Bvo-EpisodeOfCare: StructureDefinition.snapshot.element[19].fixed.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/Be-Bvo-EpisodeOfCare: StructureDefinition.differential.element[5].fixed.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-== fsh-generated/resources/StructureDefinition-BvoConditionCode.json ==
-WARNING: StructureDefinition/BvoConditionCode: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
-WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoConditionCode'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication.json ==
 WARNING: StructureDefinition/BvoNextInvitationIndication: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up.json ==
 WARNING: StructureDefinition/be-bevolkingsonderzoek-follow-up: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
-== fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up-goedkeuring.json ==
-WARNING: StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 == fsh-generated/resources/StructureDefinition-be-bvo-appointment.json ==
 WARNING: StructureDefinition/be-bvo-appointment: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+== fsh-generated/resources/StructureDefinition-be-bvo-encounter.json ==
+WARNING: StructureDefinition/be-bvo-encounter: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+== fsh-generated/resources/StructureDefinition-be-bvo-location.json ==
+WARNING: StructureDefinition/be-bvo-location: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-location'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-be-bvo-observation.json ==
+WARNING: StructureDefinition/be-bvo-observation: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 == fsh-generated/resources/ValueSet-BeVSBevolkingsonderzoekFollowUpAdvice.json ==
 WARNING: ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice: ValueSet.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 WARNING: ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'BeVSBevolkingsonderzoekFollowUpAdvice'): Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/
-== fsh-generated/resources/ValueSet-BvoConditionCodeVS.json ==
-WARNING: ValueSet/BvoConditionCodeVS: ValueSet.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+WARNING: ValueSet.where(id = 'BeVSBevolkingsonderzoekFollowUpAdvice'): Error from server: Unable to provide support for code system http://snomed.info/sct/
+== fsh-generated/resources/ValueSet-be-bvo-result-vs.json ==
+WARNING: ValueSet/be-bvo-result-vs: ValueSet.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+== fsh-generated/resources/ValueSet-be-vsbevolkingsonderzoek-body-site-location.json ==
+WARNING: ValueSet/be-vsbevolkingsonderzoek-body-site-location: ValueSet.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+WARNING: ValueSet/be-vsbevolkingsonderzoek-body-site-location: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'be-vsbevolkingsonderzoek-body-site-location'): Error from server: Unable to provide support for code system http://snomed.info/sct/
+== fsh-generated/resources/ValueSet-bevolkingsonderzoek-screening-vs.json ==
+WARNING: ValueSet/bevolkingsonderzoek-screening-vs: ValueSet.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'

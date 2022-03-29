@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b14af9ad-6842-47c0-b71c-057d8751a472"/>
+  <id value="a6083122-f90e-499c-be9c-97cabba8577a"/>
   <meta>
-    <lastUpdated value="2022-03-11T16:12:42.289+00:00"/>
+    <lastUpdated value="2022-03-29T08:17:10.197+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS"/>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-bvo-result-vs"/>
     <resource>
       <ValueSet>
-        <id value="BvoConditionCodeVS"/>
+        <id value="be-bvo-result-vs"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
@@ -32,19 +32,27 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-4473006"> </a>  
-                  <a href="http://snomed.info/id/4473006">4473006</a>
+                  <a name="http---snomed.info-sct-280415008"> </a>  
+                  <a href="http://snomed.info/id/280415008">280415008</a>
                 </td>
-                <td>Migraine with aura</td>
+                <td>afwijkend</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-280413001"> </a>  
+                  <a href="http://snomed.info/id/280413001">280413001</a>
+                </td>
+                <td>niet afwijkend</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS"/>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-bvo-result-vs"/>
         <version value="1.2.0-draft"/>
-        <name value="BvoConditionCodeVS"/>
+        <name value="BeBvoResultVS"/>
+        <title value="Be Bvo Result VS"/>
         <status value="active"/>
-        <date value="2022-03-11T16:12:42+00:00"/>
+        <date value="2022-03-29T08:17:10+00:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -73,7 +81,7 @@
             <use value="work"/>
           </telecom>
         </contact>
-        <description value="Values of possible Conditions ofr wich to perform diagnostics"/>
+        <description value="Result"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -82,9 +90,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e72836fc-1164-465c-b471-f576a0cbb837"/>
-          <timestamp value="2022-03-11T16:13:02+00:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:c3e0b3b4-f196-4f0b-a84b-4d75eff59015"/>
+          <timestamp value="2022-03-29T08:17:29+00:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -99,8 +107,138 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="4473006"/>
-            <display value="Migraine with aura"/>
+            <code value="280415008"/>
+            <display value="afwijkend"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280413001"/>
+            <display value="niet afwijkend"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/bevolkingsonderzoek-screening-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="bevolkingsonderzoek-screening-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-268547008"> </a>  
+                  <a href="http://snomed.info/id/268547008">268547008</a>
+                </td>
+                <td>Borstkanker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-762444001"> </a>  
+                  <a href="http://snomed.info/id/762444001">762444001</a>
+                </td>
+                <td>Dikkedarmkanker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-171149006"> </a>  
+                  <a href="http://snomed.info/id/171149006">171149006</a>
+                </td>
+                <td>Baarmoederhalskanker</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/bevolkingsonderzoek-screening-vs"/>
+        <version value="1.2.0-draft"/>
+        <name value="BevolkingsonderzoekScreeningVS"/>
+        <title value="Bevolkingsonderzoek Screening VS"/>
+        <status value="draft"/>
+        <date value="2022-03-29T08:17:10+00:00"/>
+        <publisher value="eHealth Platform"/>
+        <contact>
+          <name value="eHealth Platform"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="message-structure@ehealth.fgov.be"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Sven Dhaens"/>
+          <telecom>
+            <system value="email"/>
+            <value value="sven.dhaens@axians.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Kurt Dhaene"/>
+          <telecom>
+            <system value="email"/>
+            <value value="kurt.dhaene@axians.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Bevolkingsonderzoek screening types"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:e70e6aaa-a07b-41ff-8e1b-4c57bebc95fc"/>
+          <timestamp value="2022-03-29T08:17:30+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="268547008"/>
+            <display value="Borstkanker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="762444001"/>
+            <display value="Dikkedarmkanker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="171149006"/>
+            <display value="Baarmoederhalskanker"/>
           </contains>
         </expansion>
       </ValueSet>

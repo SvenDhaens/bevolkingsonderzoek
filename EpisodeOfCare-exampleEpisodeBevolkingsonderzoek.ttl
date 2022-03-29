@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"exampleEpisodeBevolkingsonderzoek\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Be-Bvo-EpisodeOfCare.html\">BE Episode Bevolkingsonderzoek</a></p></div><p><b>identifier</b>: id: 123</p><p><b>status</b>: active</p><p><b>patient</b>: <a href=\"Patient-exampleMaleBePatient.html\">Patient/exampleMaleBePatient</a> \" JACK\"</p><p><b>managingOrganization</b>: <a href=\"Organization-CvKO.html\">Organization/CvKO</a> \"Centrum voor Kankeropsporing\"</p><p><b>period</b>: 2014-09-01 --&gt; (ongoing)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"exampleEpisodeBevolkingsonderzoek\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Be-Bvo-EpisodeOfCare.html\">BE Episode Bevolkingsonderzoek</a></p></div><p><b>identifier</b>: id: 123</p><p><b>status</b>: active</p><p><b>type</b>: Dikkedarmkanker <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SNOMED CT#762444001)</span></p><p><b>patient</b>: <a href=\"Patient-exampleMaleBePatient.html\">Patient/exampleMaleBePatient</a> \" JACK\"</p><p><b>managingOrganization</b>: <a href=\"Organization-CvKO.html\">Organization/CvKO</a> \"Centrum voor Kankeropsporing\"</p><p><b>period</b>: 2014-09-01 --&gt; (ongoing)</p></div>"
   ];
   fhir:EpisodeOfCare.identifier [
      fhir:index 0;
@@ -25,6 +25,15 @@
      fhir:Identifier.value [ fhir:value "123" ]
   ];
   fhir:EpisodeOfCare.status [ fhir:value "active"];
+  fhir:EpisodeOfCare.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct/" ];
+       fhir:Coding.code [ fhir:value "762444001" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Dikkedarmkanker" ]
+  ];
   fhir:EpisodeOfCare.patient [
      fhir:link <http://example.com/fhir/example/Patient/exampleMaleBePatient>;
      fhir:Reference.reference [ fhir:value "Patient/exampleMaleBePatient" ]

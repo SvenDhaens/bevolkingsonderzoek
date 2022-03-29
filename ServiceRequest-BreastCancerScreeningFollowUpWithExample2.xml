@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="BreastCancerScreeningFollowUpWithExample2"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "BreastCancerScreeningFollowUpWithExample2" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-be-bevolkingsonderzoek-follow-up.html">Be Bevolkingsonderzoek Follow Up</a></p></div><p><b>Episode of Care</b>: <a href="EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: bijkomende mammografie <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (SNOMED CT#71651007)</span></p><p><b>subject</b>: <a href="Patient-JaneDoe.html">Patient/JaneDoe</a> " DOE"</p><p><b>occurrence</b>: 2022-09-15 --&gt; (ongoing)</p><p><b>bodySite</b>: Linkerborst <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (SNOMED CT#80248007)</span></p><p><b>patientInstruction</b>: Links: mammografische controle na 6 maanden</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare">
+    <valueReference>
+      <reference value="EpisodeOfCare/exampleEpisodeBevolkingsonderzoek"/>
+    </valueReference>
+  </extension>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct/"/>
+      <code value="71651007"/>
+    </coding>
+    <text value="bijkomende mammografie"/>
+  </code>
+  <subject>
+    <reference value="Patient/JaneDoe"/>
+  </subject>
+  <occurrencePeriod>
+    <start value="2022-09-15"/>
+  </occurrencePeriod>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct/"/>
+      <code value="80248007"/>
+    </coding>
+    <text value="Linkerborst"/>
+  </bodySite>
+  <patientInstruction value="Links: mammografische controle na 6 maanden"/>
+</ServiceRequest>

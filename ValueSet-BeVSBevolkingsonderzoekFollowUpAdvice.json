@@ -3,13 +3,13 @@
   "id": "BeVSBevolkingsonderzoekFollowUpAdvice",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>colonoscopy</td><td>Colonoscopy</td></tr><tr><td>additional_mammography_or_and_echography_left</td><td>Links: bijkomende mammografie en/of echografie</td></tr><tr><td>additional_mammography_or_and_echography_right</td><td>Rechts: bijkomende mammografie en/of echografie</td></tr><tr><td>pathological_examination_left</td><td>Links: pathologisch onderzoek</td></tr><tr><td>pathological_examination_right</td><td>Rechts: pathologisch onderzoek</td></tr><tr><td>mammographic_check_after_6_months_left</td><td>Links: mammografische controle(s) na 6 maanden</td></tr><tr><td>mammographic_check_after_6_months_richt</td><td>Rechts: mammografische controle(s) na 6 maanden</td></tr><tr><td>compare_with_previous_mammography_left</td><td>Links: te vergelijken met vorige mammografie</td></tr><tr><td>compare_with_previous_mammography_right</td><td>Rechts: te vergelijken met vorige mammografie</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://snomed.info/sct/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>73761001</td><td>Colonoscopy</td></tr><tr><td>71651007</td><td>Mammography</td></tr><tr><td>43204002</td><td>Mammography of both breasts</td></tr><tr><td>566571000119105</td><td>Mammography of right breast</td></tr><tr><td>572701000119102</td><td>Mammography of left breast</td></tr><tr><td>16310003</td><td>Echography</td></tr><tr><td>47079000</td><td>Echography of breast</td></tr><tr><td>308462001</td><td>Referral to pathology service</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html#BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography\">compare_with_previous_mammography</a></td><td>te vergelijken met vorige mammografie</td></tr></table></li></ul></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice",
   "version": "1.2.0-draft",
   "name": "BeVSBevolkingsonderzoekFollowUpAdvice",
   "status": "draft",
-  "date": "2022-03-11T16:12:42+00:00",
+  "date": "2022-03-29T08:17:10+00:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -61,43 +61,47 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/",
+        "system": "http://snomed.info/sct/",
         "concept": [
           {
-            "code": "colonoscopy",
+            "code": "73761001",
             "display": "Colonoscopy"
           },
           {
-            "code": "additional_mammography_or_and_echography_left",
-            "display": "Links: bijkomende mammografie en/of echografie"
+            "code": "71651007",
+            "display": "Mammography"
           },
           {
-            "code": "additional_mammography_or_and_echography_right",
-            "display": "Rechts: bijkomende mammografie en/of echografie"
+            "code": "43204002",
+            "display": "Mammography of both breasts"
           },
           {
-            "code": "pathological_examination_left",
-            "display": "Links: pathologisch onderzoek"
+            "code": "566571000119105",
+            "display": "Mammography of right breast"
           },
           {
-            "code": "pathological_examination_right",
-            "display": "Rechts: pathologisch onderzoek"
+            "code": "572701000119102",
+            "display": "Mammography of left breast"
           },
           {
-            "code": "mammographic_check_after_6_months_left",
-            "display": "Links: mammografische controle(s) na 6 maanden"
+            "code": "16310003",
+            "display": "Echography"
           },
           {
-            "code": "mammographic_check_after_6_months_richt",
-            "display": "Rechts: mammografische controle(s) na 6 maanden"
+            "code": "47079000",
+            "display": "Echography of breast"
           },
           {
-            "code": "compare_with_previous_mammography_left",
-            "display": "Links: te vergelijken met vorige mammografie"
-          },
+            "code": "308462001",
+            "display": "Referral to pathology service"
+          }
+        ]
+      },
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice",
+        "concept": [
           {
-            "code": "compare_with_previous_mammography_right",
-            "display": "Rechts: te vergelijken met vorige mammografie"
+            "code": "compare_with_previous_mammography"
           }
         ]
       }

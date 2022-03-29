@@ -16,22 +16,31 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ColorectalCancerScreeningFollowUpExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bevolkingsonderzoek-follow-up.html\">Be Bevolkingsonderzoek Follow Up</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: colonoscopy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#colonoscopy)</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ColorectalCancerScreeningFollowUpExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bevolkingsonderzoek-follow-up.html\">Be Bevolkingsonderzoek Follow Up</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: 73761001 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SNOMED CT#73761001)</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>patientInstruction</b>: Colonoscopie</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://example.com/fhir/example/EpisodeOfCare/exampleEpisodeBevolkingsonderzoek>;
+       fhir:Reference.reference [ fhir:value "EpisodeOfCare/exampleEpisodeBevolkingsonderzoek" ]
+     ]
   ];
   fhir:ServiceRequest.status [ fhir:value "active"];
   fhir:ServiceRequest.intent [ fhir:value "proposal"];
   fhir:ServiceRequest.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/" ];
-       fhir:Coding.code [ fhir:value "colonoscopy" ]
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct/" ];
+       fhir:Coding.code [ fhir:value "73761001" ]
      ]
   ];
   fhir:ServiceRequest.subject [
      fhir:link <http://example.com/fhir/example/Patient/JaneDoe>;
      fhir:Reference.reference [ fhir:value "Patient/JaneDoe" ]
-  ] .
+  ];
+  fhir:ServiceRequest.patientInstruction [ fhir:value "Colonoscopie"] .
 
 # - ontology header ------------------------------------------------------------
 

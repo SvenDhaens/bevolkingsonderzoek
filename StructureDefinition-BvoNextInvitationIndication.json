@@ -8,8 +8,8 @@
   "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication",
   "version": "1.2.0-draft",
   "name": "BvoNextInvitationIndication",
-  "status": "active",
-  "date": "2022-03-11T16:12:42+00:00",
+  "status": "draft",
+  "date": "2022-03-29T08:17:10+00:00",
   "publisher": "eHealth Platform",
   "contact": [
     {

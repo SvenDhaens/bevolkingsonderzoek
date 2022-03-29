@@ -21,13 +21,6 @@
     "name": "BePopulationBasedScreeningEpisodeOfCare"
   },
   {
-    "id": "BvoConditionCode",
-    "type": "StructureDefinition",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoConditionCode",
-    "version": "1.2.0-draft",
-    "name": "BvoConditionCode"
-  },
-  {
     "id": "BvoNextInvitationIndication",
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication",
@@ -42,18 +35,32 @@
     "name": "BeBevolkingsonderzoekFollowUp"
   },
   {
-    "id": "be-bevolkingsonderzoek-follow-up-goedkeuring",
-    "type": "StructureDefinition",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring",
-    "version": "1.2.0-draft",
-    "name": "BeExtBevolkingsonderzoekFollowUpGoedkeuring"
-  },
-  {
     "id": "be-bvo-appointment",
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment",
     "version": "1.2.0-draft",
     "name": "BeBvoAppointment"
+  },
+  {
+    "id": "be-bvo-encounter",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter",
+    "version": "1.2.0-draft",
+    "name": "BeBvoEncounter"
+  },
+  {
+    "id": "be-bvo-location",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-location",
+    "version": "1.2.0-draft",
+    "name": "BeLocation"
+  },
+  {
+    "id": "be-bvo-observation",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation",
+    "version": "1.2.0-draft",
+    "name": "BeBvoObservation"
   },
   {
     "id": "BeVSBevolkingsonderzoekFollowUpAdvice",
@@ -63,10 +70,24 @@
     "name": "BeVSBevolkingsonderzoekFollowUpAdvice"
   },
   {
-    "id": "BvoConditionCodeVS",
+    "id": "be-bvo-result-vs",
     "type": "ValueSet",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BvoConditionCodeVS",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-bvo-result-vs",
     "version": "1.2.0-draft",
-    "name": "BvoConditionCodeVS"
+    "name": "BeBvoResultVS"
+  },
+  {
+    "id": "be-vsbevolkingsonderzoek-body-site-location",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location",
+    "version": "1.2.0-draft",
+    "name": "BeVSBevolkingsonderzoekBodySiteLocation"
+  },
+  {
+    "id": "bevolkingsonderzoek-screening-vs",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/bevolkingsonderzoek-screening-vs",
+    "version": "1.2.0-draft",
+    "name": "BevolkingsonderzoekScreeningVS"
   }
 ]

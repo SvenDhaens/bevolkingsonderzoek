@@ -1,9 +1,14 @@
 {
   "resourceType": "Patient",
   "id": "JaneDoe",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+    ]
+  },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jane Doe </b> (no stated gender) DoB Unknown</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jane Doe </b> female, DoB Unknown</p></div>"
   },
   "name": [
     {
@@ -12,5 +17,6 @@
         "Jane"
       ]
     }
-  ]
+  ],
+  "gender": "female"
 }
