@@ -1,0 +1,83 @@
+{
+  "resourceType": "ValueSet",
+  "id": "bevolkingsonderzoek-screening-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/268547008\">268547008</a></td><td>Borstkanker</td></tr><tr><td><a href=\"http://snomed.info/id/762444001\">762444001</a></td><td>Dikkedarmkanker</td></tr><tr><td><a href=\"http://snomed.info/id/171149006\">171149006</a></td><td>Baarmoederhalskanker</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/bevolkingsonderzoek-screening-vs",
+  "version": "1.2.0-draft",
+  "name": "BevolkingsonderzoekScreeningVS",
+  "title": "Bevolkingsonderzoek Screening VS",
+  "status": "draft",
+  "date": "2022-03-29T08:17:10+00:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "eHealth Platform",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "message-structure@ehealth.fgov.be"
+        }
+      ]
+    },
+    {
+      "name": "Sven Dhaens",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "sven.dhaens@axians.com",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Kurt Dhaene",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kurt.dhaene@axians.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Bevolkingsonderzoek screening types",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056",
+          "display": "Belgium"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "268547008",
+            "display": "Borstkanker"
+          },
+          {
+            "code": "762444001",
+            "display": "Dikkedarmkanker"
+          },
+          {
+            "code": "171149006",
+            "display": "Baarmoederhalskanker"
+          }
+        ]
+      }
+    ]
+  }
+}

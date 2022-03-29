@@ -24,10 +24,6 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"EpisodeOfCare.extension","Condition","","",0,1,"Y","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoConditionCode]]} {[]}
-","Extension","The certainty of diagnosis","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "EpisodeOfCare.extension","nextInvitationDate","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication]]} {[]}
 ","Extension","The estimated date on which to expect the next invitation","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -42,7 +38,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Business Identifier(s) relevant for this EpisodeOfCare","The EpisodeOfCare may be known by different identifiers for different contexts of use, such as when an external agency is tracking the Episode for funding purposes.","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier","FiveWs.identifier"
 "EpisodeOfCare.status","","","",1,1,"","Y","Y","code {[]} {[]}
-","planned | waitlist | active | onhold | finished | cancelled | entered-in-error","planned | waitlist | active | onhold | finished | cancelled.","This element is labeled as a modifier because the status contains codes that mark the episode as not currently valid.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""active""/>","","","","",,"required","The status of the episode of care.","http://hl7.org/fhir/ValueSet/episode-of-care-status|4.0.1","",,,,"EpisodeOfCare.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","planned | waitlist | active | onhold | finished | cancelled | entered-in-error","planned | waitlist | active | onhold | finished | cancelled.","This element is labeled as a modifier because the status contains codes that mark the episode as not currently valid.","","","","","","","","",,"required","The status of the episode of care.","http://hl7.org/fhir/ValueSet/episode-of-care-status|4.0.1","",,,,"EpisodeOfCare.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","FiveWs.status"
 "EpisodeOfCare.statusHistory","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Past list of status codes (the current status may be included to cover the start date of the status)","The history of statuses that the EpisodeOfCare has been through (without requiring processing the history of the resource).","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.statusHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -66,11 +62,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Duration the EpisodeOfCare was in the specified status","The period during this EpisodeOfCare that the specific status applied.","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.statusHistory.period",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "EpisodeOfCare.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Type/class  - e.g. specialist referral, disease management","A classification of the type of episode of care; e.g. specialist referral, disease management, type of funded care.","The type can be very important in processing as this could be used in determining if the EpisodeOfCare is relevant to specific government reporting, or other types of classifications.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <code value=""cacp""/>
-  </coding>
-</valueCodeableConcept>","","","","",,"example","The type of the episode of care.","http://hl7.org/fhir/ValueSet/episodeofcare-type","",,,,"EpisodeOfCare.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type/class  - e.g. specialist referral, disease management","A classification of the type of episode of care; e.g. specialist referral, disease management, type of funded care.","The type can be very important in processing as this could be used in determining if the EpisodeOfCare is relevant to specific government reporting, or other types of classifications.","","","","","","","","",,"extensible","","https://www.ehealth.fgov.be/standards/fhir/ValueSet/bevolkingsonderzoek-screening-vs","",,,,"EpisodeOfCare.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","FiveWs.class"
 "EpisodeOfCare.diagnosis","","","",0,*,"","","Y","BackboneElement {[]} {[]}
 ","The list of diagnosis relevant to this episode of care","The list of diagnosis relevant to this episode of care.","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.diagnosis",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

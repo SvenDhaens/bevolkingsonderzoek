@@ -10,13 +10,13 @@
   fhir:Resource.id [ fhir:value "BeCSBevolkingsonderzoekFollowUpAdvice"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">colonoscopy<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-colonoscopy\"> </a></td><td>Colonoscopie</td></tr><tr><td style=\"white-space:nowrap\">additional_mammography_or_and_echography_left<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-additional_mammography_or_and_echography_left\"> </a></td><td>Links: bijkomende mammografie en/of echografie</td></tr><tr><td style=\"white-space:nowrap\">additional_mammography_or_and_echography_right<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-additional_mammography_or_and_echography_right\"> </a></td><td>Rechts: bijkomende mammografie en/of echografie</td></tr><tr><td style=\"white-space:nowrap\">pathological_examination_left<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-pathological_examination_left\"> </a></td><td>Links: pathologisch onderzoek</td></tr><tr><td style=\"white-space:nowrap\">pathological_examination_right<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-pathological_examination_right\"> </a></td><td>Rechts: pathologisch onderzoek</td></tr><tr><td style=\"white-space:nowrap\">mammographic_check_after_6_months_left<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-mammographic_check_after_6_months_left\"> </a></td><td>Links: mammografische controle(s) na 6 maanden</td></tr><tr><td style=\"white-space:nowrap\">mammographic_check_after_6_months_richt<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-mammographic_check_after_6_months_richt\"> </a></td><td>Rechts: mammografische controle(s) na 6 maanden</td></tr><tr><td style=\"white-space:nowrap\">compare_with_previous_mammography_left<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography_left\"> </a></td><td>Links: te vergelijken met vorige mammografie</td></tr><tr><td style=\"white-space:nowrap\">compare_with_previous_mammography_right<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography_right\"> </a></td><td>Rechts: te vergelijken met vorige mammografie</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">compare_with_previous_mammography<a name=\"BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography\"> </a></td><td>te vergelijken met vorige mammografie</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice"];
   fhir:CodeSystem.version [ fhir:value "1.2.0-draft"];
   fhir:CodeSystem.name [ fhir:value "BeCSBevolkingsonderzoekFollowUpAdvice"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2022-03-11T16:12:42+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-03-29T08:17:10+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -60,43 +60,11 @@
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "colonoscopy" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Colonoscopie" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "additional_mammography_or_and_echography_left" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Links: bijkomende mammografie en/of echografie" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "additional_mammography_or_and_echography_right" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Rechts: bijkomende mammografie en/of echografie" ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "pathological_examination_left" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Links: pathologisch onderzoek" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "pathological_examination_right" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Rechts: pathologisch onderzoek" ]
-  ], [
-     fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "mammographic_check_after_6_months_left" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Links: mammografische controle(s) na 6 maanden" ]
-  ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "mammographic_check_after_6_months_richt" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Rechts: mammografische controle(s) na 6 maanden" ]
-  ], [
-     fhir:index 7;
-     fhir:CodeSystem.concept.code [ fhir:value "compare_with_previous_mammography_left" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Links: te vergelijken met vorige mammografie" ]
-  ], [
-     fhir:index 8;
-     fhir:CodeSystem.concept.code [ fhir:value "compare_with_previous_mammography_right" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Rechts: te vergelijken met vorige mammografie" ]
+     fhir:CodeSystem.concept.code [ fhir:value "compare_with_previous_mammography" ];
+     fhir:CodeSystem.concept.display [ fhir:value "te vergelijken met vorige mammografie" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

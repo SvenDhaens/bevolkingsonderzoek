@@ -66,10 +66,10 @@
   ],
   "dependsOn": [
     {
-      "id": "beFederalprofiles",
-      "uri": "http://https://simplifier.net/ehealthplatformfederalprofiles",
-      "packageId": "ehealthplatform.be.r4.federalprofiles",
-      "version": "1.2.2"
+      "id": "hl7_be_fhir_core",
+      "uri": "https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.be.fhir.core",
+      "packageId": "hl7.be.fhir.core",
+      "version": "current"
     }
   ],
   "definition": {
@@ -385,38 +385,52 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/be-bvo-encounter"
+        },
+        "name": "Be Bvo Encounter",
+        "description": "Encounter for screening - deelname aan bevolkingsonderzoek",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-bvo-observation"
+        },
+        "name": "Be Bvo Observation",
+        "description": "Observation result of screening",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-bvo-location"
+        },
+        "name": "Be Bvo Location",
+        "description": "Location with BE address",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/Be-Bvo-EpisodeOfCare"
         },
         "name": "BE Episode Bevolkingsonderzoek",
         "description": "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring"
-        },
-        "name": "Be Bevolkingsonderzoek follow Up Goedkeuring",
-        "description": "Patiënt approval for collection of follow up data by the bevolkingsonderzoek responsible authority. Indication if the patiënt accepted that the bevolkingsonderzoek responsible authority can ask the healthcare providers of the patiënt for information on examinations performed after the patiënt had a positive result.\nCan probably be removed or replaced by note.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/BvoConditionCode"
-        },
-        "name": "BvoConditionCode",
-        "description": "The certainty of diagnosis",
         "exampleBoolean": false
       },
       {
@@ -441,6 +455,34 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/be-bvo-result-vs"
+        },
+        "name": "Be Bvo Result VS",
+        "description": "Result",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/be-vsbevolkingsonderzoek-body-site-location"
+        },
+        "name": "Be VS Bevolkingsonderzoek Body Site Location",
+        "description": "Location on body",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice"
         },
         "name": "BeVSBevolkingsonderzoekFollowUpAdvice",
@@ -455,10 +497,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/BvoConditionCodeVS"
+          "reference": "ValueSet/bevolkingsonderzoek-screening-vs"
         },
-        "name": "BvoConditionCodeVS",
-        "description": "Values of possible Conditions ofr wich to perform diagnostics",
+        "name": "Bevolkingsonderzoek Screening VS",
+        "description": "Bevolkingsonderzoek screening types",
         "exampleBoolean": false
       },
       {
@@ -474,6 +516,20 @@
         "name": "BeCSBevolkingsonderzoekFollowUpAdvice",
         "description": "Code system for follow up advice for Bevolkingsonderzoek screenings",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/BreastCancerEncounterExample"
+        },
+        "name": "Breast Cancer Encounter Example",
+        "description": "Participation for breastcancer screening",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter"
       },
       {
         "extension": [
@@ -497,9 +553,23 @@
           }
         ],
         "reference": {
-          "reference": "ServiceRequest/BreastCancerScreeningFollowUp"
+          "reference": "ServiceRequest/BreastCancerScreeningFollowUpExample"
         },
-        "name": "Breast Cancer Screening Follow Up",
+        "name": "Breast Cancer Screening Follow Up Example",
+        "description": "Follow up after positive breast cancer screening. This is a proposal. This resource exists to notify the patiënt that the patiënt should request additional examinations.",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/BreastCancerScreeningFollowUpWithExample2"
+        },
+        "name": "Breast Cancer Screening Follow Up Example 2",
         "description": "Follow up after positive breast cancer screening. This is a proposal. This resource exists to notify the patiënt that the patiënt should request additional examinations.",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
       },
@@ -549,20 +619,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ServiceRequest"
-          }
-        ],
-        "reference": {
-          "reference": "ServiceRequest/ColorectalCancerScreeningFollowUpExample2"
-        },
-        "name": "Colorectal Cancer Screening Follow Up Example Negative",
-        "description": "Follow up after negative colorectal cancer screening. This resource exists to notify the patiënt that the patiënt that possible follow up examination exists, but because the result of the Bevolkinsonderzoek screening was negative, the follow up examination should not be performed.",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -583,7 +639,22 @@
           "reference": "Patient/JaneDoe"
         },
         "name": "JaneDoe",
+        "description": "female example patient",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/PositiveBreastCancerResult"
+        },
+        "name": "Positive Breast Cancer Result",
+        "description": "Observation with positive/abnormal result",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation"
       },
       {
         "extension": [

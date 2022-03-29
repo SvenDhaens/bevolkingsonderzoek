@@ -1,6 +1,6 @@
 {
   "version": "1.2.0-draft",
   "fhirVersion": "[4.0.1]",
-  "date": "20220311161215",
+  "date": "20220329081640",
   "name": "fed.be.core.bevolkingsonderzoek-ig"
 }

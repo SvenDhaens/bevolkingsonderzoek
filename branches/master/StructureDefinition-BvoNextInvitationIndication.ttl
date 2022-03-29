@@ -15,8 +15,8 @@
   fhir:StructureDefinition.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"];
   fhir:StructureDefinition.version [ fhir:value "1.2.0-draft"];
   fhir:StructureDefinition.name [ fhir:value "BvoNextInvitationIndication"];
-  fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-11T16:12:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.status [ fhir:value "draft"];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-29T08:17:10+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

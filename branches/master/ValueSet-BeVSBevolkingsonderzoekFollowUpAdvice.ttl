@@ -10,13 +10,13 @@
   fhir:Resource.id [ fhir:value "BeVSBevolkingsonderzoekFollowUpAdvice"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>colonoscopy</td><td>Colonoscopy</td></tr><tr><td>additional_mammography_or_and_echography_left</td><td>Links: bijkomende mammografie en/of echografie</td></tr><tr><td>additional_mammography_or_and_echography_right</td><td>Rechts: bijkomende mammografie en/of echografie</td></tr><tr><td>pathological_examination_left</td><td>Links: pathologisch onderzoek</td></tr><tr><td>pathological_examination_right</td><td>Rechts: pathologisch onderzoek</td></tr><tr><td>mammographic_check_after_6_months_left</td><td>Links: mammografische controle(s) na 6 maanden</td></tr><tr><td>mammographic_check_after_6_months_richt</td><td>Rechts: mammografische controle(s) na 6 maanden</td></tr><tr><td>compare_with_previous_mammography_left</td><td>Links: te vergelijken met vorige mammografie</td></tr><tr><td>compare_with_previous_mammography_right</td><td>Rechts: te vergelijken met vorige mammografie</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://snomed.info/sct/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>73761001</td><td>Colonoscopy</td></tr><tr><td>71651007</td><td>Mammography</td></tr><tr><td>43204002</td><td>Mammography of both breasts</td></tr><tr><td>566571000119105</td><td>Mammography of right breast</td></tr><tr><td>572701000119102</td><td>Mammography of left breast</td></tr><tr><td>16310003</td><td>Echography</td></tr><tr><td>47079000</td><td>Echography of breast</td></tr><tr><td>308462001</td><td>Referral to pathology service</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html#BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography\">compare_with_previous_mammography</a></td><td>te vergelijken met vorige mammografie</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice"];
   fhir:ValueSet.version [ fhir:value "1.2.0-draft"];
   fhir:ValueSet.name [ fhir:value "BeVSBevolkingsonderzoekFollowUpAdvice"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-03-11T16:12:42+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-03-29T08:17:10+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -62,43 +62,46 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice/" ];
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct/" ];
        fhir:ValueSet.compose.include.concept [
          fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "colonoscopy" ];
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73761001" ];
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Colonoscopy" ]
        ], [
          fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "additional_mammography_or_and_echography_left" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Links: bijkomende mammografie en/of echografie" ]
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71651007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mammography" ]
        ], [
          fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "additional_mammography_or_and_echography_right" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rechts: bijkomende mammografie en/of echografie" ]
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43204002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mammography of both breasts" ]
        ], [
          fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "pathological_examination_left" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Links: pathologisch onderzoek" ]
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "566571000119105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mammography of right breast" ]
        ], [
          fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "pathological_examination_right" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rechts: pathologisch onderzoek" ]
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "572701000119102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mammography of left breast" ]
        ], [
          fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "mammographic_check_after_6_months_left" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Links: mammografische controle(s) na 6 maanden" ]
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16310003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Echography" ]
        ], [
          fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "mammographic_check_after_6_months_richt" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rechts: mammografische controle(s) na 6 maanden" ]
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "47079000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Echography of breast" ]
        ], [
          fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "compare_with_previous_mammography_left" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Links: te vergelijken met vorige mammografie" ]
-       ], [
-         fhir:index 8;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "compare_with_previous_mammography_right" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rechts: te vergelijken met vorige mammografie" ]
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "308462001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Referral to pathology service" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "compare_with_previous_mammography" ]
        ]
      ]
   ] .

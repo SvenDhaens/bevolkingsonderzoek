@@ -20,15 +20,14 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "ServiceRequest.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"ServiceRequest.extension","","","",0,*,"","","","Extension {[]} {[]}
+"ServiceRequest.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ServiceRequest.extension","FollowupGoedkeuring","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up-goedkeuring]]} {[]}
-","Be Bevolkingsonderzoek follow Up Goedkeuring","Patiënt approval for collection of follow up data by the bevolkingsonderzoek responsible authority. Indication if the patiënt accepted that the bevolkingsonderzoek responsible authority can ask the healthcare providers of the patiënt for information on examinations performed after the patiënt had a positive result.
-Can probably be removed or replaced by note.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"ServiceRequest.extension","Episode","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare]]} {[]}
+","Associated Encounter episode of care","The episode(s) of care that establishes the context for this {{title}}.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}",".inboundRelationship(typeCode=COMP].source[classCode<=PCPR, moodCode=EVN]"
 "ServiceRequest.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -83,7 +82,7 @@ groupIdentifier","",0,1,"","","Y","Identifier {[]} {[]}
 "ServiceRequest.quantity[x]","","","",0,1,"","","Y","Quantity {[]} {[]}
 Ratio {[]} {[]}Range {[]} {[]}","Service amount","An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction).","","When ordering a service the number of service items may need to be specified separately from the the service item.","","","","","","","",,,,,"",,,,"ServiceRequest.quantity[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","NTE",".quantity"
-"ServiceRequest.subject","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"ServiceRequest.subject","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient]]}
 ","Individual or Entity the service is ordered for","On whom or what the service is to be performed. This is usually a human patient, but can also be requested on animals, groups of humans or animals, devices such as dialysis machines, or even locations (typically for environmental scans).","","","","","","","","","",,,,,"",,,,"ServiceRequest.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","PID",".participation[typeCode=SBJ].role","FiveWs.subject[x]","FiveWs.subject","ClinicalStatement.subject"
 "ServiceRequest.encounter","","context
@@ -137,7 +136,7 @@ AOE","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/Structu
 ","SPM",".participation[typeCode=SPC].role"
 "ServiceRequest.bodySite","","location
 ","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Location on Body","Anatomic location where the procedure should be performed. This is the target site.","Only used if not implicit in the code found in ServiceRequest.code.  If the use case requires BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [procedure-targetBodyStructure](http://hl7.org/fhir/R4/extension-procedure-targetbodystructure.html).","Knowing where the procedure is performed is important for tracking if multiple sites are possible.","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"ServiceRequest.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Location on Body","Anatomic location where the procedure should be performed. This is the target site.","Only used if not implicit in the code found in ServiceRequest.code.  If the use case requires BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [procedure-targetBodyStructure](http://hl7.org/fhir/R4/extension-procedure-targetbodystructure.html).","Knowing where the procedure is performed is important for tracking if multiple sites are possible.","","","","","","","",,"extensible","","https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location","",,,,"ServiceRequest.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","SPM","targetSiteCode","Procedure.targetBodySite"
 "ServiceRequest.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Comments","Any other notes and comments made about the service request. For example, internal billing notes.","","","","","","","","","",,,,,"",,,,"ServiceRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vsbevolkingsonderzoek-body-site-location",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://snomed.info/sct/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>80248007</td><td>Left breast</td></tr><tr><td>73056007</td><td>Right breast</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location",
+  "version": "1.2.0-draft",
+  "name": "BeVSBevolkingsonderzoekBodySiteLocation",
+  "title": "Be VS Bevolkingsonderzoek Body Site Location",
+  "status": "draft",
+  "date": "2022-03-29T08:17:10+00:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "eHealth Platform",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "message-structure@ehealth.fgov.be"
+        }
+      ]
+    },
+    {
+      "name": "Sven Dhaens",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "sven.dhaens@axians.com",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Kurt Dhaene",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kurt.dhaene@axians.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Location on body",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056",
+          "display": "Belgium"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct/",
+        "concept": [
+          {
+            "code": "80248007",
+            "display": "Left breast"
+          },
+          {
+            "code": "73056007",
+            "display": "Right breast"
+          }
+        ]
+      }
+    ]
+  }
+}

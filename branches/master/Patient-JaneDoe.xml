@@ -2,11 +2,15 @@
 
 <Patient xmlns="http://hl7.org/fhir">
   <id value="JaneDoe"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+  </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Jane Doe </b> (no stated gender) DoB Unknown</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Jane Doe </b> female, DoB Unknown</p></div>
   </text>
   <name>
     <family value="Doe"/>
     <given value="Jane"/>
   </name>
+  <gender value="female"/>
 </Patient>

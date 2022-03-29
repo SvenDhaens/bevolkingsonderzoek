@@ -3,13 +3,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="BeCSBevolkingsonderzoekFollowUpAdvice"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">colonoscopy<a name="BeCSBevolkingsonderzoekFollowUpAdvice-colonoscopy"> </a></td><td>Colonoscopie</td></tr><tr><td style="white-space:nowrap">additional_mammography_or_and_echography_left<a name="BeCSBevolkingsonderzoekFollowUpAdvice-additional_mammography_or_and_echography_left"> </a></td><td>Links: bijkomende mammografie en/of echografie</td></tr><tr><td style="white-space:nowrap">additional_mammography_or_and_echography_right<a name="BeCSBevolkingsonderzoekFollowUpAdvice-additional_mammography_or_and_echography_right"> </a></td><td>Rechts: bijkomende mammografie en/of echografie</td></tr><tr><td style="white-space:nowrap">pathological_examination_left<a name="BeCSBevolkingsonderzoekFollowUpAdvice-pathological_examination_left"> </a></td><td>Links: pathologisch onderzoek</td></tr><tr><td style="white-space:nowrap">pathological_examination_right<a name="BeCSBevolkingsonderzoekFollowUpAdvice-pathological_examination_right"> </a></td><td>Rechts: pathologisch onderzoek</td></tr><tr><td style="white-space:nowrap">mammographic_check_after_6_months_left<a name="BeCSBevolkingsonderzoekFollowUpAdvice-mammographic_check_after_6_months_left"> </a></td><td>Links: mammografische controle(s) na 6 maanden</td></tr><tr><td style="white-space:nowrap">mammographic_check_after_6_months_richt<a name="BeCSBevolkingsonderzoekFollowUpAdvice-mammographic_check_after_6_months_richt"> </a></td><td>Rechts: mammografische controle(s) na 6 maanden</td></tr><tr><td style="white-space:nowrap">compare_with_previous_mammography_left<a name="BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography_left"> </a></td><td>Links: te vergelijken met vorige mammografie</td></tr><tr><td style="white-space:nowrap">compare_with_previous_mammography_right<a name="BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography_right"> </a></td><td>Rechts: te vergelijken met vorige mammografie</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">compare_with_previous_mammography<a name="BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography"> </a></td><td>te vergelijken met vorige mammografie</td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice"/>
   <version value="1.2.0-draft"/>
   <name value="BeCSBevolkingsonderzoekFollowUpAdvice"/>
   <status value="draft"/>
-  <date value="2022-03-11T16:12:42+00:00"/>
+  <date value="2022-03-29T08:17:10+00:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="eHealth Platform"/>
@@ -47,41 +47,9 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="9"/>
+  <count value="1"/>
   <concept>
-    <code value="colonoscopy"/>
-    <display value="Colonoscopie"/>
-  </concept>
-  <concept>
-    <code value="additional_mammography_or_and_echography_left"/>
-    <display value="Links: bijkomende mammografie en/of echografie"/>
-  </concept>
-  <concept>
-    <code value="additional_mammography_or_and_echography_right"/>
-    <display value="Rechts: bijkomende mammografie en/of echografie"/>
-  </concept>
-  <concept>
-    <code value="pathological_examination_left"/>
-    <display value="Links: pathologisch onderzoek"/>
-  </concept>
-  <concept>
-    <code value="pathological_examination_right"/>
-    <display value="Rechts: pathologisch onderzoek"/>
-  </concept>
-  <concept>
-    <code value="mammographic_check_after_6_months_left"/>
-    <display value="Links: mammografische controle(s) na 6 maanden"/>
-  </concept>
-  <concept>
-    <code value="mammographic_check_after_6_months_richt"/>
-    <display value="Rechts: mammografische controle(s) na 6 maanden"/>
-  </concept>
-  <concept>
-    <code value="compare_with_previous_mammography_left"/>
-    <display value="Links: te vergelijken met vorige mammografie"/>
-  </concept>
-  <concept>
-    <code value="compare_with_previous_mammography_right"/>
-    <display value="Rechts: te vergelijken met vorige mammografie"/>
+    <code value="compare_with_previous_mammography"/>
+    <display value="te vergelijken met vorige mammografie"/>
   </concept>
 </CodeSystem>
