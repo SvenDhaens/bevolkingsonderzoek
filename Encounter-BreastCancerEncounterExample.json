@@ -21,9 +21,29 @@
       },
       "name": "Mammografic unit example name",
       "address": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/language",
+            "valueCode": "nl"
+          }
+        ],
         "text": "Verlorenbroodstraat 122, 9820 Merelbeke",
         "line": [
           "Verlorenbroodstraat 122"
+        ],
+        "_line": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                "valueString": "Verlorenbroodstraat"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                "valueString": "122"
+              }
+            ]
+          }
         ],
         "city": "Merelbeke",
         "postalCode": "9820",

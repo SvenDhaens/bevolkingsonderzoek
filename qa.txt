@@ -3,7 +3,7 @@
 
 err = 22, warn = 29, info = 1
 IG Publisher Version: 1.1.113
-Generated Tue Mar 29 08:17:42 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+Generated Tue Mar 29 08:22:13 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
  Build Errors : 4 / 4 / 0
  /github/workspace/fsh-generated/resources/Appointment-BreastCancerScreeningAppointment : 4 / 0 / 3
  /github/workspace/fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment : 3 / 0 / 1
