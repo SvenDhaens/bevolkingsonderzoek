@@ -394,10 +394,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/StructureDefinition/be-bvo-location>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-bvo-location" ]
+         fhir:link <http://example.com/fhir/example/StructureDefinition/be-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-location" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Be Bvo Location" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Be Location" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Location with BE address" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [

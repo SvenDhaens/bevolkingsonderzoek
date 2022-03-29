@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9bc2d333-857b-4aa0-9e9a-03a5fc836116"/>
+  <id value="520925dc-152d-49f1-b680-41e10c8b612c"/>
   <meta>
-    <lastUpdated value="2022-03-29T08:21:37.608+00:00"/>
+    <lastUpdated value="2022-03-29T10:12:25.697+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -52,7 +52,7 @@
         <name value="BeBvoResultVS"/>
         <title value="Be Bvo Result VS"/>
         <status value="active"/>
-        <date value="2022-03-29T08:21:37+00:00"/>
+        <date value="2022-03-29T10:12:25+00:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -90,8 +90,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6e3f1cfe-9005-4b16-8ae1-040a390ded64"/>
-          <timestamp value="2022-03-29T08:21:58+00:00"/>
+          <identifier value="urn:uuid:f73dbc53-26bd-4588-ba2d-f5460dd6f703"/>
+          <timestamp value="2022-03-29T10:12:46+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -172,7 +172,7 @@
         <name value="BevolkingsonderzoekScreeningVS"/>
         <title value="Bevolkingsonderzoek Screening VS"/>
         <status value="draft"/>
-        <date value="2022-03-29T08:21:37+00:00"/>
+        <date value="2022-03-29T10:12:25+00:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -210,8 +210,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a0211e90-3310-4a95-a4e3-d032a4cfb044"/>
-          <timestamp value="2022-03-29T08:22:00+00:00"/>
+          <identifier value="urn:uuid:91ff844b-7f53-4819-af75-cf21d7540b4e"/>
+          <timestamp value="2022-03-29T10:12:50+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

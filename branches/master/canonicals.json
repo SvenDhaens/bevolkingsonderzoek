@@ -49,18 +49,18 @@
     "name": "BeBvoEncounter"
   },
   {
-    "id": "be-bvo-location",
-    "type": "StructureDefinition",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-location",
-    "version": "1.2.0-draft",
-    "name": "BeLocation"
-  },
-  {
     "id": "be-bvo-observation",
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation",
     "version": "1.2.0-draft",
     "name": "BeBvoObservation"
+  },
+  {
+    "id": "be-location",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-location",
+    "version": "1.2.0-draft",
+    "name": "BeLocation"
   },
   {
     "id": "BeVSBevolkingsonderzoekFollowUpAdvice",
