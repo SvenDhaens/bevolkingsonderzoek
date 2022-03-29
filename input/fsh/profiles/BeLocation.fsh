@@ -1,7 +1,7 @@
 Profile: BeLocation
 Parent: Location
-Id: be-bvo-location
-Title: "Be Bvo Location"
+Id: be-location
+Title: "Be Location"
 Description: "Location with BE address"
 * ^status = #draft
 * address only BeAddress
