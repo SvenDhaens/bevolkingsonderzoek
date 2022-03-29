@@ -413,9 +413,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/be-bvo-location"
+          "reference": "StructureDefinition/be-location"
         },
-        "name": "Be Bvo Location",
+        "name": "Be Location",
         "description": "Location with BE address",
         "exampleBoolean": false
       },

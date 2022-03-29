@@ -37,16 +37,16 @@
         "title": "Be Bvo Encounter"
       }
     ],
-    "Location": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-location",
-        "title": "Be Bvo Location"
-      }
-    ],
     "Observation": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation",
         "title": "Be Bvo Observation"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-location",
+        "title": "Be Location"
       }
     ]
   },

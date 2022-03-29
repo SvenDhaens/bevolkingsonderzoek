@@ -3,7 +3,7 @@
 
 err = 22, warn = 29, info = 1
 IG Publisher Version: 1.1.113
-Generated Tue Mar 29 08:22:13 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+Generated Tue Mar 29 10:13:02 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
  Build Errors : 4 / 4 / 0
  /github/workspace/fsh-generated/resources/Appointment-BreastCancerScreeningAppointment : 4 / 0 / 3
  /github/workspace/fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment : 3 / 0 / 1
@@ -24,8 +24,8 @@ Generated Tue Mar 29 08:22:13 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevol
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-appointment : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-encounter : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-location : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-observation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-location : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-BeVSBevolkingsonderzoekFollowUpAdvice : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-bvo-result-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vsbevolkingsonderzoek-body-site-location : 0 / 3 / 1
@@ -96,11 +96,11 @@ WARNING: StructureDefinition/be-bevolkingsonderzoek-follow-up: StructureDefiniti
 WARNING: StructureDefinition/be-bvo-appointment: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 == fsh-generated/resources/StructureDefinition-be-bvo-encounter.json ==
 WARNING: StructureDefinition/be-bvo-encounter: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
-== fsh-generated/resources/StructureDefinition-be-bvo-location.json ==
-WARNING: StructureDefinition/be-bvo-location: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
-WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-location'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-be-bvo-observation.json ==
 WARNING: StructureDefinition/be-bvo-observation: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+== fsh-generated/resources/StructureDefinition-be-location.json ==
+WARNING: StructureDefinition/be-location: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-location'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-BeVSBevolkingsonderzoekFollowUpAdvice.json ==
 WARNING: ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice: ValueSet.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 WARNING: ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked

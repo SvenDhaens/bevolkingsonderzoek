@@ -274,9 +274,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/be-bvo-location"/>
+        <reference value="StructureDefinition/be-location"/>
       </reference>
-      <name value="Be Bvo Location"/>
+      <name value="Be Location"/>
       <description value="Location with BE address"/>
       <exampleBoolean value="false"/>
     </resource>

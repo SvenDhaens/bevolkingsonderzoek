@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BreastCancerScreeningAppointment\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-appointment.html\">Be Bvo Appointment</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: booked</p><p><b>start</b>: Mar 15, 2022, 8:15:00 AM</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"examplePatient\">examplePatient</a></p><p><b>status</b>: tentative</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a name=\"mammographicUnit\"> </a></p><blockquote><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"mammographicUnit\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-location.html\">Be Bvo Location</a></p></div><p><b>name</b>: Mammografic unit example name</p><p><b>address</b>: Verlorenbroodstraat 122, 9820 Merelbeke</p></blockquote><p><b>status</b>: accepted</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BreastCancerScreeningAppointment\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-appointment.html\">Be Bvo Appointment</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: booked</p><p><b>start</b>: Mar 15, 2022, 8:15:00 AM</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"examplePatient\">examplePatient</a></p><p><b>status</b>: tentative</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a name=\"mammographicUnit\"> </a></p><blockquote><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"mammographicUnit\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-location.html\">Be Location</a></p></div><p><b>name</b>: Mammografic unit example name</p><p><b>address</b>: Verlorenbroodstraat 122, 9820 Merelbeke</p></blockquote><p><b>status</b>: accepted</p></blockquote></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:Location;
@@ -25,9 +25,9 @@
      fhir:Resource.id [ fhir:value "mammographicUnit" ];
      fhir:Resource.meta [
        fhir:Meta.profile [
-         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-location";
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-location";
          fhir:index 0;
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-location>
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-location>
        ]
      ];
      fhir:Location.name [ fhir:value "Mammografic unit example name" ];
