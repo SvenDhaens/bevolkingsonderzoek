@@ -1,0 +1,611 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/StructureDefinition/BeBevolkingsonderzoek> a fhir:StructureDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BeBevolkingsonderzoek"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek\" title=\"Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode.\">BeBevolkingsonderzoek</a><a name=\"BeBevolkingsonderzoek\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.patient\" title=\"The patiënt for the screening.\">patient</a><a name=\"BeBevolkingsonderzoek.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The patiënt for the screening.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.screeningType\" title=\"The related screening, for example breastcancer, coloncancer or cervicalcancer.\">screeningType</a><a name=\"BeBevolkingsonderzoek.screeningType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The related screening</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.screeningYear\" title=\"The year the screening process/episode for the given screenig. If the patiënt participated, the participation year is taken. If the patiënt didn't participate, the calender year of the invitation is taken. \nIf there is no invitation or participation, there will be no episode.\nFor example, if patiënt is allowed a population based screening every 2 years for a given screening type and the first screening episode invitation took place in 2022, the next episode will be created for the next invitation in 2024. \nIf the patiënt has a refusal or exclusion registered and does not have a participation/invitation, so the patiënt does not have any episodes, the calender year of the registration of the refusal/exclusion is taken.\">screeningYear</a><a name=\"BeBevolkingsonderzoek.screeningYear\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The calender year of the screening.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.invitation\" title=\"An invitation is not mandatory, in some cases a patiënt can participate for a screening without an invitation.\">invitation</a><a name=\"BeBevolkingsonderzoek.invitation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The appointment details of the invitation.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.invitation.Date\" title=\"The date the patiënt is invited to participate in the population based screening.\">Date</a><a name=\"BeBevolkingsonderzoek.invitation.Date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The date the patiënt is invited to participate in the population based screening.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.invitation.locationName\" title=\"For some screenings, but not all, a location is provided for the patiënt.\">locationName</a><a name=\"BeBevolkingsonderzoek.invitation.locationName\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Human readable name of the location where the patiënt is invited to participate.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.invitation.locationAddress\" title=\"For some screenings, but not all, a location is provided for the patiënt.\">locationAddress</a><a name=\"BeBevolkingsonderzoek.invitation.locationAddress\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Human readable address of the invitation location.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation\" title=\"A participation is not mandatory. A patiënt can choose not to participate for a screening.\">participation</a><a name=\"BeBevolkingsonderzoek.participation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The participation details.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.date\" title=\"The date the patiënt participated in the population based screening.\">date</a><a name=\"BeBevolkingsonderzoek.participation.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The date the patiënt participated in the population based screening.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.locationName\" title=\"For some screenings, but not all, a location is provided for the patiënt.\">locationName</a><a name=\"BeBevolkingsonderzoek.participation.locationName\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Human readable name of the location where the patiënt participated.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.locationAddress\" title=\"For some screenings, but not all, a location is provided for the patiënt.\">locationAddress</a><a name=\"BeBevolkingsonderzoek.participation.locationAddress\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Human readable address of the participation location.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.result\" title=\"Notify the patiënt if the result was abnormal/positive or normal/negative, (Afwijkend/Niet afwijkend)\">result</a><a name=\"BeBevolkingsonderzoek.participation.result\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">If the result of participation in the population based screening</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.followup\" title=\"This data acts purely as info for the patiënt to inform the patiënt of proposed actions and should not be followed up by the screening authority.\">followup</a><a name=\"BeBevolkingsonderzoek.participation.followup\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Details of proposed actions for the patiënt after the screening concluded.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.followup.needed\" title=\"Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening.\">needed</a><a name=\"BeBevolkingsonderzoek.participation.followup.needed\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.followup.advice\" title=\"Indication what other examinations/steps the patient should taken.\">advice</a><a name=\"BeBevolkingsonderzoek.participation.followup.advice\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indication what other examinations/steps the patient should taken.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.followup.approved\" title=\"If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)\">approved</a><a name=\"BeBevolkingsonderzoek.participation.followup.approved\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.nextInvitationIndication\" title=\"This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. \nIf the patiënt will not recieve future invitations for the screening, an short explanation will be given.\">nextInvitationIndication</a><a name=\"BeBevolkingsonderzoek.nextInvitationIndication\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. \nIf the patiënt will not recieve future invitations for the screening, an short explanation will be given.</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ];
+  fhir:StructureDefinition.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBevolkingsonderzoek"];
+  fhir:StructureDefinition.version [ fhir:value "1.2.0-draft"];
+  fhir:StructureDefinition.name [ fhir:value "BeBevolkingsonderzoek"];
+  fhir:StructureDefinition.status [ fhir:value "draft"];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-30T15:39:36+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
+  fhir:StructureDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "eHealth Platform" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://example.com/committees" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "message-structure@ehealth.fgov.be" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Sven Dhaens" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sven.dhaens@axians.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ContactDetail.name [ fhir:value "Kurt Dhaene" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kurt.dhaene@axians.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:StructureDefinition.description [ fhir:value "Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode."];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ];
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ];
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
+  fhir:StructureDefinition.mapping [
+     fhir:index 0;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ];
+  fhir:StructureDefinition.kind [ fhir:value "logical"];
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
+  fhir:StructureDefinition.type [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBevolkingsonderzoek"];
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Base";
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ];
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"];
+  fhir:StructureDefinition.snapshot [
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek" ];
+       fhir:ElementDefinition.definition [ fhir:value "Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.patient" ];
+       fhir:ElementDefinition.short [ fhir:value "The patiënt for the screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "The patiënt for the screening." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.patient" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.screeningType" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.screeningType" ];
+       fhir:ElementDefinition.short [ fhir:value "The related screening" ];
+       fhir:ElementDefinition.definition [ fhir:value "The related screening, for example breastcancer, coloncancer or cervicalcancer." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.screeningType" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.screeningYear" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.screeningYear" ];
+       fhir:ElementDefinition.short [ fhir:value "The calender year of the screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "The year the screening process/episode for the given screenig. If the patiënt participated, the participation year is taken. If the patiënt didn't participate, the calender year of the invitation is taken. \nIf there is no invitation or participation, there will be no episode.\nFor example, if patiënt is allowed a population based screening every 2 years for a given screening type and the first screening episode invitation took place in 2022, the next episode will be created for the next invitation in 2024. \nIf the patiënt has a refusal or exclusion registered and does not have a participation/invitation, so the patiënt does not have any episodes, the calender year of the registration of the refusal/exclusion is taken." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.screeningYear" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.invitation" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.invitation" ];
+       fhir:ElementDefinition.short [ fhir:value "The appointment details of the invitation." ];
+       fhir:ElementDefinition.definition [ fhir:value "An invitation is not mandatory, in some cases a patiënt can participate for a screening without an invitation." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.invitation" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.invitation.Date" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.invitation.Date" ];
+       fhir:ElementDefinition.short [ fhir:value "The date the patiënt is invited to participate in the population based screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "The date the patiënt is invited to participate in the population based screening." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.invitation.Date" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.invitation.locationName" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.invitation.locationName" ];
+       fhir:ElementDefinition.short [ fhir:value "Human readable name of the location where the patiënt is invited to participate." ];
+       fhir:ElementDefinition.definition [ fhir:value "For some screenings, but not all, a location is provided for the patiënt." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.invitation.locationName" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.invitation.locationAddress" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.invitation.locationAddress" ];
+       fhir:ElementDefinition.short [ fhir:value "Human readable address of the invitation location." ];
+       fhir:ElementDefinition.definition [ fhir:value "For some screenings, but not all, a location is provided for the patiënt." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.invitation.locationAddress" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation" ];
+       fhir:ElementDefinition.short [ fhir:value "The participation details." ];
+       fhir:ElementDefinition.definition [ fhir:value "A participation is not mandatory. A patiënt can choose not to participate for a screening." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.date" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.date" ];
+       fhir:ElementDefinition.short [ fhir:value "The date the patiënt participated in the population based screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "The date the patiënt participated in the population based screening." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation.date" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.locationName" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.locationName" ];
+       fhir:ElementDefinition.short [ fhir:value "Human readable name of the location where the patiënt participated." ];
+       fhir:ElementDefinition.definition [ fhir:value "For some screenings, but not all, a location is provided for the patiënt." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation.locationName" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.locationAddress" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.locationAddress" ];
+       fhir:ElementDefinition.short [ fhir:value "Human readable address of the participation location." ];
+       fhir:ElementDefinition.definition [ fhir:value "For some screenings, but not all, a location is provided for the patiënt." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation.locationAddress" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.result" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.result" ];
+       fhir:ElementDefinition.short [ fhir:value "If the result of participation in the population based screening" ];
+       fhir:ElementDefinition.definition [ fhir:value "Notify the patiënt if the result was abnormal/positive or normal/negative, (Afwijkend/Niet afwijkend)" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation.result" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.followup" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.followup" ];
+       fhir:ElementDefinition.short [ fhir:value "Details of proposed actions for the patiënt after the screening concluded." ];
+       fhir:ElementDefinition.definition [ fhir:value "This data acts purely as info for the patiënt to inform the patiënt of proposed actions and should not be followed up by the screening authority." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation.followup" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.followup.needed" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.needed" ];
+       fhir:ElementDefinition.short [ fhir:value "Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.needed" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.followup.advice" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.advice" ];
+       fhir:ElementDefinition.short [ fhir:value "Indication what other examinations/steps the patient should taken." ];
+       fhir:ElementDefinition.definition [ fhir:value "Indication what other examinations/steps the patient should taken." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.advice" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.followup.approved" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.approved" ];
+       fhir:ElementDefinition.short [ fhir:value "If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)" ];
+       fhir:ElementDefinition.definition [ fhir:value "If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.approved" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.nextInvitationIndication" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.nextInvitationIndication" ];
+       fhir:ElementDefinition.short [ fhir:value "This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. \nIf the patiënt will not recieve future invitations for the screening, an short explanation will be given." ];
+       fhir:ElementDefinition.definition [ fhir:value "This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. \nIf the patiënt will not recieve future invitations for the screening, an short explanation will be given." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BeBevolkingsonderzoek.nextInvitationIndication" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ]
+  ];
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek" ];
+       fhir:ElementDefinition.definition [ fhir:value "Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode." ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.patient" ];
+       fhir:ElementDefinition.short [ fhir:value "The patiënt for the screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "The patiënt for the screening." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.screeningType" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.screeningType" ];
+       fhir:ElementDefinition.short [ fhir:value "The related screening" ];
+       fhir:ElementDefinition.definition [ fhir:value "The related screening, for example breastcancer, coloncancer or cervicalcancer." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.screeningYear" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.screeningYear" ];
+       fhir:ElementDefinition.short [ fhir:value "The calender year of the screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "The year the screening process/episode for the given screenig. If the patiënt participated, the participation year is taken. If the patiënt didn't participate, the calender year of the invitation is taken. \nIf there is no invitation or participation, there will be no episode.\nFor example, if patiënt is allowed a population based screening every 2 years for a given screening type and the first screening episode invitation took place in 2022, the next episode will be created for the next invitation in 2024. \nIf the patiënt has a refusal or exclusion registered and does not have a participation/invitation, so the patiënt does not have any episodes, the calender year of the registration of the refusal/exclusion is taken." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.invitation" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.invitation" ];
+       fhir:ElementDefinition.short [ fhir:value "The appointment details of the invitation." ];
+       fhir:ElementDefinition.definition [ fhir:value "An invitation is not mandatory, in some cases a patiënt can participate for a screening without an invitation." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.invitation.Date" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.invitation.Date" ];
+       fhir:ElementDefinition.short [ fhir:value "The date the patiënt is invited to participate in the population based screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "The date the patiënt is invited to participate in the population based screening." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.invitation.locationName" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.invitation.locationName" ];
+       fhir:ElementDefinition.short [ fhir:value "Human readable name of the location where the patiënt is invited to participate." ];
+       fhir:ElementDefinition.definition [ fhir:value "For some screenings, but not all, a location is provided for the patiënt." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.invitation.locationAddress" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.invitation.locationAddress" ];
+       fhir:ElementDefinition.short [ fhir:value "Human readable address of the invitation location." ];
+       fhir:ElementDefinition.definition [ fhir:value "For some screenings, but not all, a location is provided for the patiënt." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation" ];
+       fhir:ElementDefinition.short [ fhir:value "The participation details." ];
+       fhir:ElementDefinition.definition [ fhir:value "A participation is not mandatory. A patiënt can choose not to participate for a screening." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.date" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.date" ];
+       fhir:ElementDefinition.short [ fhir:value "The date the patiënt participated in the population based screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "The date the patiënt participated in the population based screening." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.locationName" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.locationName" ];
+       fhir:ElementDefinition.short [ fhir:value "Human readable name of the location where the patiënt participated." ];
+       fhir:ElementDefinition.definition [ fhir:value "For some screenings, but not all, a location is provided for the patiënt." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.locationAddress" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.locationAddress" ];
+       fhir:ElementDefinition.short [ fhir:value "Human readable address of the participation location." ];
+       fhir:ElementDefinition.definition [ fhir:value "For some screenings, but not all, a location is provided for the patiënt." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.result" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.result" ];
+       fhir:ElementDefinition.short [ fhir:value "If the result of participation in the population based screening" ];
+       fhir:ElementDefinition.definition [ fhir:value "Notify the patiënt if the result was abnormal/positive or normal/negative, (Afwijkend/Niet afwijkend)" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.followup" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.followup" ];
+       fhir:ElementDefinition.short [ fhir:value "Details of proposed actions for the patiënt after the screening concluded." ];
+       fhir:ElementDefinition.definition [ fhir:value "This data acts purely as info for the patiënt to inform the patiënt of proposed actions and should not be followed up by the screening authority." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.followup.needed" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.needed" ];
+       fhir:ElementDefinition.short [ fhir:value "Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening." ];
+       fhir:ElementDefinition.definition [ fhir:value "Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.followup.advice" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.advice" ];
+       fhir:ElementDefinition.short [ fhir:value "Indication what other examinations/steps the patient should taken." ];
+       fhir:ElementDefinition.definition [ fhir:value "Indication what other examinations/steps the patient should taken." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.participation.followup.approved" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.participation.followup.approved" ];
+       fhir:ElementDefinition.short [ fhir:value "If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)" ];
+       fhir:ElementDefinition.definition [ fhir:value "If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "BeBevolkingsonderzoek.nextInvitationIndication" ];
+       fhir:ElementDefinition.path [ fhir:value "BeBevolkingsonderzoek.nextInvitationIndication" ];
+       fhir:ElementDefinition.short [ fhir:value "This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. \nIf the patiënt will not recieve future invitations for the screening, an short explanation will be given." ];
+       fhir:ElementDefinition.definition [ fhir:value "This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. \nIf the patiënt will not recieve future invitations for the screening, an short explanation will be given." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/example/StructureDefinition/BeBevolkingsonderzoek.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

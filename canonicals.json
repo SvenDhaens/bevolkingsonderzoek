@@ -21,6 +21,13 @@
     "name": "BePopulationBasedScreeningEpisodeOfCare"
   },
   {
+    "id": "BeBevolkingsonderzoek",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBevolkingsonderzoek",
+    "version": "1.2.0-draft",
+    "name": "BeBevolkingsonderzoek"
+  },
+  {
     "id": "BvoNextInvitationIndication",
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication",

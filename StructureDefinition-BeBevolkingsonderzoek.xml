@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BeBevolkingsonderzoek"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek" title="Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode.">BeBevolkingsonderzoek</a><a name="BeBevolkingsonderzoek"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.patient" title="The patiënt for the screening.">patient</a><a name="BeBevolkingsonderzoek.patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The patiënt for the screening.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.screeningType" title="The related screening, for example breastcancer, coloncancer or cervicalcancer.">screeningType</a><a name="BeBevolkingsonderzoek.screeningType"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The related screening</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.screeningYear" title="The year the screening process/episode for the given screenig. If the patiënt participated, the participation year is taken. If the patiënt didn't participate, the calender year of the invitation is taken. 
+If there is no invitation or participation, there will be no episode.
+For example, if patiënt is allowed a population based screening every 2 years for a given screening type and the first screening episode invitation took place in 2022, the next episode will be created for the next invitation in 2024. 
+If the patiënt has a refusal or exclusion registered and does not have a participation/invitation, so the patiënt does not have any episodes, the calender year of the registration of the refusal/exclusion is taken.">screeningYear</a><a name="BeBevolkingsonderzoek.screeningYear"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The calender year of the screening.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.invitation" title="An invitation is not mandatory, in some cases a patiënt can participate for a screening without an invitation.">invitation</a><a name="BeBevolkingsonderzoek.invitation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The appointment details of the invitation.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.invitation.Date" title="The date the patiënt is invited to participate in the population based screening.">Date</a><a name="BeBevolkingsonderzoek.invitation.Date"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The date the patiënt is invited to participate in the population based screening.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.invitation.locationName" title="For some screenings, but not all, a location is provided for the patiënt.">locationName</a><a name="BeBevolkingsonderzoek.invitation.locationName"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Human readable name of the location where the patiënt is invited to participate.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.invitation.locationAddress" title="For some screenings, but not all, a location is provided for the patiënt.">locationAddress</a><a name="BeBevolkingsonderzoek.invitation.locationAddress"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Human readable address of the invitation location.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation" title="A participation is not mandatory. A patiënt can choose not to participate for a screening.">participation</a><a name="BeBevolkingsonderzoek.participation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participation details.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.date" title="The date the patiënt participated in the population based screening.">date</a><a name="BeBevolkingsonderzoek.participation.date"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The date the patiënt participated in the population based screening.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.locationName" title="For some screenings, but not all, a location is provided for the patiënt.">locationName</a><a name="BeBevolkingsonderzoek.participation.locationName"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Human readable name of the location where the patiënt participated.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.locationAddress" title="For some screenings, but not all, a location is provided for the patiënt.">locationAddress</a><a name="BeBevolkingsonderzoek.participation.locationAddress"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Human readable address of the participation location.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.result" title="Notify the patiënt if the result was abnormal/positive or normal/negative, (Afwijkend/Niet afwijkend)">result</a><a name="BeBevolkingsonderzoek.participation.result"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If the result of participation in the population based screening</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.followup" title="This data acts purely as info for the patiënt to inform the patiënt of proposed actions and should not be followed up by the screening authority.">followup</a><a name="BeBevolkingsonderzoek.participation.followup"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Details of proposed actions for the patiënt after the screening concluded.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.followup.needed" title="Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening.">needed</a><a name="BeBevolkingsonderzoek.participation.followup.needed"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.followup.advice" title="Indication what other examinations/steps the patient should taken.">advice</a><a name="BeBevolkingsonderzoek.participation.followup.advice"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indication what other examinations/steps the patient should taken.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.participation.followup.approved" title="If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)">approved</a><a name="BeBevolkingsonderzoek.participation.followup.approved"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeBevolkingsonderzoek-definitions.html#BeBevolkingsonderzoek.nextInvitationIndication" title="This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. 
+If the patiënt will not recieve future invitations for the screening, an short explanation will be given.">nextInvitationIndication</a><a name="BeBevolkingsonderzoek.nextInvitationIndication"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. 
+If the patiënt will not recieve future invitations for the screening, an short explanation will be given.</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBevolkingsonderzoek"/>
+  <version value="1.2.0-draft"/>
+  <name value="BeBevolkingsonderzoek"/>
+  <status value="draft"/>
+  <date value="2022-03-30T15:39:36+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Sven Dhaens"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sven.dhaens@axians.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kurt Dhaene"/>
+    <telecom>
+      <system value="email"/>
+      <value value="kurt.dhaene@axians.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBevolkingsonderzoek"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="BeBevolkingsonderzoek">
+      <path value="BeBevolkingsonderzoek"/>
+      <definition value="Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="BeBevolkingsonderzoek.patient">
+      <path value="BeBevolkingsonderzoek.patient"/>
+      <short value="The patiënt for the screening."/>
+      <definition value="The patiënt for the screening."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.patient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.screeningType">
+      <path value="BeBevolkingsonderzoek.screeningType"/>
+      <short value="The related screening"/>
+      <definition value="The related screening, for example breastcancer, coloncancer or cervicalcancer."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.screeningType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.screeningYear">
+      <path value="BeBevolkingsonderzoek.screeningYear"/>
+      <short value="The calender year of the screening."/>
+      <definition value="The year the screening process/episode for the given screenig. If the patiënt participated, the participation year is taken. If the patiënt didn't participate, the calender year of the invitation is taken. &#xA;If there is no invitation or participation, there will be no episode.&#xA;For example, if patiënt is allowed a population based screening every 2 years for a given screening type and the first screening episode invitation took place in 2022, the next episode will be created for the next invitation in 2024. &#xA;If the patiënt has a refusal or exclusion registered and does not have a participation/invitation, so the patiënt does not have any episodes, the calender year of the registration of the refusal/exclusion is taken."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.screeningYear"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.invitation">
+      <path value="BeBevolkingsonderzoek.invitation"/>
+      <short value="The appointment details of the invitation."/>
+      <definition value="An invitation is not mandatory, in some cases a patiënt can participate for a screening without an invitation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.invitation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.invitation.Date">
+      <path value="BeBevolkingsonderzoek.invitation.Date"/>
+      <short value="The date the patiënt is invited to participate in the population based screening."/>
+      <definition value="The date the patiënt is invited to participate in the population based screening."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.invitation.Date"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.invitation.locationName">
+      <path value="BeBevolkingsonderzoek.invitation.locationName"/>
+      <short value="Human readable name of the location where the patiënt is invited to participate."/>
+      <definition value="For some screenings, but not all, a location is provided for the patiënt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.invitation.locationName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.invitation.locationAddress">
+      <path value="BeBevolkingsonderzoek.invitation.locationAddress"/>
+      <short value="Human readable address of the invitation location."/>
+      <definition value="For some screenings, but not all, a location is provided for the patiënt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.invitation.locationAddress"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation">
+      <path value="BeBevolkingsonderzoek.participation"/>
+      <short value="The participation details."/>
+      <definition value="A participation is not mandatory. A patiënt can choose not to participate for a screening."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.date">
+      <path value="BeBevolkingsonderzoek.participation.date"/>
+      <short value="The date the patiënt participated in the population based screening."/>
+      <definition value="The date the patiënt participated in the population based screening."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation.date"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.locationName">
+      <path value="BeBevolkingsonderzoek.participation.locationName"/>
+      <short value="Human readable name of the location where the patiënt participated."/>
+      <definition value="For some screenings, but not all, a location is provided for the patiënt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation.locationName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.locationAddress">
+      <path value="BeBevolkingsonderzoek.participation.locationAddress"/>
+      <short value="Human readable address of the participation location."/>
+      <definition value="For some screenings, but not all, a location is provided for the patiënt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation.locationAddress"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.result">
+      <path value="BeBevolkingsonderzoek.participation.result"/>
+      <short value="If the result of participation in the population based screening"/>
+      <definition value="Notify the patiënt if the result was abnormal/positive or normal/negative, (Afwijkend/Niet afwijkend)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation.result"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.followup">
+      <path value="BeBevolkingsonderzoek.participation.followup"/>
+      <short value="Details of proposed actions for the patiënt after the screening concluded."/>
+      <definition value="This data acts purely as info for the patiënt to inform the patiënt of proposed actions and should not be followed up by the screening authority."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation.followup"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.followup.needed">
+      <path value="BeBevolkingsonderzoek.participation.followup.needed"/>
+      <short value="Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening."/>
+      <definition value="Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation.followup.needed"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.followup.advice">
+      <path value="BeBevolkingsonderzoek.participation.followup.advice"/>
+      <short value="Indication what other examinations/steps the patient should taken."/>
+      <definition value="Indication what other examinations/steps the patient should taken."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation.followup.advice"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.followup.approved">
+      <path value="BeBevolkingsonderzoek.participation.followup.approved"/>
+      <short value="If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)"/>
+      <definition value="If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.participation.followup.approved"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.nextInvitationIndication">
+      <path value="BeBevolkingsonderzoek.nextInvitationIndication"/>
+      <short value="This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. &#xA;If the patiënt will not recieve future invitations for the screening, an short explanation will be given."/>
+      <definition value="This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. &#xA;If the patiënt will not recieve future invitations for the screening, an short explanation will be given."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeBevolkingsonderzoek.nextInvitationIndication"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="BeBevolkingsonderzoek">
+      <path value="BeBevolkingsonderzoek"/>
+      <definition value="Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode."/>
+    </element>
+    <element id="BeBevolkingsonderzoek.patient">
+      <path value="BeBevolkingsonderzoek.patient"/>
+      <short value="The patiënt for the screening."/>
+      <definition value="The patiënt for the screening."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.screeningType">
+      <path value="BeBevolkingsonderzoek.screeningType"/>
+      <short value="The related screening"/>
+      <definition value="The related screening, for example breastcancer, coloncancer or cervicalcancer."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.screeningYear">
+      <path value="BeBevolkingsonderzoek.screeningYear"/>
+      <short value="The calender year of the screening."/>
+      <definition value="The year the screening process/episode for the given screenig. If the patiënt participated, the participation year is taken. If the patiënt didn't participate, the calender year of the invitation is taken. &#xA;If there is no invitation or participation, there will be no episode.&#xA;For example, if patiënt is allowed a population based screening every 2 years for a given screening type and the first screening episode invitation took place in 2022, the next episode will be created for the next invitation in 2024. &#xA;If the patiënt has a refusal or exclusion registered and does not have a participation/invitation, so the patiënt does not have any episodes, the calender year of the registration of the refusal/exclusion is taken."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.invitation">
+      <path value="BeBevolkingsonderzoek.invitation"/>
+      <short value="The appointment details of the invitation."/>
+      <definition value="An invitation is not mandatory, in some cases a patiënt can participate for a screening without an invitation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.invitation.Date">
+      <path value="BeBevolkingsonderzoek.invitation.Date"/>
+      <short value="The date the patiënt is invited to participate in the population based screening."/>
+      <definition value="The date the patiënt is invited to participate in the population based screening."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.invitation.locationName">
+      <path value="BeBevolkingsonderzoek.invitation.locationName"/>
+      <short value="Human readable name of the location where the patiënt is invited to participate."/>
+      <definition value="For some screenings, but not all, a location is provided for the patiënt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.invitation.locationAddress">
+      <path value="BeBevolkingsonderzoek.invitation.locationAddress"/>
+      <short value="Human readable address of the invitation location."/>
+      <definition value="For some screenings, but not all, a location is provided for the patiënt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation">
+      <path value="BeBevolkingsonderzoek.participation"/>
+      <short value="The participation details."/>
+      <definition value="A participation is not mandatory. A patiënt can choose not to participate for a screening."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.date">
+      <path value="BeBevolkingsonderzoek.participation.date"/>
+      <short value="The date the patiënt participated in the population based screening."/>
+      <definition value="The date the patiënt participated in the population based screening."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.locationName">
+      <path value="BeBevolkingsonderzoek.participation.locationName"/>
+      <short value="Human readable name of the location where the patiënt participated."/>
+      <definition value="For some screenings, but not all, a location is provided for the patiënt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.locationAddress">
+      <path value="BeBevolkingsonderzoek.participation.locationAddress"/>
+      <short value="Human readable address of the participation location."/>
+      <definition value="For some screenings, but not all, a location is provided for the patiënt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.result">
+      <path value="BeBevolkingsonderzoek.participation.result"/>
+      <short value="If the result of participation in the population based screening"/>
+      <definition value="Notify the patiënt if the result was abnormal/positive or normal/negative, (Afwijkend/Niet afwijkend)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.followup">
+      <path value="BeBevolkingsonderzoek.participation.followup"/>
+      <short value="Details of proposed actions for the patiënt after the screening concluded."/>
+      <definition value="This data acts purely as info for the patiënt to inform the patiënt of proposed actions and should not be followed up by the screening authority."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.followup.needed">
+      <path value="BeBevolkingsonderzoek.participation.followup.needed"/>
+      <short value="Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening."/>
+      <definition value="Indication if the patiënt should request or take other examinations/steps based on the outcome of the screening."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.followup.advice">
+      <path value="BeBevolkingsonderzoek.participation.followup.advice"/>
+      <short value="Indication what other examinations/steps the patient should taken."/>
+      <definition value="Indication what other examinations/steps the patient should taken."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.participation.followup.approved">
+      <path value="BeBevolkingsonderzoek.participation.followup.approved"/>
+      <short value="If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)"/>
+      <definition value="If the patiënt has given permission to CvKO to collect follow up data (data of followup examinations/steps that follow after the screening concluded and are not organized by the screening authority.)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="BeBevolkingsonderzoek.nextInvitationIndication">
+      <path value="BeBevolkingsonderzoek.nextInvitationIndication"/>
+      <short value="This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. &#xA;If the patiënt will not recieve future invitations for the screening, an short explanation will be given."/>
+      <definition value="This field gives a short human readable indication for the patiënt if the patiënt can excpect future invitations for the population based screening en an estimation when the next invitation will be created. &#xA;If the patiënt will not recieve future invitations for the screening, an short explanation will be given."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
