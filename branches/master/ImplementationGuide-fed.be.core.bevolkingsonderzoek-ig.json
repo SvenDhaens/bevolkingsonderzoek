@@ -346,6 +346,19 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -445,6 +458,20 @@
         },
         "name": "BvoNextInvitationIndication",
         "description": "The estimated date on which to expect the next invitation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BeBevolkingsonderzoek"
+        },
+        "name": "BeBevolkingsonderzoek",
+        "description": "Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode.",
         "exampleBoolean": false
       },
       {

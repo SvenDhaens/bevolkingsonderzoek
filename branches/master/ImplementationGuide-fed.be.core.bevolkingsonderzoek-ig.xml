@@ -225,6 +225,14 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -300,6 +308,17 @@
       </reference>
       <name value="BvoNextInvitationIndication"/>
       <description value="The estimated date on which to expect the next invitation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BeBevolkingsonderzoek"/>
+      </reference>
+      <name value="BeBevolkingsonderzoek"/>
+      <description value="Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

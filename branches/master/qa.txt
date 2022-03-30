@@ -1,9 +1,9 @@
 ﻿TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG : Validation Results
 =========================================
 
-err = 22, warn = 29, info = 1
+err = 23, warn = 33, info = 1
 IG Publisher Version: 1.1.113
-Generated Tue Mar 29 10:13:02 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+Generated Wed Mar 30 15:40:17 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
  Build Errors : 4 / 4 / 0
  /github/workspace/fsh-generated/resources/Appointment-BreastCancerScreeningAppointment : 4 / 0 / 3
  /github/workspace/fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment : 3 / 0 / 1
@@ -20,6 +20,7 @@ Generated Tue Mar 29 10:13:02 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevol
  /github/workspace/fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpWithExample2 : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeBevolkingsonderzoek : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-appointment : 0 / 1 / 1
@@ -36,10 +37,10 @@ WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/CvKO.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/exampleEpisodeBevolkingsonderzoek.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/exampleMaleBePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Appointment-BreastCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 217, column 718: The link 'examplePatient' for "examplePatient" cannot be resolved
-ERROR: /github/workspace/output/Appointment-CervicalCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 217, column 789: The link 'examplePatient' for "examplePatient" cannot be resolved
-ERROR: /github/workspace/output/Appointment-ColonCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 217, column 784: The link 'examplePatient' for "examplePatient" cannot be resolved
-ERROR: /github/workspace/output/Encounter-BreastCancerEncounterExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 217, column 943: The link 'examplePatient' for "examplePatient" cannot be resolved
+ERROR: /github/workspace/output/Appointment-BreastCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 718: The link 'examplePatient' for "examplePatient" cannot be resolved
+ERROR: /github/workspace/output/Appointment-CervicalCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 789: The link 'examplePatient' for "examplePatient" cannot be resolved
+ERROR: /github/workspace/output/Appointment-ColonCancerScreeningAppointment.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 784: The link 'examplePatient' for "examplePatient" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BreastCancerEncounterExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 943: The link 'examplePatient' for "examplePatient" cannot be resolved
 == fsh-generated/resources/Appointment-BreastCancerScreeningAppointment.json ==
 ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: app-2: 'Either start and end are specified, or neither' Rule 'Either start and end are specified, or neither' Failed
 ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Rule 'Only proposed or cancelled appointments can be missing start/end dates' Failed
@@ -87,6 +88,12 @@ WARNING: ServiceRequest/ColorectalCancerScreeningFollowUpExample: ServiceRequest
 ERROR: ServiceRequest/ColorectalCancerScreeningFollowUpExample: ServiceRequest.code.coding[0]: Invalid System URI: http://snomed.info/sct/
 == fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare.json ==
 WARNING: StructureDefinition/Be-Bvo-EpisodeOfCare: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+== fsh-generated/resources/StructureDefinition-BeBevolkingsonderzoek.json ==
+WARNING: StructureDefinition/BeBevolkingsonderzoek: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+ERROR: StructureDefinition/BeBevolkingsonderzoek: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/BeBevolkingsonderzoek: StructureDefinition.snapshot.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/BeBevolkingsonderzoek: StructureDefinition.differential.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/BeBevolkingsonderzoek: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication.json ==
 WARNING: StructureDefinition/BvoNextInvitationIndication: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication'): The Implementation Guide contains no examples for this extension
