@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -17,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BreastCancerScreeningFollowUpWithExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bevolkingsonderzoek-follow-up.html\">Be Bevolkingsonderzoek Follow Up</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: bijkomende mammografie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SNOMED CT#71651007)</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>occurrence</b>: 2022-09-15 --&gt; (ongoing)</p><p><b>bodySite</b>: Linkerborst <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SNOMED CT#80248007)</span></p><p><b>patientInstruction</b>: Links: mammografische controle na 6 maanden</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BreastCancerScreeningFollowUpWithExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bevolkingsonderzoek-follow-up.html\">Be Bevolkingsonderzoek Follow Up</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: bijkomende mammografie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#71651007)</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>occurrence</b>: 2022-09-15 --&gt; (ongoing)</p><p><b>bodySite</b>: Linkerborst <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#80248007)</span></p><p><b>patientInstruction</b>: Links: mammografische controle na 6 maanden</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -32,7 +33,8 @@
   fhir:ServiceRequest.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct/" ];
+       a sct:71651007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "71651007" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "bijkomende mammografie" ]
@@ -48,7 +50,8 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct/" ];
+       a sct:80248007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "80248007" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Linkerborst" ]

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a12ac36c-a054-43d9-b463-b04c793b00d1"/>
+  <id value="5d058863-6722-4b7c-8226-53256215b740"/>
   <meta>
-    <lastUpdated value="2022-03-30T15:39:36.420+00:00"/>
+    <lastUpdated value="2022-04-06T16:28:25.264+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,9 +15,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
               </a>
             </p>
@@ -52,7 +52,7 @@
         <name value="BeBvoResultVS"/>
         <title value="Be Bvo Result VS"/>
         <status value="active"/>
-        <date value="2022-03-30T15:39:36+00:00"/>
+        <date value="2022-04-06T16:28:25+00:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -90,8 +90,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c8279539-bd17-4b90-9cba-e4db8107a907"/>
-          <timestamp value="2022-03-30T15:39:59+00:00"/>
+          <identifier value="urn:uuid:fb0ebd8d-52bd-48b7-baa5-76da20532ae4"/>
+          <timestamp value="2022-04-06T16:28:43+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -103,7 +103,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -120,6 +120,334 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vsbevolkingsonderzoek-body-site-location"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p>All codes in this table are from the system 
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-80248007"> </a>  
+                  <a href="http://snomed.info/id/80248007">80248007</a>
+                </td>
+                <td>Left breast</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-73056007"> </a>  
+                  <a href="http://snomed.info/id/73056007">73056007</a>
+                </td>
+                <td>Right breast</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location"/>
+        <version value="1.2.0-draft"/>
+        <name value="BeVSBevolkingsonderzoekBodySiteLocation"/>
+        <title value="Be VS Bevolkingsonderzoek Body Site Location"/>
+        <status value="draft"/>
+        <date value="2022-04-06T16:28:25+00:00"/>
+        <publisher value="eHealth Platform"/>
+        <contact>
+          <name value="eHealth Platform"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="message-structure@ehealth.fgov.be"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Sven Dhaens"/>
+          <telecom>
+            <system value="email"/>
+            <value value="sven.dhaens@axians.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Kurt Dhaene"/>
+          <telecom>
+            <system value="email"/>
+            <value value="kurt.dhaene@axians.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Location on body"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:13496f8d-4e42-4afe-840a-f422db90394a"/>
+          <timestamp value="2022-04-06T16:28:44+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80248007"/>
+            <display value="Left breast"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="73056007"/>
+            <display value="Right breast"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice"/>
+    <resource>
+      <ValueSet>
+        <id value="BeVSBevolkingsonderzoekFollowUpAdvice"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 9 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html">BeCSBevolkingsonderzoekFollowUpAdvice v1.2.0-draft (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Mar 2022</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-73761001"> </a>  
+                  <a href="http://snomed.info/id/73761001">73761001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Colonoscopy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-71651007"> </a>  
+                  <a href="http://snomed.info/id/71651007">71651007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mammography</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-43204002"> </a>  
+                  <a href="http://snomed.info/id/43204002">43204002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mammography of both breasts</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-566571000119105"> </a>  
+                  <a href="http://snomed.info/id/566571000119105">566571000119105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mammography of right breast</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-572701000119102"> </a>  
+                  <a href="http://snomed.info/id/572701000119102">572701000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mammography of left breast</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-16310003"> </a>  
+                  <a href="http://snomed.info/id/16310003">16310003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Echography</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-47079000"> </a>  
+                  <a href="http://snomed.info/id/47079000">47079000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Echography of breast</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-308462001"> </a>  
+                  <a href="http://snomed.info/id/308462001">308462001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Referral to pathology service</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice-compare-with-previous-mammography"> </a>  
+                  <a href="CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html#BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography">compare_with_previous_mammography</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice</td>
+                <td>te vergelijken met vorige mammografie</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice"/>
+        <version value="1.2.0-draft"/>
+        <name value="BeVSBevolkingsonderzoekFollowUpAdvice"/>
+        <status value="draft"/>
+        <date value="2022-04-06T16:28:25+00:00"/>
+        <publisher value="eHealth Platform"/>
+        <contact>
+          <name value="eHealth Platform"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="message-structure@ehealth.fgov.be"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Sven Dhaens"/>
+          <telecom>
+            <system value="email"/>
+            <value value="sven.dhaens@axians.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Kurt Dhaene"/>
+          <telecom>
+            <system value="email"/>
+            <value value="kurt.dhaene@axians.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Possible follow up actions"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:92e5dfa7-c576-4fc4-94f7-1581bce5c56d"/>
+          <timestamp value="2022-04-06T16:28:44+00:00"/>
+          <total value="9"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice|1.2.0-draft"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="73761001"/>
+            <display value="Colonoscopy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="71651007"/>
+            <display value="Mammography"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="43204002"/>
+            <display value="Mammography of both breasts"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="566571000119105"/>
+            <display value="Mammography of right breast"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="572701000119102"/>
+            <display value="Mammography of left breast"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="16310003"/>
+            <display value="Echography"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="47079000"/>
+            <display value="Echography of breast"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="308462001"/>
+            <display value="Referral to pathology service"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice"/>
+            <code value="compare_with_previous_mammography"/>
+            <display value="te vergelijken met vorige mammografie"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/bevolkingsonderzoek-screening-vs"/>
     <resource>
       <ValueSet>
@@ -128,9 +456,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
               </a>
             </p>
@@ -172,7 +500,7 @@
         <name value="BevolkingsonderzoekScreeningVS"/>
         <title value="Bevolkingsonderzoek Screening VS"/>
         <status value="draft"/>
-        <date value="2022-03-30T15:39:36+00:00"/>
+        <date value="2022-04-06T16:28:25+00:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -210,8 +538,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f30353d6-b917-4a01-86f8-faad3eee55da"/>
-          <timestamp value="2022-03-30T15:40:05+00:00"/>
+          <identifier value="urn:uuid:61de7062-2e00-422e-bf2f-909ef7a778c0"/>
+          <timestamp value="2022-04-06T16:28:44+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -223,7 +551,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>

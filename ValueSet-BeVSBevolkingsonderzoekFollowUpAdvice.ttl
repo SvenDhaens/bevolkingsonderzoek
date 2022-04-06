@@ -10,13 +10,13 @@
   fhir:Resource.id [ fhir:value "BeVSBevolkingsonderzoekFollowUpAdvice"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://snomed.info/sct/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>73761001</td><td>Colonoscopy</td></tr><tr><td>71651007</td><td>Mammography</td></tr><tr><td>43204002</td><td>Mammography of both breasts</td></tr><tr><td>566571000119105</td><td>Mammography of right breast</td></tr><tr><td>572701000119102</td><td>Mammography of left breast</td></tr><tr><td>16310003</td><td>Echography</td></tr><tr><td>47079000</td><td>Echography of breast</td></tr><tr><td>308462001</td><td>Referral to pathology service</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html#BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography\">compare_with_previous_mammography</a></td><td>te vergelijken met vorige mammografie</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/73761001\">73761001</a></td><td>Colonoscopy</td></tr><tr><td><a href=\"http://snomed.info/id/71651007\">71651007</a></td><td>Mammography</td></tr><tr><td><a href=\"http://snomed.info/id/43204002\">43204002</a></td><td>Mammography of both breasts</td></tr><tr><td><a href=\"http://snomed.info/id/566571000119105\">566571000119105</a></td><td>Mammography of right breast</td></tr><tr><td><a href=\"http://snomed.info/id/572701000119102\">572701000119102</a></td><td>Mammography of left breast</td></tr><tr><td><a href=\"http://snomed.info/id/16310003\">16310003</a></td><td>Echography</td></tr><tr><td><a href=\"http://snomed.info/id/47079000\">47079000</a></td><td>Echography of breast</td></tr><tr><td><a href=\"http://snomed.info/id/308462001\">308462001</a></td><td>Referral to pathology service</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html#BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography\">compare_with_previous_mammography</a></td><td>te vergelijken met vorige mammografie</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice"];
   fhir:ValueSet.version [ fhir:value "1.2.0-draft"];
   fhir:ValueSet.name [ fhir:value "BeVSBevolkingsonderzoekFollowUpAdvice"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-03-30T15:39:36+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-04-06T16:28:25+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -62,7 +62,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct/" ];
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
        fhir:ValueSet.compose.include.concept [
          fhir:index 0;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "73761001" ];

@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -17,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"exampleEpisodeBevolkingsonderzoek\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Be-Bvo-EpisodeOfCare.html\">BE Episode Bevolkingsonderzoek</a></p></div><p><b>identifier</b>: id: 123</p><p><b>status</b>: active</p><p><b>type</b>: Dikkedarmkanker <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SNOMED CT#762444001)</span></p><p><b>patient</b>: <a href=\"Patient-exampleMaleBePatient.html\">Patient/exampleMaleBePatient</a> \" JACK\"</p><p><b>managingOrganization</b>: <a href=\"Organization-CvKO.html\">Organization/CvKO</a> \"Centrum voor Kankeropsporing\"</p><p><b>period</b>: 2014-09-01 --&gt; (ongoing)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"exampleEpisodeBevolkingsonderzoek\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Be-Bvo-EpisodeOfCare.html\">BE Episode Bevolkingsonderzoek</a></p></div><p><b>identifier</b>: id: 123</p><p><b>status</b>: active</p><p><b>type</b>: Dikkedarmkanker <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#762444001)</span></p><p><b>patient</b>: <a href=\"Patient-exampleMaleBePatient.html\">Patient/exampleMaleBePatient</a> \" JACK\"</p><p><b>managingOrganization</b>: <a href=\"Organization-CvKO.html\">Organization/CvKO</a> \"Centrum voor Kankeropsporing\"</p><p><b>period</b>: 2014-09-01 --&gt; (ongoing)</p></div>"
   ];
   fhir:EpisodeOfCare.identifier [
      fhir:index 0;
@@ -29,7 +30,8 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct/" ];
+       a sct:762444001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "762444001" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Dikkedarmkanker" ]
