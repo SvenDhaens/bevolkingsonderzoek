@@ -37,7 +37,7 @@ Usage: #example
 * patient = Reference(exampleMaleBePatient)
 * managingOrganization = Reference(CvKO)
 * period.start = "2014-09-01"
-* type = http://snomed.info/sct/#762444001
+* type = $sct#762444001
 * type.text = "Dikkedarmkanker"
 
 

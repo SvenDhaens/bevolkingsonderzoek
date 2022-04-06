@@ -21,12 +21,13 @@ Usage: #example
 Title: "Breast Cancer Encounter Example"
 Description: "Participation for breastcancer screening"
 * status = #finished
-* class = #AMB
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.code = #AMB
 * episodeOfCare = Reference(exampleEpisodeBevolkingsonderzoek)
 * appointment = Reference(BreastCancerScreeningAppointment)
 * period.start = "2022-03-15T11:30:00.000+02:00"
 * location.location = Reference(mammographicUnit)
-* participant[0].individual = Reference(examplePatient)
+* subject = Reference(JaneDoe)
 * contained[0] = mammographicUnit
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)

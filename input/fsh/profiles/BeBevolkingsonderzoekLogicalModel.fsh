@@ -1,4 +1,5 @@
 Logical: BeBevolkingsonderzoek
+Parent: Element
 Description: "Logical model for recurrent popultation based screening (Bevolkingsonderzoek). The model represents one iteration of a screening, called episode. A patiënt can have multiple episodes for a given screening. A screening of a specific type for a given patiënt can be repeated after a certain period. Each time the screening is repeated results in a new episode."
 * ^status = #draft
 * patient 1..1 Reference(Patient) "The patiënt for the screening."

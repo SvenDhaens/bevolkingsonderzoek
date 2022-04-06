@@ -28,23 +28,23 @@ If the screening was negative, the follow up examination should not be performed
 ValueSet: BeVSBevolkingsonderzoekFollowUpAdvice
 Description: "Possible follow up actions"
 * ^status = #draft
-* http://snomed.info/sct/#73761001 "Colonoscopy"
-* http://snomed.info/sct/#71651007 "Mammography"
-* http://snomed.info/sct/#43204002 "Mammography of both breasts"
-* http://snomed.info/sct/#566571000119105  "Mammography of right breast"
-* http://snomed.info/sct/#572701000119102  "Mammography of left breast"
-* http://snomed.info/sct/#16310003  "Echography"
-* http://snomed.info/sct/#47079000  "Echography of breast"
-* http://snomed.info/sct/#308462001 "Referral to pathology service"
+* http://snomed.info/sct#73761001 "Colonoscopy"
+* http://snomed.info/sct#71651007 "Mammography"
+* http://snomed.info/sct#43204002 "Mammography of both breasts"
+* http://snomed.info/sct#566571000119105  "Mammography of right breast"
+* http://snomed.info/sct#572701000119102  "Mammography of left breast"
+* http://snomed.info/sct#16310003  "Echography"
+* http://snomed.info/sct#47079000  "Echography of breast"
+* http://snomed.info/sct#308462001 "Referral to pathology service"
 * BeCSBevolkingsonderzoekFollowUpAdvice#compare_with_previous_mammography
-// * http://snomed.info/sct/#additional_mammography_or_and_echography_left "Links: bijkomende mammografie en/of echografie"
-// * http://snomed.info/sct/#additional_mammography_or_and_echography_right "Rechts: bijkomende mammografie en/of echografie"
-// * http://snomed.info/sct/#pathological_examination_left "Links: pathologisch onderzoek"
-// * http://snomed.info/sct/#pathological_examination_right "Rechts: pathologisch onderzoek"
-// * http://snomed.info/sct/#mammographic_check_after_6_months_left "Links: mammografische controle(s) na 6 maanden"
-// * http://snomed.info/sct/#mammographic_check_after_6_months_richt "Rechts: mammografische controle(s) na 6 maanden"
-// * http://snomed.info/sct/#compare_with_previous_mammography_left "Links: te vergelijken met vorige mammografie"
-// * http://snomed.info/sct/#compare_with_previous_mammography_right "Rechts: te vergelijken met vorige mammografie"
+// * #additional_mammography_or_and_echography_left "Links: bijkomende mammografie en/of echografie"
+// * #additional_mammography_or_and_echography_right "Rechts: bijkomende mammografie en/of echografie"
+// * #pathological_examination_left "Links: pathologisch onderzoek"
+// * #pathological_examination_right "Rechts: pathologisch onderzoek"
+// * #mammographic_check_after_6_months_left "Links: mammografische controle(s) na 6 maanden"
+// * #mammographic_check_after_6_months_richt "Rechts: mammografische controle(s) na 6 maanden"
+// * #compare_with_previous_mammography_left "Links: te vergelijken met vorige mammografie"
+// * #compare_with_previous_mammography_right "Rechts: te vergelijken met vorige mammografie"
 
 CodeSystem: BeCSBevolkingsonderzoekFollowUpAdvice
 Description: "Code system for follow up advice for Bevolkingsonderzoek screenings"
@@ -65,8 +65,8 @@ Id: be-vsbevolkingsonderzoek-body-site-location
 Title: "Be VS Bevolkingsonderzoek Body Site Location"
 Description: "Location on body"
 * ^status = #draft
-* http://snomed.info/sct/#80248007 "Left breast"
-* http://snomed.info/sct/#73056007 "Right breast"
+* http://snomed.info/sct#80248007 "Left breast"
+* http://snomed.info/sct#73056007 "Right breast"
 
 Instance: ColorectalCancerScreeningFollowUpExample
 InstanceOf: BeBevolkingsonderzoekFollowUp
@@ -76,7 +76,7 @@ Description: "Follow up after positive colorectal cancer screening"
 * intent = #proposal
 * status = #active
 * subject = Reference(JaneDoe)
-* code = http://snomed.info/sct/#73761001
+* code = http://snomed.info/sct#73761001
 * patientInstruction = "Colonoscopie"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
@@ -89,10 +89,10 @@ Description: "Follow up after positive breast cancer screening. This is a propos
 * intent = #proposal
 * status = #active
 * subject = Reference(JaneDoe)
-* code = http://snomed.info/sct/#71651007
+* code = http://snomed.info/sct#71651007
 * code.text = "bijkomende mammografie"
 * patientInstruction = "Rechts: bijkomende mammografie"
-* bodySite = http://snomed.info/sct/#73056007
+* bodySite = http://snomed.info/sct#73056007
 * bodySite.text = "Rechterborst"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
@@ -107,10 +107,10 @@ Description: "Follow up after positive breast cancer screening. This is a propos
 * intent = #proposal
 * status = #active
 * subject = Reference(JaneDoe)
-* code = http://snomed.info/sct/#71651007
+* code = http://snomed.info/sct#71651007
 * code.text = "bijkomende mammografie"
 * patientInstruction = "Links: mammografische controle na 6 maanden"
-* bodySite = http://snomed.info/sct/#80248007
+* bodySite = http://snomed.info/sct#80248007
 * bodySite.text = "Linkerborst"
 * occurrencePeriod.start = "2022-09-15"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"

@@ -12,8 +12,9 @@ Usage: #example
 Title: "Appointment Breast Cancer Screening"
 Description: "Appointment for mammography in a mammographic unit in context of breast cancer screening"
 * status = #booked
-* start = "2022-03-15T10:15:00.000+02:00"
-* participant[0].actor = Reference(examplePatient)
+* start = "2022-03-15T00:00:00.000+02:00"
+* end = "2022-03-15T23:59:00.000+02:00"
+* participant[0].actor = Reference(JaneDoe)
 * participant[=].status = #tentative
 * participant[+].actor = Reference(mammographicUnit)
 * participant[=].status = #accepted
@@ -27,8 +28,9 @@ Usage: #example
 Title: "Appointment Colon Cancer Screening"
 Description: "Appointment for stool sample in context of colon cancer screening"
 * status = #booked
-* start = "2022-03-15T10:15:00.000+02:00"
-* participant[0].actor = Reference(examplePatient)
+* start = "2022-03-15T00:00:00.000+02:00"
+* end = "2022-03-15T23:59:00.000+02:00"
+* participant[0].actor = Reference(JaneDoe)
 * participant[=].status = #tentative
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
@@ -40,8 +42,9 @@ Usage: #example
 Title: "Appointment Cervical Cancer Screening"
 Description: "Proposed appointment in context of cervical cancer screening"
 * status = #proposed
-* start = "2022-03-15T10:15:00.000+02:00"
-* participant[0].actor = Reference(examplePatient)
+* start = "2022-03-15T00:00:00.000+02:00"
+* end = "2022-03-15T23:59:00.000+02:00"
+* participant[0].actor = Reference(JaneDoe)
 * participant[=].status = #tentative
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
