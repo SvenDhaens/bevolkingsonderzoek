@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a12ac36c-a054-43d9-b463-b04c793b00d1",
+  "id" : "5d058863-6722-4b7c-8226-53256215b740",
   "meta" : {
-    "lastUpdated" : "2022-03-30T15:39:36.420+00:00"
+    "lastUpdated" : "2022-04-06T16:28:25.264+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,14 +12,14 @@
       "id" : "be-bvo-result-vs",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-280415008\"> </a>  <a href=\"http://snomed.info/id/280415008\">280415008</a></td><td>afwijkend</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-280413001\"> </a>  <a href=\"http://snomed.info/id/280413001\">280413001</a></td><td>niet afwijkend</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Mar 2022</p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-280415008\"> </a>  <a href=\"http://snomed.info/id/280415008\">280415008</a></td><td>afwijkend</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-280413001\"> </a>  <a href=\"http://snomed.info/id/280413001\">280413001</a></td><td>niet afwijkend</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-bvo-result-vs",
       "version" : "1.2.0-draft",
       "name" : "BeBvoResultVS",
       "title" : "Be Bvo Result VS",
       "status" : "active",
-      "date" : "2022-03-30T15:39:36+00:00",
+      "date" : "2022-04-06T16:28:25+00:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -57,8 +57,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c8279539-bd17-4b90-9cba-e4db8107a907",
-        "timestamp" : "2022-03-30T15:39:59+00:00",
+        "identifier" : "urn:uuid:fb0ebd8d-52bd-48b7-baa5-76da20532ae4",
+        "timestamp" : "2022-04-06T16:28:43+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -70,7 +70,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -86,20 +86,218 @@
     }
   },
   {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vsbevolkingsonderzoek-body-site-location",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Mar 2022</p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-80248007\"> </a>  <a href=\"http://snomed.info/id/80248007\">80248007</a></td><td>Left breast</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-73056007\"> </a>  <a href=\"http://snomed.info/id/73056007\">73056007</a></td><td>Right breast</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vsbevolkingsonderzoek-body-site-location",
+      "version" : "1.2.0-draft",
+      "name" : "BeVSBevolkingsonderzoekBodySiteLocation",
+      "title" : "Be VS Bevolkingsonderzoek Body Site Location",
+      "status" : "draft",
+      "date" : "2022-04-06T16:28:25+00:00",
+      "publisher" : "eHealth Platform",
+      "contact" : [{
+        "name" : "eHealth Platform",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "message-structure@ehealth.fgov.be"
+        }]
+      },
+      {
+        "name" : "Sven Dhaens",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "sven.dhaens@axians.com",
+          "use" : "work"
+        }]
+      },
+      {
+        "name" : "Kurt Dhaene",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "kurt.dhaene@axians.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Location on body",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:13496f8d-4e42-4afe-840a-f422db90394a",
+        "timestamp" : "2022-04-06T16:28:44+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "80248007",
+          "display" : "Left breast"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "73056007",
+          "display" : "Right breast"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BeVSBevolkingsonderzoekFollowUpAdvice",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 9 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html\">BeCSBevolkingsonderzoekFollowUpAdvice v1.2.0-draft (CodeSystem)</a></li><li>SNOMED CT International edition 31-Mar 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-73761001\"> </a>  <a href=\"http://snomed.info/id/73761001\">73761001</a></td><td>http://snomed.info/sct</td><td>Colonoscopy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-71651007\"> </a>  <a href=\"http://snomed.info/id/71651007\">71651007</a></td><td>http://snomed.info/sct</td><td>Mammography</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-43204002\"> </a>  <a href=\"http://snomed.info/id/43204002\">43204002</a></td><td>http://snomed.info/sct</td><td>Mammography of both breasts</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-566571000119105\"> </a>  <a href=\"http://snomed.info/id/566571000119105\">566571000119105</a></td><td>http://snomed.info/sct</td><td>Mammography of right breast</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-572701000119102\"> </a>  <a href=\"http://snomed.info/id/572701000119102\">572701000119102</a></td><td>http://snomed.info/sct</td><td>Mammography of left breast</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-16310003\"> </a>  <a href=\"http://snomed.info/id/16310003\">16310003</a></td><td>http://snomed.info/sct</td><td>Echography</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47079000\"> </a>  <a href=\"http://snomed.info/id/47079000\">47079000</a></td><td>http://snomed.info/sct</td><td>Echography of breast</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-308462001\"> </a>  <a href=\"http://snomed.info/id/308462001\">308462001</a></td><td>http://snomed.info/sct</td><td>Referral to pathology service</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice-compare-with-previous-mammography\"> </a>  <a href=\"CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.html#BeCSBevolkingsonderzoekFollowUpAdvice-compare_with_previous_mammography\">compare_with_previous_mammography</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice</td><td>te vergelijken met vorige mammografie</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/BeVSBevolkingsonderzoekFollowUpAdvice",
+      "version" : "1.2.0-draft",
+      "name" : "BeVSBevolkingsonderzoekFollowUpAdvice",
+      "status" : "draft",
+      "date" : "2022-04-06T16:28:25+00:00",
+      "publisher" : "eHealth Platform",
+      "contact" : [{
+        "name" : "eHealth Platform",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "message-structure@ehealth.fgov.be"
+        }]
+      },
+      {
+        "name" : "Sven Dhaens",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "sven.dhaens@axians.com",
+          "use" : "work"
+        }]
+      },
+      {
+        "name" : "Kurt Dhaene",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "kurt.dhaene@axians.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Possible follow up actions",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:92e5dfa7-c576-4fc4-94f7-1581bce5c56d",
+        "timestamp" : "2022-04-06T16:28:44+00:00",
+        "total" : 9,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice|1.2.0-draft"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "73761001",
+          "display" : "Colonoscopy"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "71651007",
+          "display" : "Mammography"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "43204002",
+          "display" : "Mammography of both breasts"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "566571000119105",
+          "display" : "Mammography of right breast"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "572701000119102",
+          "display" : "Mammography of left breast"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "16310003",
+          "display" : "Echography"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "47079000",
+          "display" : "Echography of breast"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "308462001",
+          "display" : "Referral to pathology service"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice",
+          "code" : "compare_with_previous_mammography",
+          "display" : "te vergelijken met vorige mammografie"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/bevolkingsonderzoek-screening-vs",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "bevolkingsonderzoek-screening-vs",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-268547008\"> </a>  <a href=\"http://snomed.info/id/268547008\">268547008</a></td><td>Borstkanker</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-762444001\"> </a>  <a href=\"http://snomed.info/id/762444001\">762444001</a></td><td>Dikkedarmkanker</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-171149006\"> </a>  <a href=\"http://snomed.info/id/171149006\">171149006</a></td><td>Baarmoederhalskanker</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Mar 2022</p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-268547008\"> </a>  <a href=\"http://snomed.info/id/268547008\">268547008</a></td><td>Borstkanker</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-762444001\"> </a>  <a href=\"http://snomed.info/id/762444001\">762444001</a></td><td>Dikkedarmkanker</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-171149006\"> </a>  <a href=\"http://snomed.info/id/171149006\">171149006</a></td><td>Baarmoederhalskanker</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/bevolkingsonderzoek-screening-vs",
       "version" : "1.2.0-draft",
       "name" : "BevolkingsonderzoekScreeningVS",
       "title" : "Bevolkingsonderzoek Screening VS",
       "status" : "draft",
-      "date" : "2022-03-30T15:39:36+00:00",
+      "date" : "2022-04-06T16:28:25+00:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -137,8 +335,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f30353d6-b917-4a01-86f8-faad3eee55da",
-        "timestamp" : "2022-03-30T15:40:05+00:00",
+        "identifier" : "urn:uuid:61de7062-2e00-422e-bf2f-909ef7a778c0",
+        "timestamp" : "2022-04-06T16:28:44+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -150,7 +348,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",

@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ColonCancerScreeningAppointment\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-appointment.html\">Be Bvo Appointment</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: booked</p><p><b>start</b>: Mar 15, 2022, 8:15:00 AM</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"examplePatient\">examplePatient</a></td><td>tentative</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ColonCancerScreeningAppointment\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-appointment.html\">Be Bvo Appointment</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: booked</p><p><b>start</b>: Mar 14, 2022, 10:00:00 PM</p><p><b>end</b>: Mar 15, 2022, 9:59:00 PM</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</td><td>tentative</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -28,11 +28,13 @@
      ]
   ];
   fhir:Appointment.status [ fhir:value "booked"];
-  fhir:Appointment.start [ fhir:value "2022-03-15T10:15:00.000+02:00"^^xsd:dateTime];
+  fhir:Appointment.start [ fhir:value "2022-03-15T00:00:00.000+02:00"^^xsd:dateTime];
+  fhir:Appointment.end [ fhir:value "2022-03-15T23:59:00.000+02:00"^^xsd:dateTime];
   fhir:Appointment.participant [
      fhir:index 0;
      fhir:Appointment.participant.actor [
-       fhir:Reference.reference [ fhir:value "examplePatient" ]
+       fhir:link <http://example.com/fhir/example/Patient/JaneDoe>;
+       fhir:Reference.reference [ fhir:value "Patient/JaneDoe" ]
      ];
      fhir:Appointment.participant.status [ fhir:value "tentative" ]
   ] .

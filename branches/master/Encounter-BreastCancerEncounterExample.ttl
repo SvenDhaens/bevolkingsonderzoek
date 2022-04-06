@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BreastCancerEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-encounter.html\">Be Bvo Encounter</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: finished</p><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"examplePatient\">examplePatient</a></td></tr></table><p><b>appointment</b>: <a href=\"Appointment-BreastCancerScreeningAppointment.html\">Appointment/BreastCancerScreeningAppointment</a></p><p><b>period</b>: 2022-03-15 11:30:00+0200 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a name=\"mammographicUnit\"> </a><blockquote><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"mammographicUnit\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-location.html\">Be Location</a></p></div><p><b>name</b>: Mammografic unit example name</p><p><b>address</b>: Verlorenbroodstraat 122, 9820 Merelbeke</p></blockquote></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BreastCancerEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-encounter.html\">Be Bvo Encounter</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.html\">EpisodeOfCare/exampleEpisodeBevolkingsonderzoek</a></p><p><b>appointment</b>: <a href=\"Appointment-BreastCancerScreeningAppointment.html\">Appointment/BreastCancerScreeningAppointment</a></p><p><b>period</b>: 2022-03-15 11:30:00+0200 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a name=\"mammographicUnit\"> </a><blockquote><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"mammographicUnit\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-location.html\">Be Location</a></p></div><p><b>name</b>: Mammografic unit example name</p><p><b>address</b>: Verlorenbroodstraat 122, 9820 Merelbeke</p></blockquote></td></tr></table></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:Location;
@@ -66,18 +66,17 @@
   ];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
      fhir:Coding.code [ fhir:value "AMB" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <http://example.com/fhir/example/Patient/JaneDoe>;
+     fhir:Reference.reference [ fhir:value "Patient/JaneDoe" ]
   ];
   fhir:Encounter.episodeOfCare [
      fhir:index 0;
      fhir:link <http://example.com/fhir/example/EpisodeOfCare/exampleEpisodeBevolkingsonderzoek>;
      fhir:Reference.reference [ fhir:value "EpisodeOfCare/exampleEpisodeBevolkingsonderzoek" ]
-  ];
-  fhir:Encounter.participant [
-     fhir:index 0;
-     fhir:Encounter.participant.individual [
-       fhir:Reference.reference [ fhir:value "examplePatient" ]
-     ]
   ];
   fhir:Encounter.appointment [
      fhir:index 0;
