@@ -307,6 +307,17 @@
         <reference value="StructureDefinition/BvoNextInvitationIndication"/>
       </reference>
       <name value="BvoNextInvitationIndication"/>
+      <description value="This is variable text giving an estimate when the next screening is scheduled, if there is any and why."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BvoNextInvitationIndicationDate"/>
+      </reference>
+      <name value="BvoNextInvitationIndicationDate"/>
       <description value="The estimated date on which to expect the next invitation"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -375,6 +386,76 @@
       <name value="BeCSBevolkingsonderzoekFollowUpAdvice"/>
       <description value="Code system for follow up advice for Bevolkingsonderzoek screenings"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EpisodeOfCare"/>
+      </extension>
+      <reference>
+        <reference value="EpisodeOfCare/BK-1-no-screening-example-episode"/>
+      </reference>
+      <name value="BK-1-no-screening-example-episode"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EpisodeOfCare"/>
+      </extension>
+      <reference>
+        <reference value="EpisodeOfCare/BK-2-invitation-example-episode"/>
+      </reference>
+      <name value="BK-2-invitation-example-episode"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/BK-2-invitation-example-invitation"/>
+      </reference>
+      <name value="BK-2-invitation-example-invitation"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/BK-3-invitation-participation-negative-example-appointment"/>
+      </reference>
+      <name value="BK-3-invitation-participation-negative-example-appointment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/BK-3-invitation-participation-negative-example-encounter"/>
+      </reference>
+      <name value="BK-3-invitation-participation-negative-example-encounter"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EpisodeOfCare"/>
+      </extension>
+      <reference>
+        <reference value="EpisodeOfCare/BK-3-invitation-participation-negative-example-episode"/>
+      </reference>
+      <name value="BK-3-invitation-participation-negative-example-episode"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BK-3-invitation-participation-negative-example-observation"/>
+      </reference>
+      <name value="BK-3-invitation-participation-negative-example-observation"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

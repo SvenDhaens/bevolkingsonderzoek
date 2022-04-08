@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BevolkingsonderzoekScreeningVS"];
   fhir:ValueSet.title [ fhir:value "Bevolkingsonderzoek Screening VS"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-04-06T16:28:25+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-04-08T16:35:46+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;

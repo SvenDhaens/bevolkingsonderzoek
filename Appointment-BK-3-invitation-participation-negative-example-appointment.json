@@ -1,0 +1,51 @@
+{
+  "resourceType": "Appointment",
+  "id": "BK-3-invitation-participation-negative-example-appointment",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-3-invitation-participation-negative-example-appointment\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-appointment.html\">Be Bvo Appointment</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare/3237640\">EpisodeOfCare/3237640</a></p><p><b>status</b>: booked</p><p><b>start</b>: Apr 7, 2021, 10:00:00 PM</p><p><b>end</b>: Apr 8, 2021, 9:59:00 PM</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>status</b>: tentative</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"1\">1</a></p><p><b>status</b>: accepted</p></blockquote></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Location",
+      "id": "1",
+      "name": "AZ Jan Palfijn Gent",
+      "address": {
+        "text": "HENRI DUNANTLAAN 5, 9000 GENT",
+        "line": [
+          "HENRI DUNANTLAAN 5, 9000 GENT"
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+      "valueReference": {
+        "reference": "EpisodeOfCare/3237640"
+      }
+    }
+  ],
+  "status": "booked",
+  "start": "2021-04-08T00:00:00.000+02:00",
+  "end": "2021-04-08T23:59:00.000+02:00",
+  "participant": [
+    {
+      "actor": {
+        "reference": "Patient/JaneDoe"
+      },
+      "status": "tentative"
+    },
+    {
+      "actor": {
+        "reference": "1"
+      },
+      "status": "accepted"
+    }
+  ]
+}
