@@ -8,12 +8,18 @@ Description:    "Manages a recurring periodical workflow for diagnostics in rega
 * patient 1..1
 * type from BevolkingsonderzoekScreeningVS (extensible) 
 // * extension contains BvoConditionCode named Condition 0..1 MS
-* extension contains BvoNextInvitationIndication named nextInvitationDate 0..1
+* extension contains BvoNextInvitationIndicationDate named nextInvitationDate 0..1
+* extension contains BvoNextInvitationIndication named nextInvitationIndication 1..1
 
-Extension: BvoNextInvitationIndication
+Extension: BvoNextInvitationIndicationDate
 Description: "The estimated date on which to expect the next invitation"
 * ^status = #draft
 * value[x] only date
+
+Extension: BvoNextInvitationIndication
+Description: "This is variable text giving an estimate when the next screening is scheduled, if there is any and why."
+* ^status = #draft
+* value[x] only String
 
 // Extension: BvoConditionCode
 // Description: "The certainty of diagnosis"

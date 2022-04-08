@@ -67,6 +67,7 @@ Description: "Location on body"
 * ^status = #draft
 * http://snomed.info/sct#80248007 "Left breast"
 * http://snomed.info/sct#73056007 "Right breast"
+// * http://snomed.info/sct#63762007 "Both breasts"
 
 Instance: ColorectalCancerScreeningFollowUpExample
 InstanceOf: BeBevolkingsonderzoekFollowUp
@@ -112,7 +113,7 @@ Description: "Follow up after positive breast cancer screening. This is a propos
 * patientInstruction = "Links: mammografische controle na 6 maanden"
 * bodySite = http://snomed.info/sct#80248007
 * bodySite.text = "Linkerborst"
-* occurrencePeriod.start = "2022-09-15"
+* occurrenceDateTime = "2022-09-15"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
