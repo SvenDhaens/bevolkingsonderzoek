@@ -1,17 +1,24 @@
 ﻿TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG : Validation Results
 =========================================
 
-err = 7, warn = 22, info = 1
+err = 26, warn = 36, info = 1
 IG Publisher Version: 1.1.114
-Generated Wed Apr 06 16:28:56 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
- Build Errors : 0 / 4 / 0
+Generated Fri Apr 08 16:36:21 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+ Build Errors : 11 / 11 / 0
+ /github/workspace/fsh-generated/resources/Appointment-BK-2-invitation-example-invitation : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/Appointment-BK-3-invitation-participation-negative-example-appointment : 4 / 0 / 2
  /github/workspace/fsh-generated/resources/Appointment-BreastCancerScreeningAppointment : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-ColonCancerScreeningAppointment : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Encounter-BK-3-invitation-participation-negative-example-encounter : 6 / 0 / 2
  /github/workspace/fsh-generated/resources/Encounter-BreastCancerEncounterExample : 1 / 0 / 3
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-1-no-screening-example-episode : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-2-invitation-example-episode : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-3-invitation-participation-negative-example-episode : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-BK-3-invitation-participation-negative-example-observation : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-PositiveBreastCancerResult : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CvKO : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-JaneDoe : 0 / 0 / 1
@@ -21,7 +28,8 @@ Generated Wed Apr 06 16:28:56 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevol
  /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Be-Bvo-EpisodeOfCare : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeBevolkingsonderzoek : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BvoNextInvitationIndicationDate : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-appointment : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-bvo-encounter : 0 / 1 / 1
@@ -34,9 +42,37 @@ Generated Wed Apr 06 16:28:56 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevol
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/BK-1-no-screening-example-episode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/BK-2-invitation-example-episode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/BK-2-invitation-example-invitation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/BK-3-invitation-participation-negative-example-appointment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/BK-3-invitation-participation-negative-example-encounter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/BK-3-invitation-participation-negative-example-episode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BK-3-invitation-participation-negative-example-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/CvKO.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/exampleEpisodeBevolkingsonderzoek.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/exampleMaleBePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Appointment-BK-2-invitation-example-invitation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 475: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Appointment-BK-2-invitation-example-invitation.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 874: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/Appointment-BK-3-invitation-participation-negative-example-appointment.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 499: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Appointment-BK-3-invitation-participation-negative-example-appointment.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 898: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-3-invitation-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 493: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-3-invitation-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 821: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-3-invitation-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 1059: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/EpisodeOfCare-BK-1-no-screening-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 1102: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
+ERROR: /github/workspace/output/EpisodeOfCare-BK-2-invitation-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 993: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
+ERROR: /github/workspace/output/EpisodeOfCare-BK-3-invitation-participation-negative-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 977: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
+ERROR: /github/workspace/output/Observation-BK-3-invitation-participation-negative-example-observation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 499: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+== fsh-generated/resources/Appointment-BK-2-invitation-example-invitation.json ==
+ERROR: Appointment/BK-2-invitation-example-invitation: Appointment: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 1))
+ERROR: Appointment/BK-2-invitation-example-invitation: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
+ERROR: Appointment/BK-2-invitation-example-invitation: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Appointment/BK-2-invitation-example-invitation: Appointment.participant[1].actor: Unable to resolve resource '1'
+== fsh-generated/resources/Appointment-BK-3-invitation-participation-negative-example-appointment.json ==
+ERROR: Appointment/BK-3-invitation-participation-negative-example-appointment: Appointment: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 1))
+ERROR: Appointment/BK-3-invitation-participation-negative-example-appointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
+ERROR: Appointment/BK-3-invitation-participation-negative-example-appointment: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Appointment/BK-3-invitation-participation-negative-example-appointment: Appointment.participant[1].actor: Unable to resolve resource '1'
 == fsh-generated/resources/Appointment-BreastCancerScreeningAppointment.json ==
 ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
 == fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment.json ==
@@ -46,14 +82,36 @@ ERROR: Appointment/ColonCancerScreeningAppointment: Appointment: The modifier ex
 == fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice.json ==
 WARNING: CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice: CodeSystem.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 INFORMATION: CodeSystem/BeCSBevolkingsonderzoekFollowUpAdvice: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/Encounter-BK-3-invitation-participation-negative-example-encounter.json ==
+ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 1))
+ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Encounter])
+ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter.class: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB in http://terminology.hl7.org/CodeSystem/v3-ActCode for 'http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB'
+ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter.episodeOfCare[0]: Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter.location[0].location: Unable to resolve resource '1'
 == fsh-generated/resources/Encounter-BreastCancerEncounterExample.json ==
 ERROR: Encounter/BreastCancerEncounterExample: Encounter: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Encounter])
+== fsh-generated/resources/EpisodeOfCare-BK-1-no-screening-example-episode.json ==
+WARNING: EpisodeOfCare/BK-1-no-screening-example-episode: EpisodeOfCare.extension[0].value.ofType(string): value should not start or finish with whitespace 'Je...arts. '
+WARNING: EpisodeOfCare/BK-1-no-screening-example-episode: EpisodeOfCare.type[0]: The display "Bevolkingsonderzoek borstkanker" is not a valid display for the code {http://snomed.info/sct}268547008 - should be one of ['Breast neoplasm screening', 'Screening for malignant neoplasm of breast', 'Screening for malignant neoplasm of breast (procedure)', 'Breast cancer screening', 'Screening for breast cancer'] (from http://tx.fhir.org/r4)
+ERROR: EpisodeOfCare/BK-1-no-screening-example-episode: EpisodeOfCare.managingOrganization: Unable to resolve resource 'organization/CvKO'
+== fsh-generated/resources/EpisodeOfCare-BK-2-invitation-example-episode.json ==
+WARNING: EpisodeOfCare/BK-2-invitation-example-episode: EpisodeOfCare.extension[0].value.ofType(string): value should not start or finish with whitespace 'De...onderzoek. '
+WARNING: EpisodeOfCare/BK-2-invitation-example-episode: EpisodeOfCare.type[0]: The display "Bevolkingsonderzoek borstkanker" is not a valid display for the code {http://snomed.info/sct}268547008 - should be one of ['Breast neoplasm screening', 'Screening for malignant neoplasm of breast', 'Screening for malignant neoplasm of breast (procedure)', 'Breast cancer screening', 'Screening for breast cancer'] (from http://tx.fhir.org/r4)
+ERROR: EpisodeOfCare/BK-2-invitation-example-episode: EpisodeOfCare.managingOrganization: Unable to resolve resource 'organization/CvKO'
+== fsh-generated/resources/EpisodeOfCare-BK-3-invitation-participation-negative-example-episode.json ==
+WARNING: EpisodeOfCare/BK-3-invitation-participation-negative-example-episode: EpisodeOfCare.type[0]: The display "Bevolkingsonderzoek borstkanker" is not a valid display for the code {http://snomed.info/sct}268547008 - should be one of ['Breast neoplasm screening', 'Screening for malignant neoplasm of breast', 'Screening for malignant neoplasm of breast (procedure)', 'Breast cancer screening', 'Screening for breast cancer'] (from http://tx.fhir.org/r4)
+ERROR: EpisodeOfCare/BK-3-invitation-participation-negative-example-episode: EpisodeOfCare.managingOrganization: Unable to resolve resource 'organization/CvKO'
 == fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.json ==
 == fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: fed.be.core.bevolkingsonderzoek-ig/http://example.com/fhir/example
 WARNING: ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig: ImplementationGuide.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig vs http://example.com/fhir/example
+== fsh-generated/resources/Observation-BK-3-invitation-participation-negative-example-observation.json ==
+ERROR: Observation/BK-3-invitation-participation-negative-example-observation: Observation.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Observation/BK-3-invitation-participation-negative-example-observation: Observation.status: The value provided ('FINAL') is not in the value set 'ObservationStatus' (http://hl7.org/fhir/ValueSet/observation-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/observation-status#FINAL in http://hl7.org/fhir/observation-status)
+WARNING: Observation/BK-3-invitation-participation-negative-example-observation: Observation.code: The display "Niet afwijkend" is not a valid display for the code {http://snomed.info/sct}280413001 - should be one of ['Normal result', 'Normal result (qualifier value)'] (from http://tx.fhir.org/r4)
 == fsh-generated/resources/Observation-PositiveBreastCancerResult.json ==
 == fsh-generated/resources/Organization-CvKO.json ==
 == fsh-generated/resources/Patient-JaneDoe.json ==
@@ -69,7 +127,9 @@ WARNING: StructureDefinition/BeBevolkingsonderzoek: StructureDefinition.snapshot
 WARNING: StructureDefinition/BeBevolkingsonderzoek: StructureDefinition.differential.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 == fsh-generated/resources/StructureDefinition-BvoNextInvitationIndication.json ==
 WARNING: StructureDefinition/BvoNextInvitationIndication: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
-WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-BvoNextInvitationIndicationDate.json ==
+WARNING: StructureDefinition/BvoNextInvitationIndicationDate: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndicationDate'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-be-bevolkingsonderzoek-follow-up.json ==
 WARNING: StructureDefinition/be-bevolkingsonderzoek-follow-up: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 == fsh-generated/resources/StructureDefinition-be-bvo-appointment.json ==

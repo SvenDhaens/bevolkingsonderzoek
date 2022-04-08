@@ -457,6 +457,20 @@
           "reference": "StructureDefinition/BvoNextInvitationIndication"
         },
         "name": "BvoNextInvitationIndication",
+        "description": "This is variable text giving an estimate when the next screening is scheduled, if there is any and why.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BvoNextInvitationIndicationDate"
+        },
+        "name": "BvoNextInvitationIndicationDate",
         "description": "The estimated date on which to expect the next invitation",
         "exampleBoolean": false
       },
@@ -543,6 +557,97 @@
         "name": "BeCSBevolkingsonderzoekFollowUpAdvice",
         "description": "Code system for follow up advice for Bevolkingsonderzoek screenings",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "EpisodeOfCare"
+          }
+        ],
+        "reference": {
+          "reference": "EpisodeOfCare/BK-1-no-screening-example-episode"
+        },
+        "name": "BK-1-no-screening-example-episode",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "EpisodeOfCare"
+          }
+        ],
+        "reference": {
+          "reference": "EpisodeOfCare/BK-2-invitation-example-episode"
+        },
+        "name": "BK-2-invitation-example-episode",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/BK-2-invitation-example-invitation"
+        },
+        "name": "BK-2-invitation-example-invitation",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/BK-3-invitation-participation-negative-example-appointment"
+        },
+        "name": "BK-3-invitation-participation-negative-example-appointment",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/BK-3-invitation-participation-negative-example-encounter"
+        },
+        "name": "BK-3-invitation-participation-negative-example-encounter",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "EpisodeOfCare"
+          }
+        ],
+        "reference": {
+          "reference": "EpisodeOfCare/BK-3-invitation-participation-negative-example-episode"
+        },
+        "name": "BK-3-invitation-participation-negative-example-episode",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BK-3-invitation-participation-negative-example-observation"
+        },
+        "name": "BK-3-invitation-participation-negative-example-observation",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation"
       },
       {
         "extension": [

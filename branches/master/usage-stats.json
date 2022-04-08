@@ -8,6 +8,13 @@
       "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication",
       "title": "BvoNextInvitationIndication",
       "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndicationDate",
+      "title": "BvoNextInvitationIndicationDate",
+      "types": [
         "date"
       ]
     }
@@ -112,6 +119,9 @@
       "ImplementationGuide.definition.resource"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication": [
+      "EpisodeOfCare"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndicationDate": [
       "EpisodeOfCare"
     ]
   }
