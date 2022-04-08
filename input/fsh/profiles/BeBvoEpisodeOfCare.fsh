@@ -19,7 +19,7 @@ Description: "The estimated date on which to expect the next invitation"
 Extension: BvoNextInvitationIndication
 Description: "This is variable text giving an estimate when the next screening is scheduled, if there is any and why."
 * ^status = #draft
-* value[x] only String
+* value[x] only string
 
 // Extension: BvoConditionCode
 // Description: "The certainty of diagnosis"
@@ -45,6 +45,8 @@ Usage: #example
 * period.start = "2014-09-01"
 * type = $sct#762444001
 * type.text = "Dikkedarmkanker"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
+* extension.valueString = "De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek."
 
 
 Instance: exampleMaleBePatient
