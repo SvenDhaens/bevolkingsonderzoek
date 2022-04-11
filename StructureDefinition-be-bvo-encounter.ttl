@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeBvoEncounter"];
   fhir:StructureDefinition.title [ fhir:value "Be Bvo Encounter"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-08T16:35:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-11T16:06:52+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BK-5-negative-result"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "BK-5-negative-result" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-be-bvo-observation.html">Be Bvo Observation</a></p></div><p><b>Episode of Care</b>: <a href="EpisodeOfCare/3237640">EpisodeOfCare/3237640</a></p><p><b>status</b>: final</p><p><b>code</b>: Niet afwijkend <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#280413001)</span></p><p><b>subject</b>: <a href="Patient-JaneDoe.html">Patient/JaneDoe</a> " DOE"</p><p><b>encounter</b>: <a href="1">1</a></p></div>
+  </text>
+  <contained>
+    <Encounter>
+      <id value="1"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare">
+        <valueReference>
+          <reference value="EpisodeOfCare/3237640"/>
+        </valueReference>
+      </extension>
+      <status value="finished"/>
+      <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="#AMB"/>
+      </class>
+      <subject>
+        <reference value="Patient/JaneDoe"/>
+      </subject>
+      <episodeOfCare>
+        <reference value="EpisodeOfCare/3237640"/>
+      </episodeOfCare>
+      <period>
+        <start value="2021-07-17T00:00:00+02:00"/>
+        <end value="2021-07-17T23:59:00+02:00"/>
+      </period>
+      <location>
+        <location>
+          <reference value="#1"/>
+        </location>
+      </location>
+    </Encounter>
+  </contained>
+  <contained>
+    <Location>
+      <id value="1"/>
+      <name value="AZ Jan Palfijn Gent"/>
+      <address>
+        <text value="HENRI DUNANTLAAN 5, 9000 GENT"/>
+        <line value="HENRI DUNANTLAAN 5, 9000 GENT"/>
+      </address>
+    </Location>
+  </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare">
+    <valueReference>
+      <reference value="EpisodeOfCare/3237640"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="280413001"/>
+      <display value="Niet afwijkend"/>
+    </coding>
+    <text value="Niet afwijkend"/>
+  </code>
+  <subject>
+    <reference value="Patient/JaneDoe"/>
+  </subject>
+  <encounter>
+    <reference value="1"/>
+  </encounter>
+</Observation>

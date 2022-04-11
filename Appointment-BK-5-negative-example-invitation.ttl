@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Appointment/BK-5-negative-example-invitation> a fhir:Appointment;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BK-5-negative-example-invitation"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-5-negative-example-invitation\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-appointment.html\">Be Bvo Appointment</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare/3237640\">EpisodeOfCare/3237640</a></p><p><b>status</b>: booked</p><p><b>start</b>: Apr 7, 2021, 10:00:00 PM</p><p><b>end</b>: Apr 8, 2021, 9:59:00 PM</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>status</b>: tentative</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"1\">1</a></p><p><b>status</b>: accepted</p></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "1" ];
+     fhir:Location.name [ fhir:value "AZ Jan Palfijn Gent" ];
+     fhir:Location.address [
+       fhir:Address.text [ fhir:value "HENRI DUNANTLAAN 5, 9000 GENT" ];
+       fhir:Address.line [
+         fhir:value "HENRI DUNANTLAAN 5, 9000 GENT";
+         fhir:index 0
+       ]
+     ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://example.com/fhir/example/EpisodeOfCare/3237640>;
+       fhir:Reference.reference [ fhir:value "EpisodeOfCare/3237640" ]
+     ]
+  ];
+  fhir:Appointment.status [ fhir:value "booked"];
+  fhir:Appointment.start [ fhir:value "2021-04-08T00:00:00.000+02:00"^^xsd:dateTime];
+  fhir:Appointment.end [ fhir:value "2021-04-08T23:59:00.000+02:00"^^xsd:dateTime];
+  fhir:Appointment.participant [
+     fhir:index 0;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://example.com/fhir/example/Patient/JaneDoe>;
+       fhir:Reference.reference [ fhir:value "Patient/JaneDoe" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "tentative" ]
+  ], [
+     fhir:index 1;
+     fhir:Appointment.participant.actor [
+       fhir:Reference.reference [ fhir:value "1" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/example/Appointment/BK-5-negative-example-invitation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

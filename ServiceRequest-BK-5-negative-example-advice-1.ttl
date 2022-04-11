@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/ServiceRequest/BK-5-negative-example-advice-1> a fhir:ServiceRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BK-5-negative-example-advice-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-5-negative-example-advice-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bevolkingsonderzoek-follow-up.html\">Be Bevolkingsonderzoek Follow Up</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare/3237640\">EpisodeOfCare/3237640</a></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: Mammografie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#71651007)</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>bodySite</b>: Rechts <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#280413001)</span>, Links <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#280415008)</span></p><p><b>patientInstruction</b>: Mammografie</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://example.com/fhir/example/EpisodeOfCare/3237640>;
+       fhir:Reference.reference [ fhir:value "EpisodeOfCare/3237640" ]
+     ]
+  ];
+  fhir:ServiceRequest.status [ fhir:value "active"];
+  fhir:ServiceRequest.intent [ fhir:value "proposal"];
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:71651007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "71651007" ];
+       fhir:Coding.display [ fhir:value "Mammografie" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Mammografie" ]
+  ];
+  fhir:ServiceRequest.subject [
+     fhir:link <http://example.com/fhir/example/Patient/JaneDoe>;
+     fhir:Reference.reference [ fhir:value "Patient/JaneDoe" ]
+  ];
+  fhir:ServiceRequest.bodySite [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:280413001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "280413001" ];
+       fhir:Coding.display [ fhir:value "Rechts" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Rechts" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:280415008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "280415008" ];
+       fhir:Coding.display [ fhir:value "Links" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Links" ]
+  ];
+  fhir:ServiceRequest.patientInstruction [ fhir:value "Mammografie"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/example/ServiceRequest/BK-5-negative-example-advice-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

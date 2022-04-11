@@ -657,6 +657,175 @@
           }
         ],
         "reference": {
+          "reference": "Encounter/BK-4-participation-negative-example-encounter"
+        },
+        "name": "BK-4-participation-negative-example-encounter",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "EpisodeOfCare"
+          }
+        ],
+        "reference": {
+          "reference": "EpisodeOfCare/BK-4-participation-negative-example-episode"
+        },
+        "name": "BK-4-participation-negative-example-episode",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BK-4-participation-negative-example-observation"
+        },
+        "name": "BK-4-participation-negative-example-observation",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/BK-5-negative-example-advice-1"
+        },
+        "name": "BK-5-negative-example-advice-1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/BK-5-negative-example-advice-2"
+        },
+        "name": "BK-5-negative-example-advice-2",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "EpisodeOfCare"
+          }
+        ],
+        "reference": {
+          "reference": "EpisodeOfCare/BK-5-negative-example-episode"
+        },
+        "name": "BK-5-negative-example-episode",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/BK-5-negative-example-invitation"
+        },
+        "name": "BK-5-negative-example-invitation",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/BK-5-negative-example-participation"
+        },
+        "name": "BK-5-negative-example-participation",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BK-5-negative-result"
+        },
+        "name": "BK-5-negative-result",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/BK-6-negative-example-advice"
+        },
+        "name": "BK-6-negative-example-advice",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "EpisodeOfCare"
+          }
+        ],
+        "reference": {
+          "reference": "EpisodeOfCare/BK-6-negative-example-episode"
+        },
+        "name": "BK-6-negative-example-episode",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/BK-6-negative-example-participation"
+        },
+        "name": "BK-6-negative-example-participation",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BK-6-negative-example-result"
+        },
+        "name": "BK-6-negative-example-result",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
           "reference": "Encounter/BreastCancerEncounterExample"
         },
         "name": "Breast Cancer Encounter Example",
