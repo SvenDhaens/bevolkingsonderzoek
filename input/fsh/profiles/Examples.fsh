@@ -108,3 +108,251 @@ Usage: #example
 * code.text = "Niet afwijkend"
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-3-invitation-participation-negative-example-encounter)
+
+
+
+Instance: BK-4-participation-negative-example-episode
+InstanceOf: BePopulationBasedScreeningEpisodeOfCare
+Usage: #example
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
+* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+* identifier.system = "http://example.org/sampleepisodeofcare-identifier"
+* identifier.value = "3237640"
+* status = #active
+* type = http://snomed.info/sct#268547008 "Bevolkingsonderzoek borstkanker"
+* type.text = "Bevolkingsonderzoek borstkanker"
+* patient = Reference(Patient/JaneDoe)
+* managingOrganization = Reference(organization/CvKO)
+* period.start = "2020-04-08T00:00:00+02:00"
+
+Instance: BK-4-participation-negative-example-encounter
+InstanceOf: BeBvoEncounter
+Usage: #example
+* contained.resourceType = "Location"
+* contained.id = "1"
+* contained.name = "AZ Jan Palfijn Gent"
+* contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
+* contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* status = #finished
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
+* subject = Reference(Patient/JaneDoe)
+* episodeOfCare = Reference(EpisodeOfCare/3237640)
+* period.start = "2021-07-17T00:00:00+02:00"
+* period.end = "2021-07-17T23:59:00+02:00"
+* location.location = Reference(1)
+
+Instance: BK-4-participation-negative-example-observation
+InstanceOf: BeBvoObservation
+Usage: #example
+* status = #final
+* contained[0].resourceType = "Encounter"
+* contained[=].id = "1"
+* contained[=].extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* contained[=].extension.valueReference.reference = "EpisodeOfCare/3237640"
+* contained[=].status = #finished
+* contained[=].class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
+* contained[=].subject.reference = "Patient/JaneDoe"
+* contained[=].episodeOfCare.reference = "EpisodeOfCare/3237640"
+* contained[=].period.start = "2021-07-17T00:00:00+02:00"
+* contained[=].period.end = "2021-07-17T23:59:00+02:00"
+* contained[=].location.location.reference = "#1"
+* contained[+].resourceType = "Location"
+* contained[=].id = "1"
+* contained[=].name = "AZ Jan Palfijn Gent"
+* contained[=].address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
+* contained[=].address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* code = http://snomed.info/sct#280413001 "Niet afwijkend"
+* code.text = "Niet afwijkend"
+* subject = Reference(Patient/JaneDoe)
+* encounter = Reference(1)
+
+
+
+Instance: BK-5-negative-example-episode
+InstanceOf: BePopulationBasedScreeningEpisodeOfCare
+Usage: #example
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
+* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+* identifier.system = "http://example.org/sampleepisodeofcare-identifier"
+* identifier.value = "3237640"
+* status = #active
+* type = http://snomed.info/sct#268547008 "Bevolkingsonderzoek borstkanker"
+* type.text = "Bevolkingsonderzoek borstkanker"
+* patient = Reference(Patient/JaneDoe)
+* managingOrganization = Reference(organization/CvKO)
+* period.start = "2020-04-08T00:00:00+02:00"
+
+Instance: BK-5-negative-example-invitation
+InstanceOf: BeBvoAppointment
+Usage: #example
+* contained.resourceType = "Location"
+* contained.id = "1"
+* contained.name = "AZ Jan Palfijn Gent"
+* contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
+* contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* status = #booked
+* start = "2021-04-08T00:00:00.000+02:00"
+* end = "2021-04-08T23:59:00.000+02:00"
+* participant[0].actor = Reference(Patient/JaneDoe)
+* participant[=].status = #tentative
+* participant[+].actor = Reference(1)
+* participant[=].status = #accepted
+
+Instance: BK-5-negative-example-participation
+InstanceOf: BeBvoEncounter
+Usage: #example
+* contained.resourceType = "Location"
+* contained.id = "1"
+* contained.name = "AZ Jan Palfijn Gent"
+* contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
+* contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* status = #finished
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
+* subject = Reference(Patient/JaneDoe)
+* episodeOfCare = Reference(EpisodeOfCare/3237640)
+* period.start = "2021-07-17T00:00:00+02:00"
+* period.end = "2021-07-17T23:59:00+02:00"
+* location.location = Reference(1)
+
+Instance: BK-5-negative-result
+InstanceOf: BeBvoObservation
+Usage: #example
+* status = #final
+* contained[0].resourceType = "Encounter"
+* contained[=].id = "1"
+* contained[=].extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* contained[=].extension.valueReference.reference = "EpisodeOfCare/3237640"
+* contained[=].status = #finished
+* contained[=].class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
+* contained[=].subject.reference = "Patient/JaneDoe"
+* contained[=].episodeOfCare.reference = "EpisodeOfCare/3237640"
+* contained[=].period.start = "2021-07-17T00:00:00+02:00"
+* contained[=].period.end = "2021-07-17T23:59:00+02:00"
+* contained[=].location.location.reference = "#1"
+* contained[+].resourceType = "Location"
+* contained[=].id = "1"
+* contained[=].name = "AZ Jan Palfijn Gent"
+* contained[=].address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
+* contained[=].address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* code = http://snomed.info/sct#280413001 "Niet afwijkend"
+* code.text = "Niet afwijkend"
+* subject = Reference(Patient/JaneDoe)
+* encounter = Reference(1)
+
+Instance: BK-5-negative-example-advice-1
+InstanceOf: BeBevolkingsonderzoekFollowUp
+Usage: #example
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* status = #active
+* intent = #proposal
+* code = http://snomed.info/sct#71651007 "Mammografie"
+* code.text = "Mammografie"
+* subject = Reference(Patient/JaneDoe)
+* bodySite[0] = http://snomed.info/sct#280413001 "Rechts"
+* bodySite[=].text = "Rechts"
+* bodySite[+] = http://snomed.info/sct#280415008 "Links"
+* bodySite[=].text = "Links"
+* patientInstruction = "Mammografie"
+
+Instance: BK-5-negative-example-advice-2
+InstanceOf: BeBevolkingsonderzoekFollowUp
+Usage: #example
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* status = #active
+* intent = #proposal
+* code = http://snomed.info/sct#16310003 "Echografie"
+* code.text = "Echografie"
+* subject = Reference(Patient/JaneDoe)
+* bodySite[0] = http://snomed.info/sct#280413001 "Rechts"
+* bodySite[=].text = "Rechts"
+* bodySite[+] = http://snomed.info/sct#280415008 "Links"
+* bodySite[=].text = "Links"
+* patientInstruction = "Echografie"
+
+
+
+Instance: BK-6-negative-example-episode
+InstanceOf: BePopulationBasedScreeningEpisodeOfCare
+Usage: #example
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
+* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+* identifier.system = "http://example.org/sampleepisodeofcare-identifier"
+* identifier.value = "3237640"
+* status = #active
+* type = http://snomed.info/sct#268547008 "Bevolkingsonderzoek borstkanker"
+* type.text = "Bevolkingsonderzoek borstkanker"
+* patient = Reference(Patient/JaneDoe)
+* managingOrganization = Reference(organization/CvKO)
+* period.start = "2020-04-08T00:00:00+02:00"
+
+Instance: BK-6-negative-example-participation
+InstanceOf: BeBvoEncounter
+Usage: #example
+* contained.resourceType = "Location"
+* contained.id = "1"
+* contained.name = "AZ Jan Palfijn Gent"
+* contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
+* contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* status = #finished
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
+* subject = Reference(Patient/JaneDoe)
+* episodeOfCare = Reference(EpisodeOfCare/3237640)
+* period.start = "2021-07-17T00:00:00+02:00"
+* period.end = "2021-07-17T23:59:00+02:00"
+* location.location = Reference(1)
+
+Instance: BK-6-negative-example-result
+InstanceOf: BeBvoObservation
+Usage: #example
+* status = #final
+* contained[0].resourceType = "Encounter"
+* contained[=].id = "1"
+* contained[=].extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* contained[=].extension.valueReference.reference = "EpisodeOfCare/3237640"
+* contained[=].status = #finished
+* contained[=].class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
+* contained[=].subject.reference = "Patient/JaneDoe"
+* contained[=].episodeOfCare.reference = "EpisodeOfCare/3237640"
+* contained[=].period.start = "2021-07-17T00:00:00+02:00"
+* contained[=].period.end = "2021-07-17T23:59:00+02:00"
+* contained[=].location.location.reference = "#1"
+* contained[+].resourceType = "Location"
+* contained[=].id = "1"
+* contained[=].name = "AZ Jan Palfijn Gent"
+* contained[=].address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
+* contained[=].address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* code = http://snomed.info/sct#280413001 "Niet afwijkend"
+* code.text = "Niet afwijkend"
+* subject = Reference(Patient/JaneDoe)
+* encounter = Reference(1)
+
+Instance: BK-6-negative-example-advice
+InstanceOf: BeBevolkingsonderzoekFollowUp
+Usage: #example
+* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* status = #active
+* intent = #proposal
+* code = http://snomed.info/sct#71651007 "Mammografie"
+* code.text = "Mammografie"
+* subject = Reference(Patient/JaneDoe)
+* occurrenceDateTime = "2022-10-08T00:00:00+02:00"
+* bodySite = http://snomed.info/sct#280413001 "Rechts"
+* bodySite.text = "Rechts"
+* patientInstruction = "Mammografie"
