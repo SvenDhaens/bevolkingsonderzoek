@@ -658,6 +658,214 @@
          fhir:Extension.valueString [ fhir:value "Encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Encounter/BK-4-participation-negative-example-encounter>;
+         fhir:Reference.reference [ fhir:value "Encounter/BK-4-participation-negative-example-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-4-participation-negative-example-encounter" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "EpisodeOfCare" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/EpisodeOfCare/BK-4-participation-negative-example-episode>;
+         fhir:Reference.reference [ fhir:value "EpisodeOfCare/BK-4-participation-negative-example-episode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-4-participation-negative-example-episode" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Observation/BK-4-participation-negative-example-observation>;
+         fhir:Reference.reference [ fhir:value "Observation/BK-4-participation-negative-example-observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-4-participation-negative-example-observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation>
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ServiceRequest/BK-5-negative-example-advice-1>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/BK-5-negative-example-advice-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-5-negative-example-advice-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ServiceRequest/BK-5-negative-example-advice-2>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/BK-5-negative-example-advice-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-5-negative-example-advice-2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "EpisodeOfCare" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/EpisodeOfCare/BK-5-negative-example-episode>;
+         fhir:Reference.reference [ fhir:value "EpisodeOfCare/BK-5-negative-example-episode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-5-negative-example-episode" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare>
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Appointment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Appointment/BK-5-negative-example-invitation>;
+         fhir:Reference.reference [ fhir:value "Appointment/BK-5-negative-example-invitation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-5-negative-example-invitation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment>
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Encounter/BK-5-negative-example-participation>;
+         fhir:Reference.reference [ fhir:value "Encounter/BK-5-negative-example-participation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-5-negative-example-participation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter>
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Observation/BK-5-negative-result>;
+         fhir:Reference.reference [ fhir:value "Observation/BK-5-negative-result" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-5-negative-result" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation>
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ServiceRequest/BK-6-negative-example-advice>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/BK-6-negative-example-advice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-6-negative-example-advice" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "EpisodeOfCare" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/EpisodeOfCare/BK-6-negative-example-episode>;
+         fhir:Reference.reference [ fhir:value "EpisodeOfCare/BK-6-negative-example-episode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-6-negative-example-episode" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare>
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Encounter/BK-6-negative-example-participation>;
+         fhir:Reference.reference [ fhir:value "Encounter/BK-6-negative-example-participation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-6-negative-example-participation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter>
+       ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Observation/BK-6-negative-example-result>;
+         fhir:Reference.reference [ fhir:value "Observation/BK-6-negative-example-result" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BK-6-negative-example-result" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation>
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://example.com/fhir/example/Encounter/BreastCancerEncounterExample>;
          fhir:Reference.reference [ fhir:value "Encounter/BreastCancerEncounterExample" ]
        ];
@@ -668,7 +876,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-encounter>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -685,7 +893,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -702,7 +910,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -719,7 +927,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -736,7 +944,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -753,7 +961,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-appointment>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -770,7 +978,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bevolkingsonderzoek-follow-up>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -783,7 +991,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CvKO" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -797,7 +1005,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "female example patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -814,7 +1022,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-bvo-observation>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -830,7 +1038,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-Bvo-EpisodeOfCare>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

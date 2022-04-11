@@ -1,28 +1,41 @@
 ﻿TheCoreBelgianFederalFHIRProfilesBevolkingsonderzoekIG : Validation Results
 =========================================
 
-err = 26, warn = 36, info = 1
+err = 75, warn = 63, info = 1
 IG Publisher Version: 1.1.114
-Generated Fri Apr 08 16:36:21 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
- Build Errors : 11 / 11 / 0
+Generated Mon Apr 11 16:07:32 UTC 2022. FHIR version 4.0.1 for fed.be.core.bevolkingsonderzoek-ig#1.2.0-draft (canonical = http://example.com/fhir/example)
+ Build Errors : 34 / 24 / 0
  /github/workspace/fsh-generated/resources/Appointment-BK-2-invitation-example-invitation : 4 / 0 / 2
  /github/workspace/fsh-generated/resources/Appointment-BK-3-invitation-participation-negative-example-appointment : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/Appointment-BK-5-negative-example-invitation : 4 / 0 / 2
  /github/workspace/fsh-generated/resources/Appointment-BreastCancerScreeningAppointment : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-ColonCancerScreeningAppointment : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-BeCSBevolkingsonderzoekFollowUpAdvice : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Encounter-BK-3-invitation-participation-negative-example-encounter : 6 / 0 / 2
+ /github/workspace/fsh-generated/resources/Encounter-BK-4-participation-negative-example-encounter : 6 / 0 / 2
+ /github/workspace/fsh-generated/resources/Encounter-BK-5-negative-example-participation : 6 / 0 / 2
+ /github/workspace/fsh-generated/resources/Encounter-BK-6-negative-example-participation : 6 / 0 / 2
  /github/workspace/fsh-generated/resources/Encounter-BreastCancerEncounterExample : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-1-no-screening-example-episode : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-2-invitation-example-episode : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-3-invitation-participation-negative-example-episode : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-4-participation-negative-example-episode : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-5-negative-example-episode : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-BK-6-negative-example-episode : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-BK-3-invitation-participation-negative-example-observation : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-BK-4-participation-negative-example-observation : 7 / 1 / 3
+ /github/workspace/fsh-generated/resources/Observation-BK-5-negative-result : 7 / 1 / 3
+ /github/workspace/fsh-generated/resources/Observation-BK-6-negative-example-result : 7 / 1 / 3
  /github/workspace/fsh-generated/resources/Observation-PositiveBreastCancerResult : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-CvKO : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-JaneDoe : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-exampleMaleBePatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-BK-5-negative-example-advice-1 : 1 / 3 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-BK-5-negative-example-advice-2 : 1 / 3 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-BK-6-negative-example-advice : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpWithExample2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample : 0 / 0 / 1
@@ -49,6 +62,19 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/BK-3-invitation-participation-negative-example-encounter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/BK-3-invitation-participation-negative-example-episode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BK-3-invitation-participation-negative-example-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/BK-4-participation-negative-example-encounter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/BK-4-participation-negative-example-episode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BK-4-participation-negative-example-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/BK-5-negative-example-advice-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/BK-5-negative-example-advice-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/BK-5-negative-example-episode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/BK-5-negative-example-invitation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/BK-5-negative-example-participation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BK-5-negative-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/BK-6-negative-example-advice.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/BK-6-negative-example-episode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/BK-6-negative-example-participation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BK-6-negative-example-result.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/CvKO.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/exampleEpisodeBevolkingsonderzoek.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/exampleMaleBePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -56,13 +82,36 @@ ERROR: /github/workspace/output/Appointment-BK-2-invitation-example-invitation.h
 ERROR: /github/workspace/output/Appointment-BK-2-invitation-example-invitation.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 874: The link '1' for "1" cannot be resolved
 ERROR: /github/workspace/output/Appointment-BK-3-invitation-participation-negative-example-appointment.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 499: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
 ERROR: /github/workspace/output/Appointment-BK-3-invitation-participation-negative-example-appointment.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 898: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/Appointment-BK-5-negative-example-invitation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 473: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Appointment-BK-5-negative-example-invitation.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 872: The link '1' for "1" cannot be resolved
 ERROR: /github/workspace/output/Encounter-BK-3-invitation-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 493: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
 ERROR: /github/workspace/output/Encounter-BK-3-invitation-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 821: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
 ERROR: /github/workspace/output/Encounter-BK-3-invitation-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 1059: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-4-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 482: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-4-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 810: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-4-participation-negative-example-encounter.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 1048: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-5-negative-example-participation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 472: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-5-negative-example-participation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 800: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-5-negative-example-participation.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 1038: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-6-negative-example-participation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 472: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-6-negative-example-participation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 800: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Encounter-BK-6-negative-example-participation.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 1038: The link '1' for "1" cannot be resolved
 ERROR: /github/workspace/output/EpisodeOfCare-BK-1-no-screening-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 1102: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
 ERROR: /github/workspace/output/EpisodeOfCare-BK-2-invitation-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 993: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
 ERROR: /github/workspace/output/EpisodeOfCare-BK-3-invitation-participation-negative-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 977: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
+ERROR: /github/workspace/output/EpisodeOfCare-BK-4-participation-negative-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 966: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
+ERROR: /github/workspace/output/EpisodeOfCare-BK-5-negative-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 952: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
+ERROR: /github/workspace/output/EpisodeOfCare-BK-6-negative-example-episode.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 952: The link 'organization/CvKO' for "organization/CvKO" cannot be resolved
 ERROR: /github/workspace/output/Observation-BK-3-invitation-participation-negative-example-observation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 499: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Observation-BK-4-participation-negative-example-observation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 488: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Observation-BK-4-participation-negative-example-observation.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 883: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/Observation-BK-5-negative-result.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 461: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Observation-BK-5-negative-result.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 856: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/Observation-BK-6-negative-example-result.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 469: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/Observation-BK-6-negative-example-result.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 864: The link '1' for "1" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-BK-5-negative-example-advice-1.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 499: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-BK-5-negative-example-advice-2.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 499: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-BK-6-negative-example-advice.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 497: The link 'EpisodeOfCare/3237640' for "EpisodeOfCare/3237640" cannot be resolved
 == fsh-generated/resources/Appointment-BK-2-invitation-example-invitation.json ==
 ERROR: Appointment/BK-2-invitation-example-invitation: Appointment: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 1))
 ERROR: Appointment/BK-2-invitation-example-invitation: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
@@ -73,6 +122,11 @@ ERROR: Appointment/BK-3-invitation-participation-negative-example-appointment: A
 ERROR: Appointment/BK-3-invitation-participation-negative-example-appointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
 ERROR: Appointment/BK-3-invitation-participation-negative-example-appointment: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
 ERROR: Appointment/BK-3-invitation-participation-negative-example-appointment: Appointment.participant[1].actor: Unable to resolve resource '1'
+== fsh-generated/resources/Appointment-BK-5-negative-example-invitation.json ==
+ERROR: Appointment/BK-5-negative-example-invitation: Appointment: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 1))
+ERROR: Appointment/BK-5-negative-example-invitation: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
+ERROR: Appointment/BK-5-negative-example-invitation: Appointment.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Appointment/BK-5-negative-example-invitation: Appointment.participant[1].actor: Unable to resolve resource '1'
 == fsh-generated/resources/Appointment-BreastCancerScreeningAppointment.json ==
 ERROR: Appointment/BreastCancerScreeningAppointment: Appointment: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Appointment])
 == fsh-generated/resources/Appointment-CervicalCancerScreeningAppointment.json ==
@@ -89,6 +143,27 @@ ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encou
 ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter.class: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB in http://terminology.hl7.org/CodeSystem/v3-ActCode for 'http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB'
 ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter.episodeOfCare[0]: Unable to resolve resource 'EpisodeOfCare/3237640'
 ERROR: Encounter/BK-3-invitation-participation-negative-example-encounter: Encounter.location[0].location: Unable to resolve resource '1'
+== fsh-generated/resources/Encounter-BK-4-participation-negative-example-encounter.json ==
+ERROR: Encounter/BK-4-participation-negative-example-encounter: Encounter: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 1))
+ERROR: Encounter/BK-4-participation-negative-example-encounter: Encounter: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Encounter])
+ERROR: Encounter/BK-4-participation-negative-example-encounter: Encounter.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Encounter/BK-4-participation-negative-example-encounter: Encounter.class: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB in http://terminology.hl7.org/CodeSystem/v3-ActCode for 'http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB'
+ERROR: Encounter/BK-4-participation-negative-example-encounter: Encounter.episodeOfCare[0]: Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Encounter/BK-4-participation-negative-example-encounter: Encounter.location[0].location: Unable to resolve resource '1'
+== fsh-generated/resources/Encounter-BK-5-negative-example-participation.json ==
+ERROR: Encounter/BK-5-negative-example-participation: Encounter: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 1))
+ERROR: Encounter/BK-5-negative-example-participation: Encounter: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Encounter])
+ERROR: Encounter/BK-5-negative-example-participation: Encounter.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Encounter/BK-5-negative-example-participation: Encounter.class: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB in http://terminology.hl7.org/CodeSystem/v3-ActCode for 'http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB'
+ERROR: Encounter/BK-5-negative-example-participation: Encounter.episodeOfCare[0]: Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Encounter/BK-5-negative-example-participation: Encounter.location[0].location: Unable to resolve resource '1'
+== fsh-generated/resources/Encounter-BK-6-negative-example-participation.json ==
+ERROR: Encounter/BK-6-negative-example-participation: Encounter: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 1))
+ERROR: Encounter/BK-6-negative-example-participation: Encounter: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Encounter])
+ERROR: Encounter/BK-6-negative-example-participation: Encounter.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Encounter/BK-6-negative-example-participation: Encounter.class: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB in http://terminology.hl7.org/CodeSystem/v3-ActCode for 'http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB'
+ERROR: Encounter/BK-6-negative-example-participation: Encounter.episodeOfCare[0]: Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Encounter/BK-6-negative-example-participation: Encounter.location[0].location: Unable to resolve resource '1'
 == fsh-generated/resources/Encounter-BreastCancerEncounterExample.json ==
 ERROR: Encounter/BreastCancerEncounterExample: Encounter: The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Encounter])
 == fsh-generated/resources/EpisodeOfCare-BK-1-no-screening-example-episode.json ==
@@ -102,6 +177,15 @@ ERROR: EpisodeOfCare/BK-2-invitation-example-episode: EpisodeOfCare.managingOrga
 == fsh-generated/resources/EpisodeOfCare-BK-3-invitation-participation-negative-example-episode.json ==
 WARNING: EpisodeOfCare/BK-3-invitation-participation-negative-example-episode: EpisodeOfCare.type[0]: The display "Bevolkingsonderzoek borstkanker" is not a valid display for the code {http://snomed.info/sct}268547008 - should be one of ['Breast neoplasm screening', 'Screening for malignant neoplasm of breast', 'Screening for malignant neoplasm of breast (procedure)', 'Breast cancer screening', 'Screening for breast cancer'] (from http://tx.fhir.org/r4)
 ERROR: EpisodeOfCare/BK-3-invitation-participation-negative-example-episode: EpisodeOfCare.managingOrganization: Unable to resolve resource 'organization/CvKO'
+== fsh-generated/resources/EpisodeOfCare-BK-4-participation-negative-example-episode.json ==
+WARNING: EpisodeOfCare/BK-4-participation-negative-example-episode: EpisodeOfCare.type[0]: The display "Bevolkingsonderzoek borstkanker" is not a valid display for the code {http://snomed.info/sct}268547008 - should be one of ['Breast neoplasm screening', 'Screening for malignant neoplasm of breast', 'Screening for malignant neoplasm of breast (procedure)', 'Breast cancer screening', 'Screening for breast cancer'] (from http://tx.fhir.org/r4)
+ERROR: EpisodeOfCare/BK-4-participation-negative-example-episode: EpisodeOfCare.managingOrganization: Unable to resolve resource 'organization/CvKO'
+== fsh-generated/resources/EpisodeOfCare-BK-5-negative-example-episode.json ==
+WARNING: EpisodeOfCare/BK-5-negative-example-episode: EpisodeOfCare.type[0]: The display "Bevolkingsonderzoek borstkanker" is not a valid display for the code {http://snomed.info/sct}268547008 - should be one of ['Breast neoplasm screening', 'Screening for malignant neoplasm of breast', 'Screening for malignant neoplasm of breast (procedure)', 'Breast cancer screening', 'Screening for breast cancer'] (from http://tx.fhir.org/r4)
+ERROR: EpisodeOfCare/BK-5-negative-example-episode: EpisodeOfCare.managingOrganization: Unable to resolve resource 'organization/CvKO'
+== fsh-generated/resources/EpisodeOfCare-BK-6-negative-example-episode.json ==
+WARNING: EpisodeOfCare/BK-6-negative-example-episode: EpisodeOfCare.type[0]: The display "Bevolkingsonderzoek borstkanker" is not a valid display for the code {http://snomed.info/sct}268547008 - should be one of ['Breast neoplasm screening', 'Screening for malignant neoplasm of breast', 'Screening for malignant neoplasm of breast (procedure)', 'Breast cancer screening', 'Screening for breast cancer'] (from http://tx.fhir.org/r4)
+ERROR: EpisodeOfCare/BK-6-negative-example-episode: EpisodeOfCare.managingOrganization: Unable to resolve resource 'organization/CvKO'
 == fsh-generated/resources/EpisodeOfCare-exampleEpisodeBevolkingsonderzoek.json ==
 == fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core.bevolkingsonderzoek-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/fed.be.core.bevolkingsonderzoek-ig) does not match the URL (http://example.com/fhir/example)
@@ -112,10 +196,51 @@ ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-fed.be.core
 ERROR: Observation/BK-3-invitation-participation-negative-example-observation: Observation.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
 ERROR: Observation/BK-3-invitation-participation-negative-example-observation: Observation.status: The value provided ('FINAL') is not in the value set 'ObservationStatus' (http://hl7.org/fhir/ValueSet/observation-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/observation-status#FINAL in http://hl7.org/fhir/observation-status)
 WARNING: Observation/BK-3-invitation-participation-negative-example-observation: Observation.code: The display "Niet afwijkend" is not a valid display for the code {http://snomed.info/sct}280413001 - should be one of ['Normal result', 'Normal result (qualifier value)'] (from http://tx.fhir.org/r4)
+== fsh-generated/resources/Observation-BK-4-participation-negative-example-observation.json ==
+ERROR: Observation/BK-4-participation-negative-example-observation: Observation.contained[0].ofType(Encounter): The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Observation.contained.ofType(Encounter), Encounter])
+ERROR: Observation/BK-4-participation-negative-example-observation: Observation.contained[0].ofType(Encounter).extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Observation/BK-4-participation-negative-example-observation: Observation.contained[0].ofType(Encounter).class: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB in http://terminology.hl7.org/CodeSystem/v3-ActCode for 'http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB'
+ERROR: Observation/BK-4-participation-negative-example-observation: Observation.contained[0].ofType(Encounter).episodeOfCare[0]: Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Observation/BK-4-participation-negative-example-observation: Observation.contained[0].ofType(Encounter).location[0].location: Invalid Resource target type. Found Encounter, but expected one of ([Location])
+ERROR: Observation/BK-4-participation-negative-example-observation: Observation.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+WARNING: Observation/BK-4-participation-negative-example-observation: Observation.code: The display "Niet afwijkend" is not a valid display for the code {http://snomed.info/sct}280413001 - should be one of ['Normal result', 'Normal result (qualifier value)'] (from http://tx.fhir.org/r4)
+ERROR: Observation/BK-4-participation-negative-example-observation: Observation.encounter: Unable to resolve resource '1'
+== fsh-generated/resources/Observation-BK-5-negative-result.json ==
+ERROR: Observation/BK-5-negative-result: Observation.contained[0].ofType(Encounter): The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Observation.contained.ofType(Encounter), Encounter])
+ERROR: Observation/BK-5-negative-result: Observation.contained[0].ofType(Encounter).extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Observation/BK-5-negative-result: Observation.contained[0].ofType(Encounter).class: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB in http://terminology.hl7.org/CodeSystem/v3-ActCode for 'http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB'
+ERROR: Observation/BK-5-negative-result: Observation.contained[0].ofType(Encounter).episodeOfCare[0]: Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Observation/BK-5-negative-result: Observation.contained[0].ofType(Encounter).location[0].location: Invalid Resource target type. Found Encounter, but expected one of ([Location])
+ERROR: Observation/BK-5-negative-result: Observation.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+WARNING: Observation/BK-5-negative-result: Observation.code: The display "Niet afwijkend" is not a valid display for the code {http://snomed.info/sct}280413001 - should be one of ['Normal result', 'Normal result (qualifier value)'] (from http://tx.fhir.org/r4)
+ERROR: Observation/BK-5-negative-result: Observation.encounter: Unable to resolve resource '1'
+== fsh-generated/resources/Observation-BK-6-negative-example-result.json ==
+ERROR: Observation/BK-6-negative-example-result: Observation.contained[0].ofType(Encounter): The modifier extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare is not allowed to be used at this point (allowed = e:Observation, e:DiagnosticReport, e:Media, e:DeviceRequest, e:ServiceRequest, e:NutritionOrder, e:DeviceUseStatement, e:AdverseEvent, e:CarePlan, e:CareTeam, e:ClinicalImpression, e:Communication, e:CommunicationRequest, e:Condition, e:Procedure, e:QuestionnaireResponse; this element is [[Observation.contained.ofType(Encounter), Encounter])
+ERROR: Observation/BK-6-negative-example-result: Observation.contained[0].ofType(Encounter).extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Observation/BK-6-negative-example-result: Observation.contained[0].ofType(Encounter).class: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB in http://terminology.hl7.org/CodeSystem/v3-ActCode for 'http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB'
+ERROR: Observation/BK-6-negative-example-result: Observation.contained[0].ofType(Encounter).episodeOfCare[0]: Unable to resolve resource 'EpisodeOfCare/3237640'
+ERROR: Observation/BK-6-negative-example-result: Observation.contained[0].ofType(Encounter).location[0].location: Invalid Resource target type. Found Encounter, but expected one of ([Location])
+ERROR: Observation/BK-6-negative-example-result: Observation.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+WARNING: Observation/BK-6-negative-example-result: Observation.code: The display "Niet afwijkend" is not a valid display for the code {http://snomed.info/sct}280413001 - should be one of ['Normal result', 'Normal result (qualifier value)'] (from http://tx.fhir.org/r4)
+ERROR: Observation/BK-6-negative-example-result: Observation.encounter: Unable to resolve resource '1'
 == fsh-generated/resources/Observation-PositiveBreastCancerResult.json ==
 == fsh-generated/resources/Organization-CvKO.json ==
 == fsh-generated/resources/Patient-JaneDoe.json ==
 == fsh-generated/resources/Patient-exampleMaleBePatient.json ==
+== fsh-generated/resources/ServiceRequest-BK-5-negative-example-advice-1.json ==
+ERROR: ServiceRequest/BK-5-negative-example-advice-1: ServiceRequest.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+WARNING: ServiceRequest/BK-5-negative-example-advice-1: ServiceRequest.code: The display "Mammografie" is not a valid display for the code {http://snomed.info/sct}71651007 - should be one of ['Mammography', 'Radiographic examination of breast', 'Mammogram', 'Mammography (procedure)'] (from http://tx.fhir.org/r4)
+WARNING: ServiceRequest/BK-5-negative-example-advice-1: ServiceRequest.bodySite[0].coding[0]: The display "Rechts" is not a valid display for the code {http://snomed.info/sct}280413001 - should be one of ['Normal result', 'Normal result (qualifier value)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#280413001'
+WARNING: ServiceRequest/BK-5-negative-example-advice-1: ServiceRequest.bodySite[1].coding[0]: The display "Links" is not a valid display for the code {http://snomed.info/sct}280415008 - should be one of ['Abnormal result', 'Abnormal result (qualifier value)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#280415008'
+== fsh-generated/resources/ServiceRequest-BK-5-negative-example-advice-2.json ==
+ERROR: ServiceRequest/BK-5-negative-example-advice-2: ServiceRequest.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+WARNING: ServiceRequest/BK-5-negative-example-advice-2: ServiceRequest.code: The display "Echografie" is not a valid display for the code {http://snomed.info/sct}16310003 - should be one of ['Ultrasonography', 'Diagnostic ultrasonography', 'Ultrasound scan', 'USS - Ultrasound scan', 'Ultrasound', 'Ultrasonogram', 'US - Ultrasound', 'Diagnostic sonar', 'Ultrasound procedure', 'Diagnostic ultrasonography (procedure)', 'Diagnostic echography'] (from http://tx.fhir.org/r4)
+WARNING: ServiceRequest/BK-5-negative-example-advice-2: ServiceRequest.bodySite[0].coding[0]: The display "Rechts" is not a valid display for the code {http://snomed.info/sct}280413001 - should be one of ['Normal result', 'Normal result (qualifier value)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#280413001'
+WARNING: ServiceRequest/BK-5-negative-example-advice-2: ServiceRequest.bodySite[1].coding[0]: The display "Links" is not a valid display for the code {http://snomed.info/sct}280415008 - should be one of ['Abnormal result', 'Abnormal result (qualifier value)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#280415008'
+== fsh-generated/resources/ServiceRequest-BK-6-negative-example-advice.json ==
+ERROR: ServiceRequest/BK-6-negative-example-advice: ServiceRequest.extension[0].value.ofType(Reference): Unable to resolve resource 'EpisodeOfCare/3237640'
+WARNING: ServiceRequest/BK-6-negative-example-advice: ServiceRequest.code: The display "Mammografie" is not a valid display for the code {http://snomed.info/sct}71651007 - should be one of ['Mammography', 'Radiographic examination of breast', 'Mammogram', 'Mammography (procedure)'] (from http://tx.fhir.org/r4)
+WARNING: ServiceRequest/BK-6-negative-example-advice: ServiceRequest.bodySite[0].coding[0]: The display "Rechts" is not a valid display for the code {http://snomed.info/sct}280413001 - should be one of ['Normal result', 'Normal result (qualifier value)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#280413001'
 == fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpExample.json ==
 == fsh-generated/resources/ServiceRequest-BreastCancerScreeningFollowUpWithExample2.json ==
 == fsh-generated/resources/ServiceRequest-ColorectalCancerScreeningFollowUpExample.json ==
