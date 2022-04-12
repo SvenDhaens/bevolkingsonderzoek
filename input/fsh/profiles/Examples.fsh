@@ -20,7 +20,7 @@ Usage: #example
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
 * extension.valueString = "De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek. "
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
-* identifier.value = "3237640"
+* identifier.value = "3237641"
 * status = #active
 * type = http://snomed.info/sct#268547008 "Bevolkingsonderzoek borstkanker"
 * type.text = "Bevolkingsonderzoek borstkanker"
@@ -37,15 +37,14 @@ Usage: #example
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-2-invitation-example-episode)
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
 * end = "2021-04-08T23:59:00.000+02:00"
 * participant[0].actor = Reference(Patient/JaneDoe)
 * participant[=].status = #tentative
-* participant[+].actor = Reference(1)
+* participant[+].actor = Reference(Location/1)
 * participant[=].status = #accepted
-
 
 
 Instance: BK-3-invitation-participation-negative-example-episode
@@ -54,7 +53,7 @@ Usage: #example
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
 * extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
-* identifier.value = "3237640"
+* identifier.value = "3237642"
 * status = #active
 * type = http://snomed.info/sct#268547008 "Bevolkingsonderzoek borstkanker"
 * type.text = "Bevolkingsonderzoek borstkanker"
@@ -71,13 +70,13 @@ Usage: #example
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
 * end = "2021-04-08T23:59:00.000+02:00"
 * participant[0].actor = Reference(Patient/JaneDoe)
 * participant[=].status = #tentative
-* participant[+].actor = Reference(1)
+* participant[+].actor = Reference(Location/1)
 * participant[=].status = #accepted
 
 Instance: BK-3-invitation-participation-negative-example-encounter
@@ -89,20 +88,20 @@ Usage: #example
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
 * subject = Reference(Patient/JaneDoe)
-* episodeOfCare = Reference(EpisodeOfCare/3237640)
+* episodeOfCare = Reference(BK-3-invitation-participation-negative-example-episode)
 * period.start = "2021-07-17T00:00:00+02:00"
 * period.end = "2021-07-17T23:59:00+02:00"
-* location.location = Reference(1)
+* location.location = Reference(Location/1)
 
 Instance: BK-3-invitation-participation-negative-example-observation
 InstanceOf: BeBvoObservation
 Usage: #example
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #FINAL
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code.text = "Niet afwijkend"
@@ -117,7 +116,7 @@ Usage: #example
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
 * extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
-* identifier.value = "3237640"
+* identifier.value = "3237643"
 * status = #active
 * type = http://snomed.info/sct#268547008 "Bevolkingsonderzoek borstkanker"
 * type.text = "Bevolkingsonderzoek borstkanker"
@@ -134,41 +133,25 @@ Usage: #example
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-4-participation-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
 * subject = Reference(Patient/JaneDoe)
-* episodeOfCare = Reference(EpisodeOfCare/3237640)
+* episodeOfCare = Reference(BK-4-participation-negative-example-episode)
 * period.start = "2021-07-17T00:00:00+02:00"
 * period.end = "2021-07-17T23:59:00+02:00"
-* location.location = Reference(1)
+* location.location = Reference(Location/1)
 
 Instance: BK-4-participation-negative-example-observation
 InstanceOf: BeBvoObservation
 Usage: #example
 * status = #final
-* contained[0].resourceType = "Encounter"
-* contained[=].id = "1"
-* contained[=].extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* contained[=].extension.valueReference.reference = "EpisodeOfCare/3237640"
-* contained[=].status = #finished
-* contained[=].class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
-* contained[=].subject.reference = "Patient/JaneDoe"
-* contained[=].episodeOfCare.reference = "EpisodeOfCare/3237640"
-* contained[=].period.start = "2021-07-17T00:00:00+02:00"
-* contained[=].period.end = "2021-07-17T23:59:00+02:00"
-* contained[=].location.location.reference = "#1"
-* contained[+].resourceType = "Location"
-* contained[=].id = "1"
-* contained[=].name = "AZ Jan Palfijn Gent"
-* contained[=].address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
-* contained[=].address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-4-participation-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code.text = "Niet afwijkend"
 * subject = Reference(Patient/JaneDoe)
-* encounter = Reference(1)
+* encounter = Reference(BK-4-participation-negative-example-encounter)
 
 
 
@@ -178,7 +161,7 @@ Usage: #example
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
 * extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
-* identifier.value = "3237640"
+* identifier.value = "3237644"
 * status = #active
 * type = http://snomed.info/sct#268547008 "Bevolkingsonderzoek borstkanker"
 * type.text = "Bevolkingsonderzoek borstkanker"
@@ -195,13 +178,13 @@ Usage: #example
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
 * end = "2021-04-08T23:59:00.000+02:00"
 * participant[0].actor = Reference(Patient/JaneDoe)
 * participant[=].status = #tentative
-* participant[+].actor = Reference(1)
+* participant[+].actor = Reference(Location/1)
 * participant[=].status = #accepted
 
 Instance: BK-5-negative-example-participation
@@ -213,47 +196,31 @@ Usage: #example
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
 * subject = Reference(Patient/JaneDoe)
-* episodeOfCare = Reference(EpisodeOfCare/3237640)
+* episodeOfCare = Reference(BK-5-negative-example-episode)
 * period.start = "2021-07-17T00:00:00+02:00"
 * period.end = "2021-07-17T23:59:00+02:00"
-* location.location = Reference(1)
+* location.location = Reference(Location/1)
 
 Instance: BK-5-negative-result
 InstanceOf: BeBvoObservation
 Usage: #example
 * status = #final
-* contained[0].resourceType = "Encounter"
-* contained[=].id = "1"
-* contained[=].extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* contained[=].extension.valueReference.reference = "EpisodeOfCare/3237640"
-* contained[=].status = #finished
-* contained[=].class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
-* contained[=].subject.reference = "Patient/JaneDoe"
-* contained[=].episodeOfCare.reference = "EpisodeOfCare/3237640"
-* contained[=].period.start = "2021-07-17T00:00:00+02:00"
-* contained[=].period.end = "2021-07-17T23:59:00+02:00"
-* contained[=].location.location.reference = "#1"
-* contained[+].resourceType = "Location"
-* contained[=].id = "1"
-* contained[=].name = "AZ Jan Palfijn Gent"
-* contained[=].address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
-* contained[=].address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-5-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code.text = "Niet afwijkend"
 * subject = Reference(Patient/JaneDoe)
-* encounter = Reference(1)
+* encounter = Reference(BK-5-negative-example-participation)
 
 Instance: BK-5-negative-example-advice-1
 InstanceOf: BeBevolkingsonderzoekFollowUp
 Usage: #example
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #active
 * intent = #proposal
 * code = http://snomed.info/sct#71651007 "Mammografie"
@@ -269,7 +236,7 @@ Instance: BK-5-negative-example-advice-2
 InstanceOf: BeBevolkingsonderzoekFollowUp
 Usage: #example
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #active
 * intent = #proposal
 * code = http://snomed.info/sct#16310003 "Echografie"
@@ -289,7 +256,7 @@ Usage: #example
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BvoNextInvitationIndication"
 * extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
-* identifier.value = "3237640"
+* identifier.value = "3237645"
 * status = #active
 * type = http://snomed.info/sct#268547008 "Bevolkingsonderzoek borstkanker"
 * type.text = "Bevolkingsonderzoek borstkanker"
@@ -306,47 +273,31 @@ Usage: #example
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-6-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
 * subject = Reference(Patient/JaneDoe)
-* episodeOfCare = Reference(EpisodeOfCare/3237640)
+* episodeOfCare = Reference(BK-6-negative-example-episode)
 * period.start = "2021-07-17T00:00:00+02:00"
 * period.end = "2021-07-17T23:59:00+02:00"
-* location.location = Reference(1)
+* location.location = Reference(Location/1)
 
 Instance: BK-6-negative-example-result
 InstanceOf: BeBvoObservation
 Usage: #example
 * status = #final
-* contained[0].resourceType = "Encounter"
-* contained[=].id = "1"
-* contained[=].extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* contained[=].extension.valueReference.reference = "EpisodeOfCare/3237640"
-* contained[=].status = #finished
-* contained[=].class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
-* contained[=].subject.reference = "Patient/JaneDoe"
-* contained[=].episodeOfCare.reference = "EpisodeOfCare/3237640"
-* contained[=].period.start = "2021-07-17T00:00:00+02:00"
-* contained[=].period.end = "2021-07-17T23:59:00+02:00"
-* contained[=].location.location.reference = "#1"
-* contained[+].resourceType = "Location"
-* contained[=].id = "1"
-* contained[=].name = "AZ Jan Palfijn Gent"
-* contained[=].address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
-* contained[=].address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-6-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code.text = "Niet afwijkend"
 * subject = Reference(Patient/JaneDoe)
-* encounter = Reference(1)
+* encounter = Reference(BK-6-negative-example-participation)
 
 Instance: BK-6-negative-example-advice
 InstanceOf: BeBevolkingsonderzoekFollowUp
 Usage: #example
 * extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(EpisodeOfCare/3237640)
+* extension.valueReference = Reference(BK-6-negative-example-episode)
 * status = #active
 * intent = #proposal
 * code = http://snomed.info/sct#71651007 "Mammografie"
