@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-5-negative-example-participation\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-encounter.html\">Be Bvo Encounter</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare/3237640\">EpisodeOfCare/3237640</a></p><p><b>status</b>: finished</p><p><b>class</b>: #AMB (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code #AMB = '#AMB', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare/3237640\">EpisodeOfCare/3237640</a></p><p><b>period</b>: 2021-07-17 12:00:00+0200 --&gt; 2021-07-17 11:59:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"1\">1</a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-5-negative-example-participation\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-encounter.html\">Be Bvo Encounter</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-BK-5-negative-example-episode.html\">EpisodeOfCare/BK-5-negative-example-episode</a></p><p><b>status</b>: finished</p><p><b>class</b>: #AMB (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code #AMB = '#AMB', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-BK-5-negative-example-episode.html\">EpisodeOfCare/BK-5-negative-example-episode</a></p><p><b>period</b>: 2021-07-17 12:00:00+0200 --&gt; 2021-07-17 11:59:00+0200</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a name=\"1\"> </a><blockquote><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"1\" </p></div><p><b>name</b>: AZ Jan Palfijn Gent</p><p><b>address</b>: HENRI DUNANTLAAN 5, 9000 GENT</p></blockquote></td></tr></table></div>"
   },
   "contained": [
     {
@@ -27,7 +27,7 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "EpisodeOfCare/3237640"
+        "reference": "EpisodeOfCare/BK-5-negative-example-episode"
       }
     }
   ],
@@ -41,7 +41,7 @@
   },
   "episodeOfCare": [
     {
-      "reference": "EpisodeOfCare/3237640"
+      "reference": "EpisodeOfCare/BK-5-negative-example-episode"
     }
   ],
   "period": {
@@ -51,7 +51,7 @@
   "location": [
     {
       "location": {
-        "reference": "1"
+        "reference": "#1"
       }
     }
   ]

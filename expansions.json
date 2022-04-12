@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a016de4c-2caf-4079-aeaf-40655f52bf3b",
+  "id" : "3717942f-8a16-4eb0-8538-ebe92799c030",
   "meta" : {
-    "lastUpdated" : "2022-04-11T16:06:52.452+00:00"
+    "lastUpdated" : "2022-04-12T10:44:22.010+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BeBvoResultVS",
       "title" : "Be Bvo Result VS",
       "status" : "active",
-      "date" : "2022-04-11T16:06:52+00:00",
+      "date" : "2022-04-12T10:44:22+00:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -57,8 +57,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:59c3e15e-fcc4-4050-b043-045b5c5acb74",
-        "timestamp" : "2022-04-11T16:07:18+00:00",
+        "identifier" : "urn:uuid:f9eb4dea-2e8f-499f-a086-59b709fe86f0",
+        "timestamp" : "2022-04-12T10:44:47+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -99,7 +99,7 @@
       "name" : "BeVSBevolkingsonderzoekBodySiteLocation",
       "title" : "Be VS Bevolkingsonderzoek Body Site Location",
       "status" : "draft",
-      "date" : "2022-04-11T16:06:52+00:00",
+      "date" : "2022-04-12T10:44:22+00:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -137,8 +137,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:710d70f9-2ccd-4f36-914f-605af757d72d",
-        "timestamp" : "2022-04-11T16:07:18+00:00",
+        "identifier" : "urn:uuid:8d2d9f61-c1c6-4f97-a1f3-1670595ea199",
+        "timestamp" : "2022-04-12T10:44:47+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -178,7 +178,7 @@
       "version" : "1.2.0-draft",
       "name" : "BeVSBevolkingsonderzoekFollowUpAdvice",
       "status" : "draft",
-      "date" : "2022-04-11T16:06:52+00:00",
+      "date" : "2022-04-12T10:44:22+00:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -216,8 +216,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:66ce5ad1-1b76-4243-8231-de6815e9872a",
-        "timestamp" : "2022-04-11T16:07:18+00:00",
+        "identifier" : "urn:uuid:769f6767-4713-417d-965e-584976f860ad",
+        "timestamp" : "2022-04-12T10:44:47+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -297,7 +297,7 @@
       "name" : "BevolkingsonderzoekScreeningVS",
       "title" : "Bevolkingsonderzoek Screening VS",
       "status" : "draft",
-      "date" : "2022-04-11T16:06:52+00:00",
+      "date" : "2022-04-12T10:44:22+00:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -335,8 +335,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:75e2cf3e-098f-485c-ab55-faeb1c33b8fa",
-        "timestamp" : "2022-04-11T16:07:18+00:00",
+        "identifier" : "urn:uuid:3c213229-fed7-46b7-896d-60a87f22358c",
+        "timestamp" : "2022-04-12T10:44:48+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
