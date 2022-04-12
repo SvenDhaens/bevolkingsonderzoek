@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-2-invitation-example-episode\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Be-Bvo-EpisodeOfCare.html\">BE Episode Bevolkingsonderzoek</a></p></div><p><b>BvoNextInvitationIndication</b>: De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek. </p><p><b>identifier</b>: id: 3237640</p><p><b>status</b>: active</p><p><b>type</b>: Bevolkingsonderzoek borstkanker <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#268547008)</span></p><p><b>patient</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>managingOrganization</b>: <a href=\"organization/CvKO\">organization/CvKO</a></p><p><b>period</b>: 2020-04-08 12:00:00+0200 --&gt; (ongoing)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-2-invitation-example-episode\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Be-Bvo-EpisodeOfCare.html\">BE Episode Bevolkingsonderzoek</a></p></div><p><b>BvoNextInvitationIndication</b>: De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek. </p><p><b>identifier</b>: id: 3237641</p><p><b>status</b>: active</p><p><b>type</b>: Bevolkingsonderzoek borstkanker <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#268547008)</span></p><p><b>patient</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>managingOrganization</b>: <a href=\"organization/CvKO\">organization/CvKO</a></p><p><b>period</b>: 2020-04-08 12:00:00+0200 --&gt; (ongoing)</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -28,7 +28,7 @@
   fhir:EpisodeOfCare.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://example.org/sampleepisodeofcare-identifier" ];
-     fhir:Identifier.value [ fhir:value "3237640" ]
+     fhir:Identifier.value [ fhir:value "3237641" ]
   ];
   fhir:EpisodeOfCare.status [ fhir:value "active"];
   fhir:EpisodeOfCare.type [

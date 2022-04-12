@@ -110,7 +110,6 @@
       "Appointment",
       "Encounter",
       "Observation",
-      "Observation.contained",
       "ServiceRequest"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [

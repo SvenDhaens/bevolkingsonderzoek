@@ -18,63 +18,14 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-6-negative-example-result\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-observation.html\">Be Bvo Observation</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare/3237640\">EpisodeOfCare/3237640</a></p><p><b>status</b>: final</p><p><b>code</b>: Niet afwijkend <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#280413001)</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>encounter</b>: <a href=\"1\">1</a></p></div>"
-  ];
-  fhir:DomainResource.contained [
-     a fhir:Encounter;
-     fhir:index 0;
-     fhir:Resource.id [ fhir:value "1" ];
-     fhir:DomainResource.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare" ];
-       fhir:Extension.valueReference [
-         fhir:link <http://example.com/fhir/example/EpisodeOfCare/3237640>;
-         fhir:Reference.reference [ fhir:value "EpisodeOfCare/3237640" ]
-       ]
-     ];
-     fhir:Encounter.status [ fhir:value "finished" ];
-     fhir:Encounter.class [
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
-       fhir:Coding.code [ fhir:value "#AMB" ]
-     ];
-     fhir:Encounter.subject [
-       fhir:link <http://example.com/fhir/example/Patient/JaneDoe>;
-       fhir:Reference.reference [ fhir:value "Patient/JaneDoe" ]
-     ];
-     fhir:Encounter.episodeOfCare [
-       fhir:index 0;
-       fhir:link <http://example.com/fhir/example/EpisodeOfCare/3237640>;
-       fhir:Reference.reference [ fhir:value "EpisodeOfCare/3237640" ]
-     ];
-     fhir:Encounter.period [
-       fhir:Period.start [ fhir:value "2021-07-17T00:00:00+02:00"^^xsd:dateTime ];
-       fhir:Period.end [ fhir:value "2021-07-17T23:59:00+02:00"^^xsd:dateTime ]
-     ];
-     fhir:Encounter.location [
-       fhir:index 0;
-       fhir:Encounter.location.location [
-         fhir:Reference.reference [ fhir:value "#1" ]
-       ]
-     ]
-  ], [
-     a fhir:Location;
-     fhir:index 1;
-     fhir:Resource.id [ fhir:value "1" ];
-     fhir:Location.name [ fhir:value "AZ Jan Palfijn Gent" ];
-     fhir:Location.address [
-       fhir:Address.text [ fhir:value "HENRI DUNANTLAAN 5, 9000 GENT" ];
-       fhir:Address.line [
-         fhir:value "HENRI DUNANTLAAN 5, 9000 GENT";
-         fhir:index 0
-       ]
-     ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"BK-6-negative-example-result\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-bvo-observation.html\">Be Bvo Observation</a></p></div><p><b>Episode of Care</b>: <a href=\"EpisodeOfCare-BK-6-negative-example-episode.html\">EpisodeOfCare/BK-6-negative-example-episode</a></p><p><b>status</b>: final</p><p><b>code</b>: Niet afwijkend <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#280413001)</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Patient/JaneDoe</a> \" DOE\"</p><p><b>encounter</b>: <a href=\"Encounter-BK-6-negative-example-participation.html\">Encounter/BK-6-negative-example-participation</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare" ];
      fhir:Extension.valueReference [
-       fhir:link <http://example.com/fhir/example/EpisodeOfCare/3237640>;
-       fhir:Reference.reference [ fhir:value "EpisodeOfCare/3237640" ]
+       fhir:link <http://example.com/fhir/example/EpisodeOfCare/BK-6-negative-example-episode>;
+       fhir:Reference.reference [ fhir:value "EpisodeOfCare/BK-6-negative-example-episode" ]
      ]
   ];
   fhir:Observation.status [ fhir:value "final"];
@@ -93,7 +44,8 @@
      fhir:Reference.reference [ fhir:value "Patient/JaneDoe" ]
   ];
   fhir:Observation.encounter [
-     fhir:Reference.reference [ fhir:value "1" ]
+     fhir:link <http://example.com/fhir/example/Encounter/BK-6-negative-example-participation>;
+     fhir:Reference.reference [ fhir:value "Encounter/BK-6-negative-example-participation" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
