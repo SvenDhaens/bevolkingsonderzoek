@@ -223,31 +223,8 @@ Usage: #example
 * extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #active
 * intent = #proposal
-* code = http://snomed.info/sct#71651007 "Mammografie"
-* code.text = "Mammografie"
 * subject = Reference(Patient/JaneDoe)
-* bodySite[0] = http://snomed.info/sct#280413001 "Rechts"
-* bodySite[=].text = "Rechts"
-* bodySite[+] = http://snomed.info/sct#280415008 "Links"
-* bodySite[=].text = "Links"
-* patientInstruction = "Mammografie"
-
-Instance: BK-5-negative-example-advice-2
-InstanceOf: BeBevolkingsonderzoekFollowUp
-Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-* extension.valueReference = Reference(BK-5-negative-example-episode)
-* status = #active
-* intent = #proposal
-* code = http://snomed.info/sct#16310003 "Echografie"
-* code.text = "Echografie"
-* subject = Reference(Patient/JaneDoe)
-* bodySite[0] = http://snomed.info/sct#280413001 "Rechts"
-* bodySite[=].text = "Rechts"
-* bodySite[+] = http://snomed.info/sct#280415008 "Links"
-* bodySite[=].text = "Links"
-* patientInstruction = "Echografie"
-
+* patientInstruction = "Ga naar de arts die u hebt opgegeven bij het onderzoek, dit is uw huisarts of gynaecoloog of andere, voor een verwijsbrief voor bijkomend onderzoek."
 
 
 Instance: BK-6-negative-example-episode
@@ -300,10 +277,5 @@ Usage: #example
 * extension.valueReference = Reference(BK-6-negative-example-episode)
 * status = #active
 * intent = #proposal
-* code = http://snomed.info/sct#71651007 "Mammografie"
-* code.text = "Mammografie"
 * subject = Reference(Patient/JaneDoe)
-* occurrenceDateTime = "2022-10-08T00:00:00+02:00"
-* bodySite = http://snomed.info/sct#280413001 "Rechts"
-* bodySite.text = "Rechts"
-* patientInstruction = "Mammografie"
+* patientInstruction = "Ga naar de arts die u hebt opgegeven bij het onderzoek, dit is uw huisarts of gynaecoloog of andere, voor een verwijsbrief voor bijkomend onderzoek."
