@@ -27,6 +27,19 @@ Description: "A periodic episode for a population based screening"
 * ^status = #draft
 * value[x] only Reference(BePopulationBasedScreeningEpisodeOfCare)
 
+Instance: cvko-id
+InstanceOf: NamingSystem
+Usage: #definition
+Title: "cvko-id"
+Description: "Internal id for identification of resource with cvko"
+* status = #draft
+* name = "CVKONamingSystem"
+* kind = #identifier
+* date = "2022-06-08"
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cvkoId"
+* uniqueId[=].preferred = true
+
 // Extension: BvoConditionCode
 // Description: "The certainty of diagnosis"
 // * ^status = #draft
