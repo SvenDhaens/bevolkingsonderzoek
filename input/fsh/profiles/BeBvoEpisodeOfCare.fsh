@@ -21,6 +21,12 @@ Description: "This is variable text giving an estimate when the next screening i
 * ^status = #draft
 * value[x] only string
 
+Extension: BeBvoEpisodeOfCare
+Parent: workflow-episodeOfCare
+Description: "A periodic episode for a population based screening"
+* ^status = #draft
+* value[x] only Reference(BePopulationBasedScreeningEpisodeOfCare)
+
 // Extension: BvoConditionCode
 // Description: "The certainty of diagnosis"
 // * ^status = #draft

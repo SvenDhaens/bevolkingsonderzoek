@@ -4,7 +4,7 @@ Id: be-bvo-appointment
 Title: "Be Bvo Appointment"
 Description: "Appointment for bevolkingsonderzoek"
 * ^status = #draft
-* extension contains workflow-episodeOfCare named Episode 1..1 MS
+* extension contains BeBvoEpisodeOfCare named Episode 1..1 MS
 
 Instance: BreastCancerScreeningAppointment
 InstanceOf: BeBvoAppointment
@@ -18,7 +18,7 @@ Description: "Appointment for mammography in a mammographic unit in context of b
 * participant[=].status = #tentative
 * participant[+].actor = Reference(mammographicUnit)
 * participant[=].status = #accepted
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 * contained[0] = mammographicUnit
 
@@ -32,7 +32,7 @@ Description: "Appointment for stool sample in context of colon cancer screening"
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[0].actor = Reference(JaneDoe)
 * participant[=].status = #tentative
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
 
@@ -46,5 +46,5 @@ Description: "Proposed appointment in context of cervical cancer screening"
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[0].actor = Reference(JaneDoe)
 * participant[=].status = #tentative
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)

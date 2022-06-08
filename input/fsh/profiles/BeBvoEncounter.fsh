@@ -4,7 +4,7 @@ Id: be-bvo-encounter
 Title: "Be Bvo Encounter"
 Description: "Encounter for screening - deelname aan bevolkingsonderzoek"
 * ^status = #draft
-* extension contains workflow-episodeOfCare named Episode 1..1 MS
+* extension contains BeBvoEpisodeOfCare named Episode 1..1 MS
 
 Profile: BeBvoObservation
 Parent: Observation
@@ -13,7 +13,7 @@ Title: "Be Bvo Observation"
 Description: "Observation result of screening"
 * ^status = #draft
 * code from BeBvoResultVS (extensible)
-* extension contains workflow-episodeOfCare named Episode 1..1 MS
+* extension contains BeBvoEpisodeOfCare named Episode 1..1 MS
 
 Instance: BreastCancerEncounterExample
 InstanceOf: BeBvoEncounter
@@ -29,7 +29,7 @@ Description: "Participation for breastcancer screening"
 * location.location = Reference(mammographicUnit)
 * subject = Reference(JaneDoe)
 * contained[0] = mammographicUnit
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
 
@@ -41,7 +41,7 @@ Description: "Observation with positive/abnormal result"
 * status = #final
 * code = $sct#280415008
 * encounter = Reference(BreastCancerEncounterExample)
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
 

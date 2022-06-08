@@ -36,7 +36,7 @@ Usage: #example
 * contained.name = "AZ Jan Palfijn Gent"
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-2-invitation-example-episode)
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
@@ -69,7 +69,7 @@ Usage: #example
 * contained.name = "AZ Jan Palfijn Gent"
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
@@ -87,7 +87,7 @@ Usage: #example
 * contained.name = "AZ Jan Palfijn Gent"
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
@@ -100,7 +100,7 @@ Usage: #example
 Instance: BK-3-invitation-participation-negative-example-observation
 InstanceOf: BeBvoObservation
 Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #FINAL
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
@@ -132,7 +132,7 @@ Usage: #example
 * contained.name = "AZ Jan Palfijn Gent"
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-4-participation-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
@@ -146,7 +146,7 @@ Instance: BK-4-participation-negative-example-observation
 InstanceOf: BeBvoObservation
 Usage: #example
 * status = #final
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-4-participation-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code.text = "Niet afwijkend"
@@ -177,7 +177,7 @@ Usage: #example
 * contained.name = "AZ Jan Palfijn Gent"
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
@@ -195,7 +195,7 @@ Usage: #example
 * contained.name = "AZ Jan Palfijn Gent"
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
@@ -209,7 +209,7 @@ Instance: BK-5-negative-result
 InstanceOf: BeBvoObservation
 Usage: #example
 * status = #final
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-5-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code.text = "Niet afwijkend"
@@ -219,7 +219,7 @@ Usage: #example
 Instance: BK-5-negative-example-advice-1
 InstanceOf: BeBevolkingsonderzoekFollowUp
 Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #active
 * intent = #proposal
@@ -249,7 +249,7 @@ Usage: #example
 * contained.name = "AZ Jan Palfijn Gent"
 * contained.address.text = "HENRI DUNANTLAAN 5, 9000 GENT"
 * contained.address.line = "HENRI DUNANTLAAN 5, 9000 GENT"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-6-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode##AMB
@@ -263,7 +263,7 @@ Instance: BK-6-negative-example-result
 InstanceOf: BeBvoObservation
 Usage: #example
 * status = #final
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-6-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code.text = "Niet afwijkend"
@@ -273,7 +273,7 @@ Usage: #example
 Instance: BK-6-negative-example-advice
 InstanceOf: BeBevolkingsonderzoekFollowUp
 Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(BK-6-negative-example-episode)
 * status = #active
 * intent = #proposal

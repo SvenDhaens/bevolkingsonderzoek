@@ -13,7 +13,7 @@ If the screening was negative, the follow up examination should not be performed
 * bodySite from BeVSBevolkingsonderzoekBodySiteLocation (extensible)
 * patientInstruction
 * occurrence[x]
-* extension contains workflow-episodeOfCare named Episode 1..1 MS
+* extension contains BeBvoEpisodeOfCare named Episode 1..1 MS
 
 ValueSet: BeVSBevolkingsonderzoekFollowUpAdvice
 Description: "Possible follow up actions"
@@ -39,7 +39,7 @@ Description: "Follow up after positive colorectal cancer screening"
 * patientInstruction = "Colonoscopie"
 * bodySite = http://snomed.info/sct#14742008
 * bodySite.text = "Dikke darm"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
 Instance: BreastCancerScreeningFollowUpExample
@@ -51,7 +51,7 @@ Description: "Follow up after positive breast cancer screening. This is a propos
 * status = #active
 * subject = Reference(JaneDoe)
 * patientInstruction = "Ga naar de arts die u hebt opgegeven bij het onderzoek, dit is uw huisarts of gynaecoloog of andere, voor een verwijsbrief voor bijkomend onderzoek."
-* extension.url = "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BeBvoEpisodeOfCare"
 * extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
 
 Instance: JaneDoe
